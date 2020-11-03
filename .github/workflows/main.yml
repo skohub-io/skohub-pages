@@ -1,0 +1,46 @@
+name: Build /public and delpoy to gh-pages with docker container
+
+on:
+  push:
+    branches:
+      - master
+      - main
+      - gh-pages
+  workflow_dispatch:
+    inputs:
+      logLevel:
+        description: 'Log level'
+        required: true
+        default: 'warning'
+      tags:
+        description: 'Test scenario tags'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v2 # If you're using actions/checkout@v2 you must set persist-credentials to false in most cases for the deployment to work correctly.
+        with:
+          persist-credentials: false
+
+      - name: remove public and data-dir if already exists
+        run: rm -rf public data
+
+      - run: mkdir public
+
+      - run: mkdir data
+
+      - run: git clone https://github.com/skohub-io/skohub-docker-vocabs.git data/
+
+      - name: make .env.production file
+        run: echo "PATH_PREFIX=/skohub-docker-vocabs" > .env.production
+
+      - name: build public dir with docker image
+        run: docker run -v $(pwd)/public:/app/public -v $(pwd)/data:/app/data -v $(pwd)/.env.production:/app/.env.production skohub/skohub-vocabs-docker:latest
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
