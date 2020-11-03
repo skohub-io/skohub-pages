@@ -1,0 +1,5 @@
+DirectoryIndex index
+AddType text/index .index
+AddType application/json .json
+AddType application/ld+json .jsonld
+AddType application/activity+json .jsonas
