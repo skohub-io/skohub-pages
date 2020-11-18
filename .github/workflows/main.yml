@@ -31,10 +31,10 @@ jobs:
 
       - run: mkdir data
 
-      - run: git clone https://github.com/skohub-io/skohub-docker-vocabs.git data/
+      - run: git clone https://github.com/TobiasNx/skohub-docker-vocabs-test.git data/
 
       - name: make .env.production file
-        run: echo "PATH_PREFIX=/skohub-docker-vocabs" > .env.production
+        run: echo "PATH_PREFIX=/skohub-docker-vocabs-test" > .env.production
 
       - name: build public dir with docker image
         run: docker run -v $(pwd)/public:/app/public -v $(pwd)/data:/app/data -v $(pwd)/.env.production:/app/.env.production skohub/skohub-vocabs-docker:latest
