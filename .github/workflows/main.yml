@@ -1,4 +1,4 @@
-name: Build /public and delpoy to gh-pages with docker container
+name: Build /public and deploy to gh-pages with docker container
 
 on:
   push:
