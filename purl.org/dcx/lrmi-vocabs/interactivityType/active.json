@@ -1,8 +1,8 @@
 {
   "id": "http://purl.org/dcx/lrmi-vocabs/interactivityType/active",
   "type": "Concept",
-  "followers": "https://test.skohub.io/followers?subject=purl.org%2Fdcx%2Flrmi-vocabs%2FinteractivityType%2Factive",
-  "inbox": "https://test.skohub.io/inbox?target=purl.org%2Fdcx%2Flrmi-vocabs%2FinteractivityType%2Factive",
+  "followers": "https://test.skohub.io/followers?subject=skohub-docker-vocabs%2Fpurl.org%2Fdcx%2Flrmi-vocabs%2FinteractivityType%2Factive",
+  "inbox": "https://test.skohub.io/inbox?target=skohub-docker-vocabs%2Fpurl.org%2Fdcx%2Flrmi-vocabs%2FinteractivityType%2Factive",
   "prefLabel": {
     "en": "active"
   },
@@ -73,7 +73,16 @@
     "notation": {
       "@container": "@set"
     },
+    "example": {
+      "@container": "@language"
+    },
     "narrower": {
+      "@container": "@set"
+    },
+    "related": {
+      "@container": "@set"
+    },
+    "relatedMatch": {
       "@container": "@set"
     },
     "narrowerTransitive": {
@@ -82,7 +91,22 @@
     "broaderTransitive": {
       "@container": "@set"
     },
+    "broadMatch": {
+      "@container": "@set"
+    },
+    "narrowMatch": {
+      "@container": "@set"
+    },
+    "closeMatch": {
+      "@container": "@set"
+    },
+    "exactMatch": {
+      "@container": "@set"
+    },
     "followers": "as:followers",
-    "inbox": "ldp:inbox"
+    "inbox": "ldp:inbox",
+    "hasTopConcept": {
+      "@container": "@set"
+    }
   }
 }
