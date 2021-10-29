@@ -8,7 +8,7 @@ color: a skos:ConceptScheme ;
     dct:creator "Hans Dampf"@de ;
     dct:created "2021-11-02"^^xsd:date ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    skos:hasTopConcept color:b0001 color:b0002 ;
+    skos:hasTopConcept color:b0001, color:b0002 ;
     .
 
 color:b0001 a skos:Concept ;
@@ -18,7 +18,7 @@ color:b0001 a skos:Concept ;
     .
 
 color:b0002 a skos:Concept ;
-    skos:preflabel "Green"@en, "Grün"@de ;
+    skos:prefLabel "Green"@en, "Grün"@de ;
     skos:narrower color:b0003 ;
     skos:topConceptOf color: ;
     .
