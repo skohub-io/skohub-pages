@@ -16,3 +16,15 @@ color:b0001 a skos:Concept ;
     skos:altLabel "lila"@de, "purple"@en ;
     skos:topConceptOf color: ;
     .
+
+color:b0002 a skos:Concept ;
+    skos:preflabel "Green"@en, "Grün"@de ;
+    skos:narrower color:b0003 ;
+    skos:topConceptOf color: ;
+    .
+    
+color:b0003 a skos:Concept ;
+    skos:prefLabel "Light green"@en, "Hellgrün"@de ;
+    skos:broader color:b0002 ;
+    skos:inScheme color: ;
+    .
