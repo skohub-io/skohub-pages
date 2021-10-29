@@ -8,7 +8,7 @@ color: a skos:ConceptScheme ;
     dct:creator "Hans Dampf"@de ;
     dct:created "2021-11-02"^^xsd:date ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    skos:hasTopConcept color:b0001 ;
+    skos:hasTopConcept color:b0001 color:b0002 ;
     .
 
 color:b0001 a skos:Concept ;
