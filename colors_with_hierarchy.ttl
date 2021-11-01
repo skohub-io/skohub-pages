@@ -8,23 +8,19 @@ color: a skos:ConceptScheme ;
     dct:creator "Hans Dampf"@de ;
     dct:created "2021-11-02"^^xsd:date ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    skos:hasTopConcept color:b0001, color:b0002 ;
-    .
+    skos:hasTopConcept color:b0001, color:b0002 .
 
 color:b0001 a skos:Concept ;
     skos:prefLabel "Violett"@de, "violet"@en ;
     skos:altLabel "lila"@de, "purple"@en ;
-    skos:topConceptOf color: ;
-    .
+    skos:topConceptOf color: .
 
 color:b0002 a skos:Concept ;
     skos:prefLabel "Green"@en, "Grün"@de ;
     skos:narrower color:b0003 ;
-    skos:topConceptOf color: ;
-    .
+    skos:topConceptOf color: .
     
 color:b0003 a skos:Concept ;
     skos:prefLabel "Light green"@en, "Hellgrün"@de ;
     skos:broader color:b0002 ;
-    skos:inScheme color: ;
-    .
+    skos:inScheme color: .
