@@ -4,7 +4,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 color: a skos:ConceptScheme ;
-    dct:title "Colors with hierarchy"@en, "Farben mit Hierarchie"@de ;
+    dct:title "Color vocabulary with hierarchy"@en, "Farbvokabular mit Hierarchie"@de ;
     dct:creator "Hans Dampf"@de ;
     dct:created "2021-11-02"^^xsd:date ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
