@@ -17,8 +17,8 @@
   "inScheme": {
     "id": "https://example.org/color-with-hierarchy/",
     "title": {
-      "en": "Colors with hierarchy",
-      "de": "Farben mit Hierarchie"
+      "en": "Color vocabulary with hierarchy",
+      "de": "Farbvokabular mit Hierarchie"
     }
   },
   "@context": {
