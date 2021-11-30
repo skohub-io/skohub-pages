@@ -31,7 +31,7 @@ jobs:
 
       - run: mkdir data
 
-      - run: git clone https://github.com/TobiasNx/skohub-docker-vocabs-test.git data/
+      - run: git clone https://github.com/skohub-io/skohub-docker-vocabs.git data/
 
       - name: make .env.production file
 
