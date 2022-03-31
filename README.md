@@ -61,7 +61,7 @@ jobs:
       - run: git clone https://github.com/skohub-io/skohub-docker-vocabs.git data/
 
       - name: make .env.production file
-        run: echo "BASERURL=/skohub-docker-vocabs" > .env.production
+        run: echo "BASEURL=/skohub-docker-vocabs" > .env.production
 
       - name: build public dir with docker image
         run: docker run -v $(pwd)/public:/app/public -v $(pwd)/data:/app/data -v $(pwd)/.env.production:/app/.env.production skohub/skohub-vocabs-docker:latest
