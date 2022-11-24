@@ -1,8 +1,6 @@
 {
   "id": "https://example.org/colour-with-hierarchy/violet",
   "type": "Concept",
-  "followers": "https://test.skohub.io/followers?subject=skohub-docker-vocabs%2Fexample.org%2Fcolour-with-hierarchy%2Fviolet",
-  "inbox": "https://test.skohub.io/inbox?target=skohub-docker-vocabs%2Fexample.org%2Fcolour-with-hierarchy%2Fviolet",
   "prefLabel": {
     "en": "violet",
     "de": "Violett"
@@ -34,7 +32,6 @@
     "dct": "http://purl.org/dc/terms/",
     "schema": "http://schema.org/",
     "vann": "http://purl.org/vocab/vann/",
-    "as": "https://www.w3.org/ns/activitystreams#",
     "ldp": "http://www.w3.org/ns/ldp#",
     "title": {
       "@id": "dct:title",
@@ -113,8 +110,6 @@
     "exactMatch": {
       "@container": "@set"
     },
-    "followers": "as:followers",
-    "inbox": "ldp:inbox",
     "hasTopConcept": {
       "@container": "@set"
     }

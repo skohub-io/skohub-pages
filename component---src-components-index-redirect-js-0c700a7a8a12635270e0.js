@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[5],{"FGo+":function(t,e,n){"use strict";n.r(e);n("q1tI");var c=n("qKvR");e.default=function(t){var e=t.pageContext,n=e.baseURL,r=e.redirectPath;return Object(c.c)("div",null,Object(c.c)("meta",{httpEquiv:"refresh",content:"0; url="+(n+r)}))}}}]);
-//# sourceMappingURL=component---src-components-index-redirect-js-0c700a7a8a12635270e0.js.map
