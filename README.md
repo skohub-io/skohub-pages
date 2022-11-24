@@ -14,7 +14,7 @@ If you want to reuse this repo and have your vocabulary automatically pushed und
 2. go to the `.github/workflows/main.yml`-file, make sure to replace the following lines:
 
 - `run: git clone https://github.com/skohub-io/skohub-docker-vocabs.git data/` <- adjust the path to point to **YOUR** repository
-- `run: echo "BASEURL=/skohub-docker-vocabs" > .env.production` <- the `BASEURL` has to be set to **YOUR** repository name (only necessary if you changed the repository name; if you just forked and did not rename, leave it as it is)
+- `run: echo "BASEURL=/skohub-docker-vocabs" > .env` <- the `BASEURL` has to be set to **YOUR** repository name (only necessary if you changed the repository name; if you just forked and did not rename, leave it as it is)
 
 3. in your repository settings go to the "GitHub Pages" setting and select `gh-pages` as the branch your site is being built from. If it is not available yet, you might have to push something to your repo, so the GitHub-Action gets triggered or you can trigger it manually with going to "Actions" in the menubar, then select the workflow "Build /public and deploy..." and click "Run workflow". This way you can trigger the workflow automatically.
 
@@ -60,11 +60,11 @@ jobs:
 
       - run: git clone https://github.com/skohub-io/skohub-docker-vocabs.git data/
 
-      - name: make .env.production file
-        run: echo "BASEURL=/skohub-docker-vocabs" > .env.production
+      - name: make .env file
+        run: echo "BASERURL=/skohub-docker-vocabs" > .env
 
       - name: build public dir with docker image
-        run: docker run -v $(pwd)/public:/app/public -v $(pwd)/data:/app/data -v $(pwd)/.env.production:/app/.env.production skohub/skohub-vocabs-docker:latest
+        run: docker run -v $(pwd)/public:/app/public -v $(pwd)/data:/app/data -v $(pwd)/.env:/app/.env skohub/skohub-vocabs-docker:202-docker
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3

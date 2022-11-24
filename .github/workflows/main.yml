@@ -16,8 +16,50 @@ on:
         description: 'Test scenario tags'
 
 jobs:
+  changedfiles:
+    runs-on: ubuntu-latest
+    outputs:
+      ttl: ${{ steps.set-matrix.outputs.ttl }}
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 2
+      - name: Get changed files
+        id: changed-files
+        uses: tj-actions/changed-files@v34
+        with:
+          files: |
+            **/*.ttl
+          json: "true"
+
+      - name: Set matrix
+        id: set-matrix
+        run: echo "ttl=${{ steps.changed-files.outputs.all_changed_files }}" >> $GITHUB_OUTPUT
+
+  validate:
+    runs-on: ubuntu-latest
+    needs: changedfiles
+    # only run there are changed files
+    if: ${{needs.changedfiles.outputs.ttl != '[]'}}
+    strategy:
+      fail-fast: false # other validation jobs should continue checking even if one file is invalid
+      matrix:
+        file: ${{ fromJson(needs.changedfiles.outputs.ttl) }}
+    steps:
+      - uses: actions/checkout@v3
+      - name: echo changed files
+        run: echo "${{ matrix.file }}"
+
+      - name: get shape
+        run: curl https://raw.githubusercontent.com/skohub-io/shapes/main/skos.shacl.ttl --output skos.shacl.ttl
+
+      - name: Validate with script
+        run: bash ${GITHUB_WORKSPACE}/scripts/validate-skos.sh -f ${{ matrix.file }}
+
+
   build:
     runs-on: ubuntu-latest
+    needs: [changedfiles, validate]
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v2 # If you're using actions/checkout@v2 you must set persist-credentials to false in most cases for the deployment to work correctly.
@@ -33,12 +75,12 @@ jobs:
 
       - run: git clone https://github.com/skohub-io/skohub-docker-vocabs.git data/
 
-      - name: make .env.production file
+      - name: make .env file
 
-        run: echo "BASEURL=/skohub-docker-vocabs" > .env.production
+        run: echo "BASEURL=/skohub-docker-vocabs" > .env
 
       - name: build public dir with docker image
-        run: docker run -v $(pwd)/public:/app/public -v $(pwd)/data:/app/data -v $(pwd)/.env.production:/app/.env.production skohub/skohub-vocabs-docker:latest
+        run: docker run -v $(pwd)/public:/app/public -v $(pwd)/data:/app/data -v $(pwd)/.env:/app/.env skohub/skohub-vocabs-docker:202-docker
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
