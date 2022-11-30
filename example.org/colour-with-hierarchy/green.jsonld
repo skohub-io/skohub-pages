@@ -2,7 +2,7 @@
   "id": "https://example.org/colour-with-hierarchy/green",
   "type": "Concept",
   "prefLabel": {
-    "en": "Green",
+    "en": "green",
     "de": "Grün"
   },
   "narrower": [
