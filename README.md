@@ -7,7 +7,7 @@ It spins up a Docker-Container made out the [SkoHub-Vocabs](https://github.com/h
 
 ## Reuse
 
-If you want to reuse this repo and have your vocabulary automatically pushed und published via GitHub-Pages, follow these steps:
+If you want to reuse this repo and have your vocabulary automatically pushed und published via GitHub-Pages, follow these steps (also explained [in these slides including screenshots](https://pad.gwdg.de/p/2022-11-30-swib22-skos-workshop-slides#/51):
 
 1. Fork this repo
 
