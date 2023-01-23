@@ -64,7 +64,7 @@ jobs:
         run: echo "BASERURL=/skohub-docker-vocabs" > .env
 
       - name: build public dir with docker image
-        run: docker run -v $(pwd)/public:/app/public -v $(pwd)/data:/app/data -v $(pwd)/.env:/app/.env skohub/skohub-vocabs-docker:202-docker
+        run: docker run -v $(pwd)/public:/app/public -v $(pwd)/data:/app/data -v $(pwd)/.env:/app/.env skohub/skohub-vocabs-docker:latest
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
