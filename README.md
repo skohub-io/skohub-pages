@@ -73,6 +73,12 @@ jobs:
           publish_dir: ./public
 ```
 
+## FAQ
+
+- During the build I get an error saying `The requested URL returned error: 403`
+  - You maybe need to update permissions like described here: https://github.com/peaceiris/actions-gh-pages/issues/744
+  - Go to `Settings` > `Actions` > `General` > `Workflow permissions` and toggle the Read and write permissions
+
 ## CHANGELOG
 
 09.02.2021:
