@@ -71,7 +71,11 @@ jobs:
 
       - run: mkdir public
 
+      - run: chmod -R 777 public # user in container is node which won't have write access to public
+
       - run: mkdir data
+
+      - run: chmod -R 777 data # user in container is node which won't have write access to public
 
       - run: git clone https://github.com/skohub-io/skohub-docker-vocabs.git data/
 
