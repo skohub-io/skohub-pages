@@ -12,13 +12,20 @@
       "de": "Grün"
     }
   },
-  "inScheme": {
-    "id": "https://example.org/colour-with-hierarchy/",
-    "title": {
-      "en": "Colour vocabulary with hierarchy",
-      "de": "Farbvokabular mit Hierarchie"
+  "inScheme": [
+    {
+      "id": "https://example.org/colour-with-hierarchy/",
+      "title": {
+        "en": "Colour vocabulary with hierarchy",
+        "de": "Farbvokabular mit Hierarchie"
+      }
     }
-  },
+  ],
+  "inSchemeAll": [
+    {
+      "id": "https://example.org/colour-with-hierarchy/"
+    }
+  ],
   "@context": {
     "@version": 1.1,
     "id": "@id",
@@ -59,6 +66,12 @@
       "@container": "@language"
     },
     "altLabel": {
+      "@container": [
+        "@language",
+        "@set"
+      ]
+    },
+    "hiddenLabel": {
       "@container": [
         "@language",
         "@set"
@@ -107,6 +120,12 @@
       "@container": "@set"
     },
     "hasTopConcept": {
+      "@container": "@set"
+    },
+    "inScheme": {
+      "@container": "@set"
+    },
+    "topConceptOf": {
       "@container": "@set"
     }
   }

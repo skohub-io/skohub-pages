@@ -13,16 +13,29 @@
       "Lila"
     ]
   },
-  "inScheme": {
-    "id": "https://example.org/colour/",
-    "title": {
-      "en": "Colour Vocabulary",
-      "de": "Farbvokabular"
+  "inScheme": [
+    {
+      "id": "https://example.org/colour/",
+      "title": {
+        "en": "Colour Vocabulary",
+        "de": "Farbvokabular"
+      }
     }
-  },
-  "topConceptOf": {
-    "id": "https://example.org/colour/"
-  },
+  ],
+  "inSchemeAll": [
+    {
+      "id": "https://example.org/colour/"
+    }
+  ],
+  "topConceptOf": [
+    {
+      "id": "https://example.org/colour/",
+      "title": {
+        "en": "Colour Vocabulary",
+        "de": "Farbvokabular"
+      }
+    }
+  ],
   "@context": {
     "@version": 1.1,
     "id": "@id",
@@ -63,6 +76,12 @@
       "@container": "@language"
     },
     "altLabel": {
+      "@container": [
+        "@language",
+        "@set"
+      ]
+    },
+    "hiddenLabel": {
       "@container": [
         "@language",
         "@set"
@@ -111,6 +130,12 @@
       "@container": "@set"
     },
     "hasTopConcept": {
+      "@container": "@set"
+    },
+    "inScheme": {
+      "@container": "@set"
+    },
+    "topConceptOf": {
       "@container": "@set"
     }
   }
