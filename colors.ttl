@@ -5,7 +5,7 @@
 
 colour: a skos:ConceptScheme ;
     dct:title "Colour Vocabulary"@en, "Farbvokabular"@de ;
-    dct:creator "Hans Dampfer"@de ;
+    dct:creator "Hans Dampf"@de ;
     dct:created "2021-11-02"^^xsd:date ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     skos:hasTopConcept colour:violet .
