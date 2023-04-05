@@ -56,15 +56,27 @@ jobs:
 
       - run: mkdir public
 
+      - run: chmod -R 777 public # user in container is node which won't have write access to public
+
       - run: mkdir data
 
-      - run: git clone https://github.com/skohub-io/skohub-docker-vocabs.git data/
+      - run: chmod -R 777 data # user in container is node which won't have write access to public
+
+      - run: git clone https://github.com/skohub-io/skohub-docker-vocabs.git data/ # <-- add link to your repo here
 
       - name: make .env file
-        run: echo "BASERURL=/skohub-docker-vocabs" > .env
 
+        run: echo "BASEURL=/skohub-docker-vocabs" > .env
+
+      # below add link to your repo after -e GATSBY_REPOSITORY_URL=...
       - name: build public dir with docker image
-        run: docker run -v $(pwd)/public:/app/public -v $(pwd)/data:/app/data -v $(pwd)/.env:/app/.env skohub/skohub-vocabs-docker:latest
+        run: >
+          docker run
+          -v $(pwd)/public:/app/public
+          -v $(pwd)/data:/app/data
+          -v $(pwd)/.env:/app/.env
+          -e GATSBY_RESPOSITORY_URL=https://github.com/skohub-io/skohub-docker-vocabs.git
+          skohub/skohub-vocabs-docker:latest
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
