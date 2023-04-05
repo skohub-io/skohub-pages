@@ -85,10 +85,11 @@ jobs:
         run: echo "BASEURL=/skohub-docker-vocabs" > .env
 
       - name: build public dir with docker image
-        run: docker run \
-          -v $(pwd)/public:/app/public \
-          -v $(pwd)/data:/app/data \
-          -v $(pwd)/.env:/app/.env \
+        run: >
+          docker run
+          -v $(pwd)/public:/app/public
+          -v $(pwd)/data:/app/data
+          -v $(pwd)/.env:/app/.env
           -e GATSBY_RESPOSITORY_URL=https://github.com/skohub-io/skohub-docker-vocabs.git
           skohub/skohub-vocabs-docker:latest
 
