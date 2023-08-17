@@ -12,7 +12,7 @@
 
 <n1> a skos:Concept ;
   skos:prefLabel "Allgemeines"@de, "General"@en ;
-  skos:narrower <n01>;
+  skos:narrower <n01> ;
   skos:notation "1" ;
   skos:topConceptOf <scheme> .
 
