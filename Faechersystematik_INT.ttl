@@ -8,8 +8,6 @@
   dct:alternative "Institutssystematik"@de ;
   dct:description "Diese SKOS-Klassifikation basiert auf der Aufstellungssystematik am INT."@de , "This SKOS classification is based on the system of classification at INT."@en;
   dct:issued "2023-08-17" ;
-  vann:preferredNamespacePrefix "is" ;
-  vann:preferredNamespaceUri "https://w3id.org/scientific-librarian/institutssystematik/" ;
   skos:hasTopConcept <n1> .
 
 <n1> a skos:Concept ;
