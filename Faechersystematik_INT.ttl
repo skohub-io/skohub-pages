@@ -10,3 +10,14 @@
   dct:issued "2023-08-17" ;
   skos:hasTopConcept <n1> .
 
+<n1> a skos:Concept ;
+  skos:prefLabel "Geisteswissenschaften"@de, "Humanities"@en, "Гуманітарні науки"@uk ;
+  skos:narrower <n01> ;
+  skos:notation "1" ;
+  skos:topConceptOf <scheme> .
+
+<n01> a skos:Concept ;
+  skos:prefLabel "Geisteswissenschaften allgemein"@de, "Humanities (general)"@en, "Гуманітарні науки загалом"@uk ;
+  skos:broader <n1> ;
+  skos:notation "01" ;
+  skos:inScheme <scheme> .
