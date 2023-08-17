@@ -1,21 +1,20 @@
-
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix schema: <http://schema.org/> .
 @prefix vann: <http://purl.org/vocab/vann/> .
 
 <scheme> a skos:ConceptScheme ;
-  dct:title "Aufstellungssystematik am Fraunhofer-Institut für Naturwissenschaftlich-Technische Trendanalysen INT nach Fächergruppen "@de, "Classification system at the Fraunhofer Institute for Scientific and Technical Trend Analysis INT by subject groups"@en;
+  dct:title "Aufstellungssystematik am Fraunhofer-Institut für Naturwissenschaftlich-Technische Trendanalysen INT nach Fächergruppen "@de, "Classification system at the Fraunhofer Institute for Scientific and Technical Trend Analysis INT by subject groups."@en;
   dct:alternative "Institutssystematik"@de ;
   dct:description "Diese SKOS-Klassifikation basiert auf der Aufstellungssystematik am INT."@de , "This SKOS classification is based on the system of classification at INT."@en;
   dct:issued "2023-08-17" ;
   vann:preferredNamespacePrefix "is" ;
   vann:preferredNamespaceUri "https://w3id.org/scientific-librarian/institutssystematik/" ;
-  skos:hasTopConcept  <n1>, <n2>, <n3>, <n4>, <n5>, <n7>, <n8>, <n9> .
+  skos:hasTopConcept <n1> .
 
 <n1> a skos:Concept ;
   skos:prefLabel "Allgemeines"@de, "General"@en ;
-  skos:narrower <n01>, <n02>, <n03> ;
+  skos:narrower <n01> ;
   skos:notation "1" ;
   skos:topConceptOf <scheme> .
 
