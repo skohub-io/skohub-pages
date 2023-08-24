@@ -67,7 +67,7 @@ Systematik:M_Mathematik a skos:Concept ;
     skos:narrower Systematik:M0_Allgemeines, Lehrbücher ;
     skos:topConceptOf Systematik: .
 
-Systematik:M0_Allgemeines, Lehrbücher a skos:Concept ;
+Systematik:M0_Allgemeines_Lehrbücher a skos:Concept ;
     skos:prefLabel "Allgemeines, Lehrbücher"@de, "Textbook"@en ;
     skos:altLabel "Universelles, Fachbücher"@de, "Reference books"@en ;
     skos:notation "M0"@de, "M0"@en ;
