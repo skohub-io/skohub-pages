@@ -12,8 +12,8 @@ Systematik: a skos:ConceptScheme ;
 
 Systematik:A_Allgemeines a skos:Concept ;
     skos:prefLabel "A_Allgemeines"@de, "A_General"@en ;
-    skos:altLabel "Universelles"@de, "Universal"@en ;
-    skos:notation "A-A2"@de, "A-A2"@en ;
+    skos:altLabel "A_Universelles"@de, "A_Universal"@en ;
+    skos:notation "A0-A2"@de, "A0-A2"@en ;
     skos:hiddenLabel "verstecke Notiz"@de, "hidden Note"@en ;
     skos:narrower Systematik:A0_Verschiedenes ;
     skos:narrower Systematik:A1_Lexika;
@@ -62,7 +62,7 @@ Systematik:GA_Geowissenschaften_Astrophysik a skos:Concept ;
 Systematik:M_Mathematik a skos:Concept ;
     skos:prefLabel "M_Mathematik"@de, "M_Mathematics"@en ;
     skos:altLabel "M_Mathe"@de, "M_Math"@en ;
-    skos:notation "M"@de, "M"@en ;
+    skos:notation "M0-M5"@de, "M0-M5"@en ;
     skos:hiddenLabel "verstecke Notiz"@de, "hidden Note"@en ;
     skos:narrower Systematik:M0_Allgemeines_Lehrbücher ;
     skos:topConceptOf Systematik: .
