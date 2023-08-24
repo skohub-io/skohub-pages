@@ -16,7 +16,7 @@ Systematik:A_Allgemeines a skos:Concept ;
     skos:notation "A0-A2"@de, "A0-A2"@en ;
     skos:hiddenLabel "verstecke Notiz"@de, "hidden Note"@en ;
     skos:narrower Systematik:A0_Verschiedenes ;
-    skos:narrower Systematik:A1_Lexika;
+    skos:narrower Systematik:A1_Lexika_alternative_Nachschlagewerke ;
     skos:narrower Systematik:A2_Wörterbücher;
     skos:topConceptOf Systematik: .
 
