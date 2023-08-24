@@ -26,9 +26,9 @@ Systematik:A0_Verschiedenes a skos:Concept ;
     skos:notation "A0"@de, "A0"@en ;
     skos:inScheme Systematik: .
 
-Systematik:A1_Lexika a skos:Concept ;
-    skos:prefLabel "A1_Lexika"@de, "A1_Lexica"@en ;
-    skos:altLabel "A1_Allgemeine Nachschlagewerke"@de, "A1_General reference works"@en ;
+Systematik:A1_Lexika_alternative_Nachschlagewerke a skos:Concept ;
+    skos:prefLabel "A1_Lexika_alternative_Nachschlagewerke"@de, "A1_Lexica, Alternative reference books"@en ;
+    skos:altLabel "A1_Enzyklopädie"@de, "A1_Encyclopedia"@en ;
     skos:notation "A1"@de, "A1"@en ;
     skos:inScheme Systematik: .
 
