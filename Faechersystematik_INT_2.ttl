@@ -9,6 +9,7 @@ Systematik: a skos:ConceptScheme ;
     dct:created "2023-08-24"^^xsd:date ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     skos:hasTopConcept Systematik:A_Allgemeines .
+    skos:hasTopConcept Systematik:BC_Biowissenschaften_Chemie_Kernchemie_Pharmamedizin .
 
 Systematik:A_Allgemeines a skos:Concept ;
     skos:prefLabel "A_Allgemeines"@de, "A_General"@en ;
@@ -34,8 +35,7 @@ Systematik:A2_Wörterbücher a skos:Concept ;
     skos:altLabel "Vokabularium"@de, "Vocabulary"@en ;
     skos:inScheme Systematik: .
 
-
-Systematik:BC_Biowissenschaften, Chemie, Kernchemie, Pharmamedizin a skos:Concept ;
+Systematik:BC_Biowissenschaften_Chemie_Kernchemie_Pharmamedizin a skos:Concept ;
     skos:prefLabel ":BC_Biowissenschaften, Chemie, Kernchemie, Pharmamedizin"@de, "BC_Bioscience, chemistry, nuclear chemistry, pharmaceutical medicine"@en ;
     skos:altLabel "BC_Biologie, Chemie, Medizin"@de, "biology, chemistry, medicine"@en ;
     skos:notation "BC"@de, "BC"@en ;
