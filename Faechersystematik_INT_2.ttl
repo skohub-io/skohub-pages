@@ -64,7 +64,7 @@ Systematik:M_Mathematik a skos:Concept ;
     skos:altLabel "Mathe"@de, "M_Math"@en ;
     skos:notation "M"@de, "M"@en ;
     skos:hiddenLabel "verstecke Notiz"@de, "hidden Note"@en ;
-    skos:narrower Systematik:M0_Allgemeines, Lehrbücher ;
+    skos:narrower Systematik:M0_Allgemeines_Lehrbücher ;
     skos:topConceptOf Systematik: .
 
 Systematik:M0_Allgemeines_Lehrbücher a skos:Concept ;
