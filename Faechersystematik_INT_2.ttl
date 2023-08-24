@@ -8,8 +8,7 @@ Systematik: a skos:ConceptScheme ;
     dct:creator "Rene Peter Bennemann"@de ;
     dct:created "2023-08-24"^^xsd:date ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    skos:hasTopConcept Systematik:A_Allgemeines .
-    skos:hasTopConcept Systematik:BC_Biowissenschaften_Chemie_Kernchemie_Pharmamedizin .
+    skos:hasTopConcept Systematik:A_Allgemeines, Systematik:BC_Biowissenschaften_Chemie_Kernchemie_Pharmamedizin .
 
 Systematik:A_Allgemeines a skos:Concept ;
     skos:prefLabel "A_Allgemeines"@de, "A_General"@en ;
