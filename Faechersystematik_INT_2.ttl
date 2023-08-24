@@ -18,3 +18,8 @@ Systematik:A_Allgemeines a skos:Concept ;
     skos:narrower Systematik:A0_Verschiedenes ;
     skos:topConceptOf Systematik: .
 
+Systematik:A0_Verschiedenes a skos:Concept ;
+    skos:prefLabel "A0_Verschiedenes"@de, "A0_Various"@en ;
+    skos:inScheme Systematik: .
+
+
