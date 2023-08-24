@@ -65,10 +65,24 @@ Systematik:M_Mathematik a skos:Concept ;
     skos:notation "M0-M5"@de, "M0-M5"@en ;
     skos:hiddenLabel "verstecke Notiz"@de, "hidden Note"@en ;
     skos:narrower Systematik:M0_Allgemeines_Lehrbücher ;
+    skos:narrower Systematik:M1_Tabellen_Nachschlagewerke ; 
+    skos:narrower Systematik:M2_Algebra_Gruppentheorie_Geometrie_Arimetrie_Zahlentheorie ; 
     skos:topConceptOf Systematik: .
 
 Systematik:M0_Allgemeines_Lehrbücher a skos:Concept ;
     skos:prefLabel "M0_Allgemeines, Lehrbücher"@de, "M0_General, Textbook"@en ;
     skos:altLabel "M0_Universelles, Fachbücher"@de, "M0_Reference books"@en ;
     skos:notation "M0"@de, "M0"@en ;
+    skos:inScheme Systematik: .
+
+Systematik:M1_Tabellen_Nachschlagewerke a skos:Concept ;
+    skos:prefLabel "M1_Tabellen, Nachschlagewerke"@de, "M1_Tables, Reference books"@en ;
+    skos:altLabel "M1_Tabellenbuch"@de, "M1_Tablebooks"@en ;
+    skos:notation "M1"@de, "M1"@en ;
+    skos:inScheme Systematik: .
+
+Systematik:M2_Algebra_Gruppentheorie_Geometrie_Arimetrie_Zahlentheorie a skos:Concept ;
+    skos:prefLabel "M2_Algebra, Gruppentheorie, Geometrie, Arimetrie, Zahlentheorie"@de, "M2_Algebra, Group theory, Geometry, Arimetry, Theory of Numbers"@en ;
+    skos:altLabel "M2_Allgemeine Algebra, Raumlehre"@de, "M2_General algebra, Spatial Science"@en ;
+    skos:notation "M2"@de, "M2"@en ;
     skos:inScheme Systematik: .
