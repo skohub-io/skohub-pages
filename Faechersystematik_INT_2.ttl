@@ -11,8 +11,8 @@ Systematik: a skos:ConceptScheme ;
     skos:hasTopConcept Systematik:A_Allgemeines, Systematik:BC_Biowissenschaften_Chemie_Kernchemie_Pharmamedizin, Systematik:DI_Datenverarbeitung_Informatik_Informationsverarbeitung_Programmiersprache_Künstliche_Intelligenz, Systematik:GA_Geowissenschaften_Astrophysik, Systematik:M_Mathematik  .
 
 Systematik:A_Allgemeines a skos:Concept ;
-    skos:prefLabel "A_Allgemeines"@de, "A_General"@en ;
-    skos:altLabel "A_Universelles"@de, "A_Universal"@en ;
+    skos:prefLabel "A Allgemeines"@de, "A General"@en ;
+    skos:altLabel "A Universelles"@de, "A Universal"@en ;
     skos:notation "A0-A2"@de, "A0-A2"@en ;
     skos:hiddenLabel "verstecke Notiz"@de, "hidden Note"@en ;
     skos:narrower Systematik:A0_Verschiedenes ;
