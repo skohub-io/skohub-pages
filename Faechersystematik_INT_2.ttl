@@ -86,3 +86,9 @@ Systematik:M2_Algebra_Gruppentheorie_Geometrie_Arimetrie_Zahlentheorie a skos:Co
     skos:altLabel "M2_Allgemeine Algebra, Raumlehre"@de, "M2_General algebra, Spatial Science"@en ;
     skos:notation "M2"@de, "M2"@en ;
     skos:inScheme Systematik: .
+
+Systematik:M3_Analysis_Funktionsanalysis_Funktionstheorie_Spezielle_Funktionen a skos:Concept ;
+    skos:prefLabel "M3_Analysis, Funktionsanalysis, Funktionstheorie, Spezielle Funktionen "@de, "M3_Analysis, Functional analysis, Functional theory, Special functions "@en ;
+    skos:altLabel "M3_Analyse, Funktionen"@de, "Functions"@en ;
+    skos:notation "M3"@de, "M3"@en ;
+    skos:inScheme Systematik: .
