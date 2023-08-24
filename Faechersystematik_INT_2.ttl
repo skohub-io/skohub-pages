@@ -8,7 +8,7 @@ Systematik: a skos:ConceptScheme ;
     dct:creator "Rene Peter Bennemann"@de ;
     dct:created "2023-08-24"^^xsd:date ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    skos:hasTopConcept Systematik:A_Allgemeines, Systematik:BC_Biowissenschaften_Chemie_Kernchemie_Pharmamedizin, Systematik:DI_Datenverarbeitung_Informatik_Informationsverarbeitung_Programmiersprache_Künstliche_Intelligenz  .
+    skos:hasTopConcept Systematik:A_Allgemeines, Systematik:BC_Biowissenschaften_Chemie_Kernchemie_Pharmamedizin, Systematik:DI_Datenverarbeitung_Informatik_Informationsverarbeitung_Programmiersprache_Künstliche_Intelligenz, Systematik:GA_Geowissenschaften_Astrophysik  .
 
 Systematik:A_Allgemeines a skos:Concept ;
     skos:prefLabel "A_Allgemeines"@de, "A_General"@en ;
@@ -47,4 +47,12 @@ Systematik:DI_Datenverarbeitung_Informatik_Informationsverarbeitung_Programmiers
     skos:notation "DI"@de, "DI"@en ;
     skos:hiddenLabel "verstecke Notiz"@de, "hidden Note"@en ;
     skos:topConceptOf Systematik: .
+
+Systematik:GA_Geowissenschaften_Astrophysik a skos:Concept ;
+    skos:prefLabel ":GA_Geowissenschaften, Astrophysik"@de, "GA_Geosciences, Astrophysics"@en ;
+    skos:altLabel "GA_Geographie, Astronomie"@de, "GA_Geography, Astronomy"@en ;
+    skos:notation "GA"@de, "GA"@en ;
+    skos:hiddenLabel "verstecke Notiz"@de, "hidden Note"@en ;
+    skos:topConceptOf Systematik: .
+
 
