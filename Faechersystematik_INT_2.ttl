@@ -8,11 +8,11 @@ Systematik: a skos:ConceptScheme ;
     dct:creator "Rene Peter Bennemann"@de ;
     dct:created "2023-08-24"^^xsd:date ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    skos:hasTopConcept Systematik:A_Allgemeines, Systematik:BC_Biowissenschaften_Chemie_Kernchemie_Pharmamedizinz, DI_Datenverarbeitung_Informatik_Informationsverarbeitung_Programmiersprache_Künstliche_Intelligenz, Systematik:GA_Geowissenschaften_Astrophysik  .
+    skos:hasTopConcept Systematik:A_Allgemeines, Systematik:BC_Biowissenschaften_Chemie_Kernchemie_Pharmamedizinz, Systematik:DI_Datenverarbeitung_Informatik_Informationsverarbeitung_Programmiersprache_Künstliche_Intelligenz, Systematik:GA_Geowissenschaften_Astrophysik, Systematik:M_Mathematik  .
 
 Systematik:A_Allgemeines a skos:Concept ;
-    skos:prefLabel "A_Allgemeines"@de, "A_General"@en ;
-    skos:altLabel "A_Universelles"@de, "A_Universal"@en ;
+    skos:prefLabel "Allgemeines"@de, "General"@en ;
+    skos:altLabel "Universelles"@de, "Universal"@en ;
     skos:notation "A-A2"@de, "A-A2"@en ;
     skos:hiddenLabel "verstecke Notiz"@de, "hidden Note"@en ;
     skos:narrower Systematik:A0_Verschiedenes ;
@@ -21,38 +21,54 @@ Systematik:A_Allgemeines a skos:Concept ;
     skos:topConceptOf Systematik: .
 
 Systematik:A0_Verschiedenes a skos:Concept ;
-    skos:prefLabel "A0_Verschiedenes"@de, "A0_Various"@en ;
+    skos:prefLabel "Verschiedenes"@de, "Various"@en ;
+    skos:altLabel "Diverses"@de, "Miscellaneous"@en ;
+    skos:notation "A0"@de, "A0"@en ;
     skos:inScheme Systematik: .
 
 Systematik:A1_Lexika a skos:Concept ;
-    skos:prefLabel "A1_Lexika"@de, "A1_Lexica"@en ;
+    skos:prefLabel "Lexika"@de, "Lexica"@en ;
     skos:altLabel "allgemeine Nachschlagewerke"@de, "General reference works"@en ;
+    skos:notation "A1"@de, "A1"@en ;
     skos:inScheme Systematik: .
 
 Systematik:A2_Wörterbücher a skos:Concept ;
-    skos:prefLabel "A2_Wörterbücher"@de, "A1_Dictionaries"@en ;
+    skos:prefLabel "Wörterbücher"@de, "Dictionaries"@en ;
     skos:altLabel "Vokabularium"@de, "Vocabulary"@en ;
+    skos:notation "A2"@de, "A2"@en ;
     skos:inScheme Systematik: .
 
 Systematik:BC_Biowissenschaften_Chemie_Kernchemie_Pharmamedizin a skos:Concept ;
-    skos:prefLabel ":BC_Biowissenschaften, Chemie, Kernchemie, Pharmamedizin"@de, "BC_Bioscience, chemistry, nuclear chemistry, pharmaceutical medicine"@en ;
-    skos:altLabel "BC_Biologie, Chemie, Medizin"@de, "biology, chemistry, medicine"@en ;
+    skos:prefLabel "Biowissenschaften, Chemie, Kernchemie, Pharmamedizin"@de, "Bioscience, chemistry, nuclear chemistry, pharmaceutical medicine"@en ;
+    skos:altLabel "Biologie, Chemie, Medizin"@de, "biology, chemistry, medicine"@en ;
     skos:notation "BC"@de, "BC"@en ;
     skos:hiddenLabel "verstecke Notiz"@de, "hidden Note"@en ;
     skos:topConceptOf Systematik: .
 
 Systematik:DI_Datenverarbeitung_Informatik_Informationsverarbeitung_Programmiersprache_Künstliche_Intelligenz a skos:Concept ;
-    skos:prefLabel ":DI_Datenverarbeitung, Informatik, Informationsverarbeitung, Programmiersprache, Künstliche Intelligenz"@de, "DI_ Data proceesing, Informatics, Information processing, Programming language, artificial intelligence"@en ;
-    skos:altLabel "DI_Dateninformatik, KI"@de, "Data science, AI"@en ;
+    skos:prefLabel "Datenverarbeitung, Informatik, Informationsverarbeitung, Programmiersprache, Künstliche Intelligenz"@de, "Data proceesing, Informatics, Information processing, Programming language, artificial intelligence"@en ;
+    skos:altLabel "Dateninformatik, KI"@de, "Data science, AI"@en ;
     skos:notation "DI"@de, "DI"@en ;
     skos:hiddenLabel "verstecke Notiz"@de, "hidden Note"@en ;
     skos:topConceptOf Systematik: .
 
 Systematik:GA_Geowissenschaften_Astrophysik a skos:Concept ;
-    skos:prefLabel ":GA_Geowissenschaften, Astrophysik"@de, "GA_Geosciences, Astrophysics"@en ;
-    skos:altLabel "GA_Geographie, Astronomie"@de, "GA_Geography, Astronomy"@en ;
+    skos:prefLabel "Geowissenschaften, Astrophysik"@de, "Geosciences, Astrophysics"@en ;
+    skos:altLabel "Geographie, Astronomie"@de, "Geography, Astronomy"@en ;
     skos:notation "GA"@de, "GA"@en ;
     skos:hiddenLabel "verstecke Notiz"@de, "hidden Note"@en ;
     skos:topConceptOf Systematik: .
 
+Systematik:M_Mathematik a skos:Concept ;
+    skos:prefLabel "Mathematik"@de, "Mathematics"@en ;
+    skos:altLabel "Mathe"@de, "M_Math"@en ;
+    skos:notation "M"@de, "M"@en ;
+    skos:hiddenLabel "verstecke Notiz"@de, "hidden Note"@en ;
+    skos:narrower Systematik:M0_Allgemeines, Lehrbücher ;
+    skos:topConceptOf Systematik: .
 
+Systematik:M0_Allgemeines, Lehrbücher a skos:Concept ;
+    skos:prefLabel "Allgemeines, Lehrbücher"@de, "Textbook"@en ;
+    skos:altLabel "Universelles, Fachbücher"@de, "Reference books"@en ;
+    skos:notation "M0"@de, "M0"@en ;
+    skos:inScheme Systematik: .
