@@ -108,7 +108,6 @@ Systematik:M5_Numerische_Mathematik a skos:Concept ;
     skos:notation "M5"@de, "M5"@en ;
     skos:inScheme Systematik: .
 
-
 Systematik:OR_Operations_Research a skos:Concept ;
     skos:prefLabel "OR_Operations Research"@de, "OR_Operations Research"@en ;
     skos:altLabel "OR_Betriebsforschung"@de, "OR_Business Research"@en ;
@@ -121,18 +120,18 @@ Systematik:OR_Operations_Research a skos:Concept ;
 
 Systematik:OR0_Grundlagen_Systemwissenschaften_Komplexitätstheorie a skos:Concept ;
     skos:prefLabel "OR0_Grundlagen, Systemwissenschaften, Komplexitätstheorie"@de, "OR0_Basics, System Sciences, Theory of complexity"@en ;
-    skos:altLabel "OR0_Grundbegriffe, Ordnungswissenschaften, Komplextheorie"@de, OR05_Basic terms, Regulatory Sciences, Complex Theory"@en ;
+    skos:altLabel "OR0_Grundbegriffe, Ordnungswissenschaften, Komplextheorie"@de, "OR05_Basic terms, Regulatory Sciences, Complex Theory"@en ;
     skos:notation "OR0"@de, "OR0"@en ;
     skos:inScheme Systematik: .
 
 Systematik:OR1_Mathematische Verfahren_Kontrolltheorie_Spieltheorie_Klassisches_OR a skos:Concept ;
     skos:prefLabel "OR1_Mathematische Verfahren, Kontrolltheorie, Spieltheorie, Klassiches OR"@de, "OR1_Mathematical methods, Control Theory, Game theory, Classic OR"@en ;
-    skos:altLabel "OR1_Verfahren der Mathematik, Entscheidungstheorie, Ursprüngliches OR"@de, OR1_Mathematics procedure, Theory of decision, Original OR"@en ;
+    skos:altLabel "OR1_Verfahren der Mathematik, Entscheidungstheorie, Ursprüngliches OR"@de, "OR1_Mathematics procedure, Theory of decision, Original OR"@en ;
     skos:notation "OR1"@de, "OR1"@en ;
     skos:inScheme Systematik: .
 
 Systematik:OR2_Anwendungen_Prognosen_Modelle_Zukunftsforschung_Technologiefolgen a skos:Concept ;
     skos:prefLabel "OR2_Anwendungen, Prognosen, Modelle, Zukunftsforschung, Technologiefolgen"@de, "OR2_Applications, Forecasts, Models, Technology Implications"@en ;
-    skos:altLabel "OR2_Einsatz, Einschätzungen, Methoden, Perspektivforschung, Technikfolgen"@de, OR2_Use, Assessment, Methods, Perspective Research, Technology Impact"@en ;
+    skos:altLabel "OR2_Einsatz, Einschätzungen, Methoden, Perspektivforschung, Technikfolgen"@de, "OR2_Use, Assessment, Methods, Perspective Research, Technology Impact"@en ;
     skos:notation "OR2"@de, "OR2"@en ;
     skos:inScheme Systematik: .
