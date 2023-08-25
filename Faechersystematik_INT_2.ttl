@@ -8,7 +8,7 @@ Systematik: a skos:ConceptScheme ;
     dct:creator "Rene Peter Bennemann"@de ;
     dct:created "2023-08-24"^^xsd:date ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    skos:hasTopConcept Systematik:A_Allgemeines, Systematik:BC_Biowissenschaften_Chemie_Kernchemie_Pharmamedizin, Systematik:DI_Datenverarbeitung_Informatik_Informationsverarbeitung_Programmiersprache_Künstliche_Intelligenz, Systematik:GA_Geowissenschaften_Astrophysik, Systematik:M_Mathematik, Systematik:OR_Operations_Research .
+    skos:hasTopConcept Systematik:A_Allgemeines, Systematik:BC_Biowissenschaften_Chemie_Kernchemie_Pharmamedizin, Systematik:DI_Datenverarbeitung_Informatik_Informationsverarbeitung_Programmiersprache_Künstliche_Intelligenz, Systematik:GA_Geowissenschaften_Astrophysik, Systematik:M_Mathematik, Systematik:OR_Operations_Research, Systematik:P_Physik .
 
 Systematik:A_Allgemeines a skos:Concept ;
     skos:prefLabel "A Allgemeines"@de, "A General"@en ;
@@ -28,7 +28,7 @@ Systematik:A0_Verschiedenes a skos:Concept ;
 
 Systematik:A1_Lexika_alternative_Nachschlagewerke a skos:Concept ;
     skos:prefLabel "A1_Lexika_alternative_Nachschlagewerke"@de, "A1_Lexica, Alternative reference books"@en ;
-    skos:altLabel "A1_Enzyklopädie"@de, "A1_Encyclopedia"@en ;
+    skos:altLabel "A1_Enzyklopädie, Kompendium"@de, "A1_Encyclopedia, Compendium"@en ;
     skos:notation "A1"@de, "A1"@en ;
     skos:inScheme Systematik: .
 
@@ -80,7 +80,7 @@ Systematik:M0_Allgemeines_Lehrbücher a skos:Concept ;
 
 Systematik:M1_Tabellen_Nachschlagewerke a skos:Concept ;
     skos:prefLabel "M1_Tabellen, Nachschlagewerke"@de, "M1_Tables, Reference books"@en ;
-    skos:altLabel "M1_Tabellenbuch"@de, "M1_Tablebooks"@en ;
+    skos:altLabel "M1_Tabellenbuch, Kompendium"@de, "M1_Tablebooks, Compendium"@en ;
     skos:notation "M1"@de, "M1"@en ;
     skos:inScheme Systematik: .
 
@@ -134,4 +134,51 @@ Systematik:OR2_Anwendungen_Prognosen_Modelle_Zukunftsforschung_Technologiefolgen
     skos:prefLabel "OR2_Anwendungen, Prognosen, Modelle, Zukunftsforschung, Technologiefolgen"@de, "OR2_Applications, Forecasts, Models, Technology Implications"@en ;
     skos:altLabel "OR2_Einsatz, Einschätzungen, Methoden, Perspektivforschung, Technikfolgen"@de, "OR2_Use, Assessment, Methods, Perspective Research, Technology Impact"@en ;
     skos:notation "OR2"@de, "OR2"@en ;
+    skos:inScheme Systematik: .
+
+Systematik:P_Physik a skos:Concept ;
+    skos:prefLabel "P_Physik"@de, "P_Physics"@en ;
+    skos:altLabel "P_Physikalisch@de, "P_Physical"@en ;
+    skos:notation "P0-P2"@de, "P0-P8"@en ;
+    skos:hiddenLabel "verstecke Notiz"@de, "hidden Note"@en ;
+    skos:narrower Systematik:P0_Allgemeines_Lehrbücher_Handbücher ; 
+    skos:narrower Systematik:P1_Tabellen_Nachschlagewerke ; 
+    skos:narrower Systematik:P2_Mathematische_Mehtoden_der_Physik ; 
+    skos:narrower Systematik:P3_Kernphysik_Neutronenphysik ; 
+    skos:topConceptOf Systematik: .
+
+Systematik:P0_Allgemeines_Lehrbücher_Handbücher a skos:Concept ;
+    skos:prefLabel "P0_Allgemeines, Lehrbücher, Handbücher"@de, "P0_General, Textbook, Manuals"@en ;
+    skos:altLabel "P0_Universelles, Fachbücher, Handbuch"@de, "P0_Unviversal, Reference books, User Manual "@en ;
+    skos:notation "P0"@de, "P0"@en ;
+    skos:inScheme Systematik: .
+
+Systematik:P1_Tabellen_Nachschlagewerke  a skos:Concept ;
+    skos:prefLabel "P1_Tabellen, Nachschlagewerke"@de, "P0_Tables, Reference books"@en ;
+    skos:altLabel "P1_Tabellenbuch, Kompendium"@de, "P1_Tablebooks, Compendium"@en ;
+    skos:notation "P1"@de, "P1"@en ;
+    skos:inScheme Systematik: .
+
+Systematik:P2_Mathematische_Mehtoden_der_Physik  a skos:Concept ;
+    skos:prefLabel "P2_Mathematische Mehtoden der Physik"@de, "P2_Mathematical methods of physics"@en ;
+    skos:altLabel "P2_Mathemethodik der Physik"@de, "P2_Math methods of Physics"@en ;
+    skos:notation "P2"@de, "P2"@en ;
+    skos:inScheme Systematik: .
+
+Systematik:P3_Kernphysik_Neutronenphysik a skos:Concept ;
+    skos:prefLabel "P3_Kernphysik, Neutronenphysik"@de, "P3_Nuclear Physics, Neutronics Physics"@en ;
+    skos:altLabel "P3_Atompyhsik, Nukleonphysik"@de, "P3_Atomphysics, Nucleon Physics"@en ;
+    skos:notation "P3"@de, "P3"@en ;
+    skos:inScheme Systematik: .
+
+Systematik:P3_Kernphysik_Neutronenphysik a skos:Concept ;
+    skos:prefLabel "P3_Kernphysik, Neutronenphysik"@de, "P3_Nuclear Physics, Neutronics Physics"@en ;
+    skos:altLabel "P3_Atompyhsik, Nukleonphysik"@de, "P3_Atom physics, Nucleon Physics"@en ;
+    skos:notation "P3"@de, "P3"@en ;
+    skos:inScheme Systematik: .
+
+Systematik:P4_Atomphysik_Festkörperphysik_Strahlungseffekte_Halbleiterphysik a skos:Concept ;
+    skos:prefLabel "P4_Atomphysik, Festkörperphysik, Strahlungseffekte, Halbleiterphysik"@de, "P4_Atomic physics, Solid state physics, Radiation effects, Semiconductor physics"@en ;
+    skos:altLabel "P4_"@de, "P3_Atomphysics, Nucleon Physics"@en ;
+    skos:notation "P4"@de, "P4"@en ;
     skos:inScheme Systematik: .
