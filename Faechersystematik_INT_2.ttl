@@ -146,7 +146,7 @@ Systematik:P_Physik a skos:Concept ;
     skos:narrower Systematik:P2_Mathematische_Mehtoden_der_Physik ; 
     skos:narrower Systematik:P3_Kernphysik_Neutronenphysik ; 
     skos:narrower Systematik:P4_Atomphysik_Festkörperphysik_Strahlungseffekte_Halbleiterphysik ; 
-    skos:narrower Systematik:P5 Mechanik_Hydrodynamik_Gasdynamik_Ballistik_Synergetik ; 
+    skos:narrower Systematik:P5_Mechanik_Hydrodynamik_Gasdynamik_Ballistik_Synergetik ; 
     skos:narrower Systematik:P6_Thermodynamik_Statistische_Physik_Transporttheorie ;
     skos:narrower Systematik:P7_Optik_Elektrizität_Magnetismus_elektromagnetische_Felder ;
     skos:narrower Systematik:P8_Plasmaphysik_Fusion_Hochtemperaturphysik ; 
@@ -182,7 +182,7 @@ Systematik:P4_Atomphysik_Festkörperphysik_Strahlungseffekte_Halbleiterphysik a 
     skos:notation "P4"@de, "P4"@en ;
     skos:inScheme Systematik: .
 
-Systematik:P5 Mechanik_Hydrodynamik_Gasdynamik_Ballistik_Synergetik a skos:Concept ;
+Systematik:P5_Mechanik_Hydrodynamik_Gasdynamik_Ballistik_Synergetik a skos:Concept ;
     skos:prefLabel "P5 Mechanik, Hydrodynamik, Gasdynamik, Ballistik, Synergetik"@de, "P5_Mechanics, Hydrodynamics, Gas dynamics, Ballistics, Synergetic"@en ;
     skos:altLabel "P5_Mechanismus, dynamische Physik, Terminalballistik, Synergismus"@de, "P5_Mechanism, Dynamic Physics, Terminal ballistics, Synergism"@en ;
     skos:notation "P5"@de, "P5"@en ;
