@@ -172,12 +172,6 @@ Systematik:P3_Kernphysik_Neutronenphysik a skos:Concept ;
     skos:notation "P3"@de, "P3"@en ;
     skos:inScheme Systematik: .
 
-Systematik:P3_Kernphysik_Neutronenphysik a skos:Concept ;
-    skos:prefLabel "P3_Kernphysik, Neutronenphysik"@de, "P3_Nuclear Physics, Neutronics Physics"@en ;
-    skos:altLabel "P3_Atompyhsik, Nukleonphysik"@de, "P3_Atom physics, Nucleon Physics"@en ;
-    skos:notation "P3"@de, "P3"@en ;
-    skos:inScheme Systematik: .
-
 Systematik:P4_Atomphysik_Festkörperphysik_Strahlungseffekte_Halbleiterphysik a skos:Concept ;
     skos:prefLabel "P4_Atomphysik, Festkörperphysik, Strahlungseffekte, Halbleiterphysik"@de, "P4_Atomic physics, Solid state physics, Radiation effects, Semiconductor physics"@en ;
     skos:altLabel "P4_"@de, "P3_Atomphysics, Nucleon Physics"@en ;
