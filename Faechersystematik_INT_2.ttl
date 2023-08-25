@@ -114,17 +114,17 @@ Systematik:OR_Operations_Research a skos:Concept ;
     skos:notation "OR0-OR2"@de, "OR0-OR2"@en ;
     skos:hiddenLabel "verstecke Notiz"@de, "hidden Note"@en ;
     skos:narrower Systematik:OR0_Grundlagen_Systemwissenschaften_Komplexitätstheorie ;
-    skos:narrower Systematik:OR1_Mathematische Verfahren_Kontrolltheorie_Spieltheorie_Klassisches_OR ; 
+    skos:narrower Systematik:OR1_Mathematische_Verfahren_Kontrolltheorie_Spieltheorie_Klassisches_OR ; 
     skos:narrower Systematik:OR2_Anwendungen_Prognosen_Modelle_Zukunftsforschung_Technologiefolgen ; 
     skos:topConceptOf Systematik: .
 
 Systematik:OR0_Grundlagen_Systemwissenschaften_Komplexitätstheorie a skos:Concept ;
     skos:prefLabel "OR0_Grundlagen, Systemwissenschaften, Komplexitätstheorie"@de, "OR0_Basics, System Sciences, Theory of complexity"@en ;
-    skos:altLabel "OR0_Grundbegriffe, Ordnungswissenschaften, Komplextheorie"@de, "OR05_Basic terms, Regulatory Sciences, Complex Theory"@en ;
+    skos:altLabel "OR0_Grundbegriffe, Ordnungswissenschaften, Komplextheorie"@de, "OR0_Basic terms, Regulatory Sciences, Complex Theory"@en ;
     skos:notation "OR0"@de, "OR0"@en ;
     skos:inScheme Systematik: .
 
-Systematik:OR1_Mathematische Verfahren_Kontrolltheorie_Spieltheorie_Klassisches_OR a skos:Concept ;
+Systematik:OR1_Mathematische_Verfahren_Kontrolltheorie_Spieltheorie_Klassisches_OR a skos:Concept ;
     skos:prefLabel "OR1_Mathematische Verfahren, Kontrolltheorie, Spieltheorie, Klassiches OR"@de, "OR1_Mathematical methods, Control Theory, Game theory, Classic OR"@en ;
     skos:altLabel "OR1_Verfahren der Mathematik, Entscheidungstheorie, Ursprüngliches OR"@de, "OR1_Mathematics procedure, Theory of decision, Original OR"@en ;
     skos:notation "OR1"@de, "OR1"@en ;
