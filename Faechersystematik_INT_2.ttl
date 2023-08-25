@@ -120,7 +120,7 @@ Systematik:OR_Operations_Research a skos:Concept ;
     skos:topConceptOf Systematik: .
 
 Systematik:OR0_Grundlagen_Systemwissenschaften_Komplexitätstheorie a skos:Concept ;
-    skos:prefLabel "OR0_Grundlagen, Systemwissenschaften, Komplexitätstheorie"@de, "OR0_Basics, System Sciences, Theory of complexity "@en ;
+    skos:prefLabel "OR0_Grundlagen, Systemwissenschaften, Komplexitätstheorie"@de, "OR0_Basics, System Sciences, Theory of complexity"@en ;
     skos:altLabel "OR0_Grundbegriffe, Ordnungswissenschaften, Komplextheorie"@de, OR05_Basic terms, Regulatory Sciences, Complex Theory"@en ;
     skos:notation "OR0"@de, "OR0"@en ;
     skos:inScheme Systematik: .
