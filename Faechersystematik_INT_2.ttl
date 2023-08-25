@@ -147,6 +147,9 @@ Systematik:P_Physik a skos:Concept ;
     skos:narrower Systematik:P3_Kernphysik_Neutronenphysik ; 
     skos:narrower Systematik:P4_Atomphysik_Festkörperphysik_Strahlungseffekte_Halbleiterphysik ; 
     skos:narrower Systematik:P5 Mechanik_Hydrodynamik_Gasdynamik_Ballistik_Synergetik ; 
+    skos:narrower Systematik:P6_Thermodynamik_Statistische_Physik_Transporttheorie ;
+    skos:narrower Systematik:P7_Optik_Elektrizität_Magnetismus_elektromagnetische_Felder ;
+    skos:narrower Systematik:P8_Plasmaphysik_Fusion_Hochtemperaturphysik ; 
     skos:topConceptOf Systematik: .
 
 Systematik:P0_Allgemeines_Lehrbücher_Handbücher a skos:Concept ;
@@ -191,7 +194,7 @@ Systematik:P6_Thermodynamik_Statistische_Physik_Transporttheorie a skos:Concept 
     skos:notation "P6"@de, "P6"@en ;
     skos:inScheme Systematik: .
 
-Systematik:P7_Optik_Elektrizität_Magnetismus_elektromagnetische Felder a skos:Concept ;
+Systematik:P7_Optik_Elektrizität_Magnetismus_elektromagnetische_Felder a skos:Concept ;
     skos:prefLabel "P7_Optik, Elektrizität, Magnetismus, elektromagnetische Felder"@de, "P7_Optics, Electricity, Magnetism, Electromagnetic fields"@en ;
     skos:altLabel "P7_Lehre vom Licht, Strom, Elektromagnetismus, Magnetische Felder"@de, "P7_Doctrine of light, Power, Electromagnetism, Magnetic fields"@en ;
     skos:notation "P7"@de, "P7"@en ;
@@ -199,7 +202,7 @@ Systematik:P7_Optik_Elektrizität_Magnetismus_elektromagnetische Felder a skos:C
 
 Systematik:P8_Plasmaphysik_Fusion_Hochtemperaturphysik a skos:Concept ;
     skos:prefLabel "P8_Plasmaphysik, Fusion, Hochtemperaturphysik"@de, "P8_Plasma Physics, Fusion, High-Temperature Physics"@en ;
-    skos:altLabel "P8_Geformte Physik, Kernfusion, Temperaturphysik"@de, "P8_"@en ;
-    skos:notation "P7"@de, "P7"@en ;
+    skos:altLabel "P8_Geformte Physik, Kernfusion, Temperaturphysik"@de, "P8_Formed Physics, Nuclear Fusion, Physics of temperature"@en ;
+    skos:notation "P8"@de, "P8"@en ;
     skos:inScheme Systematik: .
 
