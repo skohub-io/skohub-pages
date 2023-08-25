@@ -73,7 +73,7 @@ Systematik:M_Mathematik a skos:Concept ;
     skos:topConceptOf Systematik: .
 
 Systematik:M0_Allgemeines_Lehrbücher a skos:Concept ;
-    skos:prefLabel "M0_Allgemeines, Lehrbücher"@de, "M0_General, Textbook"@en ;
+    skos:prefLabel "M0_Allgemeines, Lehrbücher"@de, "M0_General, Textbookss"@en ;
     skos:altLabel "M0_Universelles, Fachbücher"@de, "M0_Reference books"@en ;
     skos:notation "M0"@de, "M0"@en ;
     skos:inScheme Systematik: .
@@ -153,7 +153,7 @@ Systematik:P_Physik a skos:Concept ;
     skos:topConceptOf Systematik: .
 
 Systematik:P0_Allgemeines_Lehrbücher_Handbücher a skos:Concept ;
-    skos:prefLabel "P0_Allgemeines, Lehrbücher, Handbücher"@de, "P0_General, Textbook, Manuals"@en ;
+    skos:prefLabel "P0_Allgemeines, Lehrbücher, Handbücher"@de, "P0_General, Textbooks, Manuals"@en ;
     skos:altLabel "P0_Universelles, Fachbücher, Handbuch"@de, "P0_Unviversal, Reference books, User Manual"@en ;
     skos:notation "P0"@de, "P0"@en ;
     skos:inScheme Systematik: .
@@ -206,3 +206,42 @@ Systematik:P8_Plasmaphysik_Fusion_Hochtemperaturphysik a skos:Concept ;
     skos:notation "P8"@de, "P8"@en ;
     skos:inScheme Systematik: .
 
+Systematik:T_Technik a skos:Concept ;
+    skos:prefLabel "T_Technik"@de, "T_Technics"@en ;
+    skos:altLabel "T_Technologie"@de, "PT_Technology"@en ;
+    skos:notation "T0-T8"@de, "PT0-T8"@en ;
+    skos:hiddenLabel "verstecke Notiz"@de, "hidden Note"@en ;
+    skos:narrower T0_Allgemeines_Lehrbücher_der_Technik ; 
+    skos:narrower Systematik:P1_Tabellen_Nachschlagewerke ; 
+    skos:narrower Systematik:P2_Mathematische_Mehtoden_der_Physik ; 
+    skos:narrower Systematik:P3_Kernphysik_Neutronenphysik ; 
+    skos:narrower Systematik:P4_Atomphysik_Festkörperphysik_Strahlungseffekte_Halbleiterphysik ; 
+    skos:narrower Systematik:P5_Mechanik_Hydrodynamik_Gasdynamik_Ballistik_Synergetik ; 
+    skos:narrower Systematik:P6_Thermodynamik_Statistische_Physik_Transporttheorie ;
+    skos:narrower Systematik:P7_Optik_Elektrizität_Magnetismus_elektromagnetische_Felder ;
+    skos:narrower Systematik:P8_Plasmaphysik_Fusion_Hochtemperaturphysik ; 
+    skos:topConceptOf Systematik: .
+
+Systematik:T0_Allgemeines_Lehrbücher_der_Technik a skos:Concept ;
+    skos:prefLabel "T0 Allgemeines, Lehrbücher der Technik"@de, "T0_General, Textbooks"@en ;
+    skos:altLabel "T0_Universelles, Fachbücher der Technik"@de, "T0_Universal, Reference books"@en ;
+    skos:notation "T0"@de, "T0"@en ;
+    skos:inScheme Systematik: .
+
+Systematik:T1_Tabellen_Nachschlagewerke a skos:Concept ;
+    skos:prefLabel "T1_Tabellen, Nachschlagewerke"@de, "T1_Tables, Reference books"@en ;
+    skos:altLabel "T1_Tabellenbuch, Kompendium"@de, "T1_Tablebooks, Compendium"@en ;
+    skos:notation "T1"@de, "T1"@en ;
+    skos:inScheme Systematik: .
+
+Systematik:T2_Messtechnik_Experimentiertechnik_Beschleuniger_Sensorik a skos:Concept ;
+    skos:prefLabel "T2_Messtechnik, Experimentiertechnik, Beschleuniger, Sensorik"@de, "T2_Measurement technology, Experimental technology, Accelerator, Sensoric"@en ;
+    skos:altLabel "T2_Messmethoden, Versuchstechnik"@de, "T"_Measurement methods, Experimental Engineering"@en ;
+    skos:notation "T2"@de, "T2"@en ;
+    skos:inScheme Systematik: .
+
+Systematik:T2_Messtechnik_Experimentiertechnik_Beschleuniger_Sensorik a skos:Concept ;
+    skos:prefLabel "T2_Messtechnik, Experimentiertechnik, Beschleuniger, Sensorik"@de, "T2_Measurement technology, Experimental technology, Accelerator, Sensoric"@en ;
+    skos:altLabel "T2_Messmethoden, Versuchstechnik"@de, "T"_Measurement methods, Experimental Engineering"@en ;
+    skos:notation "T2"@de, "T2"@en ;
+    skos:inScheme Systematik: .
