@@ -150,7 +150,7 @@ Systematik:P_Physik a skos:Concept ;
 
 Systematik:P0_Allgemeines_Lehrbücher_Handbücher a skos:Concept ;
     skos:prefLabel "P0_Allgemeines, Lehrbücher, Handbücher"@de, "P0_General, Textbook, Manuals"@en ;
-    skos:altLabel "P0_Universelles, Fachbücher, Handbuch"@de, "P0_Unviversal, Reference books, User Manual "@en ;
+    skos:altLabel "P0_Universelles, Fachbücher, Handbuch"@de, "P0_Unviversal, Reference books, User Manual"@en ;
     skos:notation "P0"@de, "P0"@en ;
     skos:inScheme Systematik: .
 
@@ -174,6 +174,6 @@ Systematik:P3_Kernphysik_Neutronenphysik a skos:Concept ;
 
 Systematik:P4_Atomphysik_Festkörperphysik_Strahlungseffekte_Halbleiterphysik a skos:Concept ;
     skos:prefLabel "P4_Atomphysik, Festkörperphysik, Strahlungseffekte, Halbleiterphysik"@de, "P4_Atomic physics, Solid state physics, Radiation effects, Semiconductor physics"@en ;
-    skos:altLabel "P4_"@de, "P3_Atomphysics, Nucleon Physics"@en ;
+    skos:altLabel "P4_Nuklearphysik"@de, "P4_Nuclear Physics"@en ;
     skos:notation "P4"@de, "P4"@en ;
     skos:inScheme Systematik: .
