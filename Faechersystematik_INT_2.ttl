@@ -145,6 +145,7 @@ Systematik:P_Physik a skos:Concept ;
     skos:narrower Systematik:P1_Tabellen_Nachschlagewerke ; 
     skos:narrower Systematik:P2_Mathematische_Mehtoden_der_Physik ; 
     skos:narrower Systematik:P3_Kernphysik_Neutronenphysik ; 
+    skos:narrower Systematik:P4_Atomphysik_Festkörperphysik_Strahlungseffekte_Halbleiterphysik ; 
     skos:topConceptOf Systematik: .
 
 Systematik:P0_Allgemeines_Lehrbücher_Handbücher a skos:Concept ;
