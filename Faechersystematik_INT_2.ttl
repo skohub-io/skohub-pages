@@ -138,7 +138,7 @@ Systematik:OR2_Anwendungen_Prognosen_Modelle_Zukunftsforschung_Technologiefolgen
 
 Systematik:P_Physik a skos:Concept ;
     skos:prefLabel "P_Physik"@de, "P_Physics"@en ;
-    skos:altLabel "P_Physikalisch@de, "P_Physical"@en ;
+    skos:altLabel "P_Physikalisch"@de, "P_Physical"@en ;
     skos:notation "P0-P2"@de, "P0-P8"@en ;
     skos:hiddenLabel "verstecke Notiz"@de, "hidden Note"@en ;
     skos:narrower Systematik:P0_Allgemeines_Lehrbücher_Handbücher ; 
