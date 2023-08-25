@@ -67,6 +67,9 @@ Systematik:M_Mathematik a skos:Concept ;
     skos:narrower Systematik:M0_Allgemeines_Lehrbücher ;
     skos:narrower Systematik:M1_Tabellen_Nachschlagewerke ; 
     skos:narrower Systematik:M2_Algebra_Gruppentheorie_Geometrie_Arimetrie_Zahlentheorie ; 
+    skos:narrower Systematik:M3_Analysis_Funktionsanalysis_Funktionstheorie_Spezielle_Funktionen ; 
+    skos:narrower Systematik:M4_Statistik_Wahrscheinlichkeitsrechnung ; 
+    skos:narrower Systematik:M5_Numerische_Mathematik ;
     skos:topConceptOf Systematik: .
 
 Systematik:M0_Allgemeines_Lehrbücher a skos:Concept ;
@@ -88,7 +91,21 @@ Systematik:M2_Algebra_Gruppentheorie_Geometrie_Arimetrie_Zahlentheorie a skos:Co
     skos:inScheme Systematik: .
 
 Systematik:M3_Analysis_Funktionsanalysis_Funktionstheorie_Spezielle_Funktionen a skos:Concept ;
-    skos:prefLabel "M3_Analysis, Funktionsanalysis, Funktionstheorie, Spezielle Funktionen "@de, "M3_Analysis, Functional analysis, Functional theory, Special functions "@en ;
+    skos:prefLabel "M3_Analysis, Funktionsanalysis, Funktionstheorie, Spezielle Funktionen"@de, "M3_Analysis, Functional analysis, Functional theory, Special functions"@en ;
     skos:altLabel "M3_Analyse, Funktionen"@de, "Functions"@en ;
     skos:notation "M3"@de, "M3"@en ;
     skos:inScheme Systematik: .
+
+Systematik:M4_Statistik_Wahrscheinlichkeitsrechnung a skos:Concept ;
+    skos:prefLabel "M4_Statistik, Wahrscheinlichkeitsrechnung"@de, "M4_Statistics, Probability calculation"@en ;
+    skos:altLabel "M4_Quantitative Informationen, Wahrscheinlichkeitslehre"@de, "M4_Quantitative information, Probability theory "@en ;
+    skos:notation "M4"@de, "M4"@en ;
+    skos:inScheme Systematik: .
+
+Systematik:M5_Numerische_Mathematik a skos:Concept ;
+    skos:prefLabel "M5 Numerische Mathematik"@de, "M5_Numerical mathematics"@en ;
+    skos:altLabel "M5_Numerik"@de, "M5_Numerics"@en ;
+    skos:notation "M5"@de, "M5"@en ;
+    skos:inScheme Systematik: .
+
+
