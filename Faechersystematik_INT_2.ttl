@@ -236,12 +236,19 @@ Systematik:T1_Tabellen_Nachschlagewerke a skos:Concept ;
 
 Systematik:T2_Messtechnik_Experimentiertechnik_Beschleuniger_Sensorik a skos:Concept ;
     skos:prefLabel "T2_Messtechnik, Experimentiertechnik, Beschleuniger, Sensorik"@de, "T2_Measurement technology, Experimental technology, Accelerator, Sensoric"@en ;
-    skos:altLabel "T2_Messmethoden, Versuchstechnik"@de, "T"_Measurement methods, Experimental Engineering"@en ;
+    skos:altLabel "T2_Messmethoden, Versuchstechnik"@de, "T_Measurement methods, Experimental Engineering"@en ;
     skos:notation "T2"@de, "T2"@en ;
     skos:inScheme Systematik: .
 
-Systematik:T2_Messtechnik_Experimentiertechnik_Beschleuniger_Sensorik a skos:Concept ;
-    skos:prefLabel "T2_Messtechnik, Experimentiertechnik, Beschleuniger, Sensorik"@de, "T2_Measurement technology, Experimental technology, Accelerator, Sensoric"@en ;
-    skos:altLabel "T2_Messmethoden, Versuchstechnik"@de, "T"_Measurement methods, Experimental Engineering"@en ;
-    skos:notation "T2"@de, "T2"@en ;
+Systematik:T3_Elektrotechnik_Elektronik_HF-Technik_Halbleitertechnik a skos:Concept ;
+    skos:prefLabel "T3_Elektrotechnik, Elektronik, HF-Technik, Halbleitertechnik"@de, "T3_Electrical engineering, Electronic, HF-Technics, Semiconductor technics"@en ;
+    skos:altLabel "T3_E-Technik, Elektrik, Halbleiter-Technik"@de, "T3_E-technics, Electrics,Semiconductor-technics"@en ;
+    skos:notation "T3"@de, "T3"@en ;
     skos:inScheme Systematik: .
+
+Systematik:T4_Technische Optik_Lasertechnik_Optronik_Photonik_IR-Technik a skos:Concept ;
+    skos:prefLabel "T4_Technische Optik, Lasertechnik, Optronik, Photonik, IR-Technik"@de, "T4_Technical optics, Laser technology, Optronics, Photonics, IR-technics"@en ;
+    skos:altLabel "T4_Technik Optik,Kohärentes Licht"@de, "T3_E-technics, Electrics,Semiconductor-technics"@en ;
+    skos:notation "T3"@de, "T3"@en ;
+    skos:inScheme Systematik: .
+
