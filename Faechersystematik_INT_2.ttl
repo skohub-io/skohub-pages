@@ -74,7 +74,7 @@ Systematik:M_Mathematik a skos:Concept ;
     skos:topConceptOf Systematik: .
 
 Systematik:M0_Allgemeines_Lehrbücher a skos:Concept ;
-    skos:prefLabel "M0_Allgemeines, Lehrbücher"@de, "M0_General, Textbookss"@en ;
+    skos:prefLabel "M0_Allgemeines, Lehrbücher"@de, "M0_General, Textbooks"@en ;
     skos:altLabel "M0_Universelles, Fachbücher"@de, "M0_Reference books"@en ;
     skos:notation "M0"@de, "M0"@en ;
     skos:inScheme Systematik: .
@@ -86,7 +86,7 @@ Systematik:M1_Tabellen_Nachschlagewerke a skos:Concept ;
     skos:inScheme Systematik: .
 
 Systematik:M2_Algebra_Gruppentheorie_Geometrie_Arimetrie_Zahlentheorie a skos:Concept ;
-    skos:prefLabel "M2_Algebra, Gruppentheorie, Geometrie, Arimetrie, Zahlentheorie"@de, "M2_Algebra, Group theory, Geometry, Arimetry, Theory of Numbers"@en ;
+    skos:prefLabel "M2_Algebra, Gruppentheorie, Geometrie, Arimetrie, Zahlentheorie"@de, "M2_Algebra, Group theory, Geometry, Arimetry, Theory of numbers"@en ;
     skos:altLabel "M2_Allgemeine Algebra, Raumlehre"@de, "M2_General algebra, Spatial science"@en ;
     skos:notation "M2"@de, "M2"@en ;
     skos:inScheme Systematik: .
@@ -126,14 +126,14 @@ Systematik:OR0_Grundlagen_Systemwissenschaften_Komplexitätstheorie a skos:Conce
     skos:inScheme Systematik: .
 
 Systematik:OR1_Mathematische_Verfahren_Kontrolltheorie_Spieltheorie_Klassisches_OR a skos:Concept ;
-    skos:prefLabel "OR1_Mathematische Verfahren, Kontrolltheorie, Spieltheorie, Klassiches OR"@de, "OR1_Mathematical methods, Control Theory, Game theory, Classic OR"@en ;
+    skos:prefLabel "OR1_Mathematische Verfahren, Kontrolltheorie, Spieltheorie, Klassiches OR"@de, "OR1_Mathematical methods, Control theory, Game theory, Classic OR"@en ;
     skos:altLabel "OR1_Verfahren der Mathematik, Entscheidungstheorie, Ursprüngliches OR"@de, "OR1_Mathematics procedure, Theory of decision, Original OR"@en ;
     skos:notation "OR1"@de, "OR1"@en ;
     skos:inScheme Systematik: .
 
 Systematik:OR2_Anwendungen_Prognosen_Modelle_Zukunftsforschung_Technologiefolgen a skos:Concept ;
-    skos:prefLabel "OR2_Anwendungen, Prognosen, Modelle, Zukunftsforschung, Technologiefolgen"@de, "OR2_Applications, Forecasts, Models, Technology Implications"@en ;
-    skos:altLabel "OR2_Einsatz, Einschätzungen, Methoden, Perspektivforschung, Technikfolgen"@de, "OR2_Use, Assessment, Methods, Perspective Research, Technology Impact"@en ;
+    skos:prefLabel "OR2_Anwendungen, Prognosen, Modelle, Zukunftsforschung, Technologiefolgen"@de, "OR2_Applications, Forecasts, Models, Technology implications"@en ;
+    skos:altLabel "OR2_Einsatz, Einschätzungen, Methoden, Perspektivforschung, Technikfolgen"@de, "OR2_Use, Assessment, Methods, Perspective research, Technology impact"@en ;
     skos:notation "OR2"@de, "OR2"@en ;
     skos:inScheme Systematik: .
 
@@ -204,7 +204,7 @@ Systematik:P7_Optik_Elektrizität_Magnetismus_elektromagnetische_Felder a skos:C
 
 Systematik:P8_Plasmaphysik_Fusion_Hochtemperaturphysik a skos:Concept ;
     skos:prefLabel "P8_Plasmaphysik, Fusion, Hochtemperaturphysik"@de, "P8_Plasma physics, Fusion, High-Temperature physics"@en ;
-    skos:altLabel "P8_Geformte Physik, Kernfusion, Temperaturphysik"@de, "P8_Formed physics, Nuclear Fusion, physics of temperature"@en ;
+    skos:altLabel "P8_Geformte Physik, Kernfusion, Temperaturphysik"@de, "P8_Formed physics, Nuclear fusion, physics of temperature"@en ;
     skos:notation "P8"@de, "P8"@en ;
     skos:inScheme Systematik: .
 
