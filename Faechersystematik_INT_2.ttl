@@ -64,6 +64,7 @@ Systematik:M_Mathematik a skos:Concept ;
     skos:altLabel "M_Mathe"@de, "M_Math"@en ;
     skos:notation "M0-M5"@de, "M0-M5"@en ;
     skos:hiddenLabel "verstecke Notiz"@de, "hidden Note"@en ;
+    skos:changeNote "geändert am 10.05.2021"
     skos:narrower Systematik:M0_Allgemeines_Lehrbücher ;
     skos:narrower Systematik:M1_Tabellen_Nachschlagewerke ; 
     skos:narrower Systematik:M2_Algebra_Gruppentheorie_Geometrie_Arimetrie_Zahlentheorie ; 
@@ -141,6 +142,7 @@ Systematik:P_Physik a skos:Concept ;
     skos:altLabel "P_Physikalisch"@de, "P_Physical"@en ;
     skos:notation "P0-P2"@de, "P0-P8"@en ;
     skos:hiddenLabel "verstecke Notiz"@de, "hidden Note"@en ;
+    skos:changeNote "geändert am 18.02.2022"
     skos:narrower Systematik:P0_Allgemeines_Lehrbücher_Handbücher ; 
     skos:narrower Systematik:P1_Tabellen_Nachschlagewerke ; 
     skos:narrower Systematik:P2_Mathematische_Mehtoden_der_Physik ; 
@@ -211,6 +213,7 @@ Systematik:T_Technik a skos:Concept ;
     skos:altLabel "T_Technologie"@de, "PT_Technology"@en ;
     skos:notation "T0-T8"@de, "PT0-T8"@en ;
     skos:hiddenLabel "verstecke Notiz"@de, "hidden Note"@en ;
+    skos:changeNote "geändert am 29.03.2023"
     skos:narrower Systematik:T0_Allgemeines_Lehrbücher_der_Technik ; 
     skos:narrower Systematik:T1_Tabellen_Nachschlagewerke ; 
     skos:narrower Systematik:T2_Messtechnik_Experimentiertechnik_Beschleuniger_Sensorik ; 
