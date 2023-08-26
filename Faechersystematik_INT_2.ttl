@@ -8,7 +8,7 @@ Systematik: a skos:ConceptScheme ;
     dct:creator "Rene Peter Bennemann"@de ;
     dct:created "2023-08-24"^^xsd:date ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    skos:hasTopConcept Systematik:A_Allgemeines, Systematik:BC_Biowissenschaften_Chemie_Kernchemie_Pharmamedizin, Systematik:DI_Datenverarbeitung_Informatik_Informationsverarbeitung_Programmiersprache_Künstliche_Intelligenz, Systematik:GA_Geowissenschaften_Astrophysik, Systematik:M_Mathematik, Systematik:OR_Operations_Research, Systematik:P_Physik .
+    skos:hasTopConcept Systematik:A_Allgemeines, Systematik:BC_Biowissenschaften_Chemie_Kernchemie_Pharmamedizin, Systematik:DI_Datenverarbeitung_Informatik_Informationsverarbeitung_Programmiersprache_Künstliche_Intelligenz, Systematik:GA_Geowissenschaften_Astrophysik, Systematik:M_Mathematik, Systematik:OR_Operations_Research, Systematik:P_Physik, Systematik:T_Technik, Systematik:W_Wehrwissenschaft .
 
 Systematik:A_Allgemeines a skos:Concept ;
     skos:prefLabel "A_Allgemeines"@de, "A_General"@en ;
@@ -86,7 +86,7 @@ Systematik:M1_Tabellen_Nachschlagewerke a skos:Concept ;
 
 Systematik:M2_Algebra_Gruppentheorie_Geometrie_Arimetrie_Zahlentheorie a skos:Concept ;
     skos:prefLabel "M2_Algebra, Gruppentheorie, Geometrie, Arimetrie, Zahlentheorie"@de, "M2_Algebra, Group theory, Geometry, Arimetry, Theory of Numbers"@en ;
-    skos:altLabel "M2_Allgemeine Algebra, Raumlehre"@de, "M2_General algebra, Spatial Science"@en ;
+    skos:altLabel "M2_Allgemeine Algebra, Raumlehre"@de, "M2_General algebra, Spatial science"@en ;
     skos:notation "M2"@de, "M2"@en ;
     skos:inScheme Systematik: .
 
@@ -119,8 +119,8 @@ Systematik:OR_Operations_Research a skos:Concept ;
     skos:topConceptOf Systematik: .
 
 Systematik:OR0_Grundlagen_Systemwissenschaften_Komplexitätstheorie a skos:Concept ;
-    skos:prefLabel "OR0_Grundlagen, Systemwissenschaften, Komplexitätstheorie"@de, "OR0_Basics, System Sciences, Theory of complexity"@en ;
-    skos:altLabel "OR0_Grundbegriffe, Ordnungswissenschaften, Komplextheorie"@de, "OR0_Basic terms, Regulatory Sciences, Complex Theory"@en ;
+    skos:prefLabel "OR0_Grundlagen, Systemwissenschaften, Komplexitätstheorie"@de, "OR0_Basics, System sciences, Theory of complexity"@en ;
+    skos:altLabel "OR0_Grundbegriffe, Ordnungswissenschaften, Komplextheorie"@de, "OR0_Basic terms, Regulatory sciences, Complex Theory"@en ;
     skos:notation "OR0"@de, "OR0"@en ;
     skos:inScheme Systematik: .
 
@@ -211,7 +211,7 @@ Systematik:T_Technik a skos:Concept ;
     skos:altLabel "T_Technologie"@de, "PT_Technology"@en ;
     skos:notation "T0-T8"@de, "PT0-T8"@en ;
     skos:hiddenLabel "verstecke Notiz"@de, "hidden Note"@en ;
-    skos:narrower T0_Allgemeines_Lehrbücher_der_Technik ; 
+    skos:narrower Systematik:T0_Allgemeines_Lehrbücher_der_Technik ; 
     skos:narrower Systematik:T1_Tabellen_Nachschlagewerke ; 
     skos:narrower Systematik:T2_Messtechnik_Experimentiertechnik_Beschleuniger_Sensorik ; 
     skos:narrower Systematik:T3_Elektrotechnik_Elektronik_HF-Technik_Halbleitertechnik ; 
@@ -275,6 +275,50 @@ Systematik:T8_Technische_Akustik_Wasserschal_Seismik a skos:Concept ;
     skos:altLabel "T8_Technischer Klang, Wasserklang, Angewandte Geophysik"@de, "T8_Technical sound, Water sound, Applied geophysics"@en ;
     skos:notation "T8"@de, "T8"@en ;
     skos:inScheme Systematik: .
+
+Systematik:W_Wehrwissenschaft a skos:Concept ;
+    skos:prefLabel "W_Wehrwissenschaft"@de, "W_Defence science"@en ;
+    skos:altLabel "Militärwissenschaft"@de, "W_Military science"@en ;
+    skos:notation "W0-W4"@de, "W0-W4"@en ;
+    skos:hiddenLabel "verstecke Notiz"@de, "hidden Note"@en ;
+    skos:narrower Systematik:W0_Allgemeines ;
+    skos:narrower Systematik:W1_Tabellen_Nachschlagewerke ;
+    skos:narrower Systematik:W2_Wehrtechnik_Militärische_Praxis_Militärische_Ausbildung ;
+    skos:narrower Systematik:W3_Kernwaffen_Kernwaffenwirkung ;
+    skos:narrower Systematik:W4_Sicherheitspolitik_allgemeine_Verteidigungsfragen ;
+    skos:topConceptOf Systematik: .
+
+Systematik:W0_Allgemeines a skos:Concept ;
+    skos:prefLabel "W0_Allgemeines"@de, "W0_General"@en ;
+    skos:altLabel "W0_Universelles"@de, "W0_Universal"@en ;
+    skos:notation "W0"@de, "W0"@en ;
+    skos:inScheme Systematik: .
+
+Systematik:W1_Tabellen_Nachschlagewerke a skos:Concept ;
+    skos:prefLabel "W1_Tabellen, Nachschlagewerke"@de, "W1_Tables, Reference books"@en ;
+    skos:altLabel "W1_Tabellenbuch, Kompendium"@de, "W1_Tablebooks, Compedium"@en ;
+    skos:notation "W1"@de, "W1"@en ;
+    skos:inScheme Systematik: .
+
+Systematik:W2_Wehrtechnik_Militärische_Praxis_Militärische_Ausbildung a skos:Concept ;
+    skos:prefLabel "W2_Wehrtechnik, Militärische Praxis, Militärische Ausbildung"@de, "W2_Defense engineering, Military practice, Military training"@en ;
+    skos:altLabel "W2_Militärtechnik, Wehrpraxis, Wehrausblidung"@de, "W2_Military technology, Defense Practice, Defense training"@en ;
+    skos:notation "W2"@de, "W2"@en ;
+    skos:inScheme Systematik: .
+
+Systematik:W3_Kernwaffen_Kernwaffenwirkung  a skos:Concept ;
+    skos:prefLabel "W3_Kernwaffen, Kernwaffenwirkung"@de, "W3_Nuclear weapons, Nuclear Weapons effect"@en ;
+    skos:altLabel "W3_Atomwaffen, Atomawaffenwirkung"@de, "W3_Atomic weapons, Atomic weapons effect"@en ;
+    skos:notation "W3"@de, "W3"@en ;
+    skos:inScheme Systematik: .
+
+Systematik:W4_Sicherheitspolitik_allgemeine_Verteidigungsfragen a skos:Concept ;
+    skos:prefLabel "W4_Sicherheitspolitik, allgemeine Verteidigungsfragen"@de, "W4_Security policy,General defense questions"@en ;
+    skos:altLabel "W4_Verteidigungspolitik, allgemeine Sicherheitsfragen"@de, "W4_Defense policy,Ggeneral security questions"@en ;
+    skos:notation "W4"@de, "W4"@en ;
+    skos:inScheme Systematik: .
+
+
 
 
 
