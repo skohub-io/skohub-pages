@@ -53,7 +53,7 @@ Systematik:DI_Datenverarbeitung_Informatik_Informationsverarbeitung_Programmiers
     skos:topConceptOf Systematik: .
 
 Systematik:GA_Geowissenschaften_Astrophysik a skos:Concept ;
-    skos:prefLabel "GA_Geowissenschaften, Astrophysik"@de, "GA_Geosciences, Astro Physics"@en ;
+    skos:prefLabel "GA_Geowissenschaften, Astrophysik"@de, "GA_Geosciences, Astro physics"@en ;
     skos:altLabel "Geographie, Astronomie"@de, "Geography, Astronomy"@en ;
     skos:notation "GA"@de, "GA"@en ;
     skos:hiddenLabel "verstecke Notiz"@de, "hidden Note"@en ;
@@ -137,7 +137,7 @@ Systematik:OR2_Anwendungen_Prognosen_Modelle_Zukunftsforschung_Technologiefolgen
     skos:inScheme Systematik: .
 
 Systematik:P_Physik a skos:Concept ;
-    skos:prefLabel "P_Physik"@de, "P_Physics"@en ;
+    skos:prefLabel "P_Physik"@de, "P_physics"@en ;
     skos:altLabel "P_Physikalisch"@de, "P_Physical"@en ;
     skos:notation "P0-P2"@de, "P0-P8"@en ;
     skos:hiddenLabel "verstecke Notiz"@de, "hidden Note"@en ;
@@ -165,32 +165,32 @@ Systematik:P1_Tabellen_Nachschlagewerke  a skos:Concept ;
     skos:inScheme Systematik: .
 
 Systematik:P2_Mathematische_Mehtoden_der_Physik  a skos:Concept ;
-    skos:prefLabel "P2_Mathematische Mehtoden der Physik"@de, "P2_Mathematical methods of Physics"@en ;
-    skos:altLabel "P2_Mathemethodik der Physik"@de, "P2_Math methods of Physics"@en ;
+    skos:prefLabel "P2_Mathematische Mehtoden der Physik"@de, "P2_Mathematical methods of physics"@en ;
+    skos:altLabel "P2_Mathemethodik der Physik"@de, "P2_Math methods of physics"@en ;
     skos:notation "P2"@de, "P2"@en ;
     skos:inScheme Systematik: .
 
 Systematik:P3_Kernphysik_Neutronenphysik a skos:Concept ;
-    skos:prefLabel "P3_Kernphysik, Neutronenphysik"@de, "P3_Nuclear Physics, Neutronics Physics"@en ;
-    skos:altLabel "P3_Atompyhsik, Nukleonphysik"@de, "P3_Atom Physics, Nucleon Physics"@en ;
+    skos:prefLabel "P3_Kernphysik, Neutronenphysik"@de, "P3_Nuclear physics, Neutronics physics"@en ;
+    skos:altLabel "P3_Atompyhsik, Nukleonphysik"@de, "P3_Atom physics, Nucleon physics"@en ;
     skos:notation "P3"@de, "P3"@en ;
     skos:inScheme Systematik: .
 
 Systematik:P4_Atomphysik_Festkörperphysik_Strahlungseffekte_Halbleiterphysik a skos:Concept ;
-    skos:prefLabel "P4_Atomphysik, Festkörperphysik, Strahlungseffekte, Halbleiterphysik"@de, "P4_Atomic Physics, Solid state Physics, Radiation effects, Semiconductor Physics"@en ;
-    skos:altLabel "P4_Nuklearphysik, Feststoffphysik, Radioaktive Effekte, Amorphe Halbleiter"@de, "P4_Nuclear Physics, Solid State Physics, Radiation Physics,Amorphous semiconductor"@en ;
+    skos:prefLabel "P4_Atomphysik, Festkörperphysik, Strahlungseffekte, Halbleiterphysik"@de, "P4_Atomic physics, Solid state physics, Radiation effects, Semiconductor physics"@en ;
+    skos:altLabel "P4_Nuklearphysik, Feststoffphysik, Radioaktive Effekte, Amorphe Halbleiter"@de, "P4_Nuclear physics, Solid State physics, Radiation physics,Amorphous semiconductor"@en ;
     skos:notation "P4"@de, "P4"@en ;
     skos:inScheme Systematik: .
 
 Systematik:P5_Mechanik_Hydrodynamik_Gasdynamik_Ballistik_Synergetik a skos:Concept ;
     skos:prefLabel "P5 Mechanik, Hydrodynamik, Gasdynamik, Ballistik, Synergetik"@de, "P5_Mechanics, Hydrodynamics, Gas dynamics, Ballistics, Synergetic"@en ;
-    skos:altLabel "P5_Mechanismus, dynamische Physik, Terminalballistik, Synergismus"@de, "P5_Mechanism, Dynamic Physics, Terminal ballistics, Synergism"@en ;
+    skos:altLabel "P5_Mechanismus, dynamische Physik, Terminalballistik, Synergismus"@de, "P5_Mechanism, Dynamic physics, Terminal ballistics, Synergism"@en ;
     skos:notation "P5"@de, "P5"@en ;
     skos:inScheme Systematik: .
 
 Systematik:P6_Thermodynamik_Statistische_Physik_Transporttheorie a skos:Concept ;
-    skos:prefLabel "P6_Thermodynamik, Statistische Physik, Transporttheorie"@de, "P6_Thermodynamics, Statistical Physics, Transportation theory"@en ;
-    skos:altLabel "P6_Wärmelehre, Statistik der Physik, Optimaler Transport"@de, "P6_Heat theory,Physics statistics,Optimal transport theory"@en ;
+    skos:prefLabel "P6_Thermodynamik, Statistische Physik, Transporttheorie"@de, "P6_Thermodynamics, Statistical physics, Transportation theory"@en ;
+    skos:altLabel "P6_Wärmelehre, Statistik der Physik, Optimaler Transport"@de, "P6_Heat theory,physics statistics,Optimal transport theory"@en ;
     skos:notation "P6"@de, "P6"@en ;
     skos:inScheme Systematik: .
 
@@ -201,8 +201,8 @@ Systematik:P7_Optik_Elektrizität_Magnetismus_elektromagnetische_Felder a skos:C
     skos:inScheme Systematik: .
 
 Systematik:P8_Plasmaphysik_Fusion_Hochtemperaturphysik a skos:Concept ;
-    skos:prefLabel "P8_Plasmaphysik, Fusion, Hochtemperaturphysik"@de, "P8_Plasma Physics, Fusion, High-Temperature Physics"@en ;
-    skos:altLabel "P8_Geformte Physik, Kernfusion, Temperaturphysik"@de, "P8_Formed Physics, Nuclear Fusion, Physics of temperature"@en ;
+    skos:prefLabel "P8_Plasmaphysik, Fusion, Hochtemperaturphysik"@de, "P8_Plasma physics, Fusion, High-Temperature physics"@en ;
+    skos:altLabel "P8_Geformte Physik, Kernfusion, Temperaturphysik"@de, "P8_Formed physics, Nuclear Fusion, physics of temperature"@en ;
     skos:notation "P8"@de, "P8"@en ;
     skos:inScheme Systematik: .
 
@@ -212,14 +212,14 @@ Systematik:T_Technik a skos:Concept ;
     skos:notation "T0-T8"@de, "PT0-T8"@en ;
     skos:hiddenLabel "verstecke Notiz"@de, "hidden Note"@en ;
     skos:narrower T0_Allgemeines_Lehrbücher_der_Technik ; 
-    skos:narrower Systematik:P1_Tabellen_Nachschlagewerke ; 
-    skos:narrower Systematik:P2_Mathematische_Mehtoden_der_Physik ; 
-    skos:narrower Systematik:P3_Kernphysik_Neutronenphysik ; 
-    skos:narrower Systematik:P4_Atomphysik_Festkörperphysik_Strahlungseffekte_Halbleiterphysik ; 
-    skos:narrower Systematik:P5_Mechanik_Hydrodynamik_Gasdynamik_Ballistik_Synergetik ; 
-    skos:narrower Systematik:P6_Thermodynamik_Statistische_Physik_Transporttheorie ;
-    skos:narrower Systematik:P7_Optik_Elektrizität_Magnetismus_elektromagnetische_Felder ;
-    skos:narrower Systematik:P8_Plasmaphysik_Fusion_Hochtemperaturphysik ; 
+    skos:narrower Systematik:T1_Tabellen_Nachschlagewerke ; 
+    skos:narrower Systematik:T2_Messtechnik_Experimentiertechnik_Beschleuniger_Sensorik ; 
+    skos:narrower Systematik:T3_Elektrotechnik_Elektronik_HF-Technik_Halbleitertechnik ; 
+    skos:narrower Systematik:T4_Technische Optik_Lasertechnik_Optronik_Photonik_IR-Technik ; 
+    skos:narrower Systematik:T5_Verkehrstechnik_Antriebstechnik_Energietechnik_Kältetechnik_Werkstofftechnik_Raumfahrt ; 
+    skos:narrower Systematik:T6_Kernenergie_Reaktorphysik_Neutronenwelle_Strahlungswelle_Kerntechnik ;
+    skos:narrower Systematik:T7_Strahlenschutz_Dosimetrie ;
+    skos:narrower Systematik:T8_Technische_Akustik_Wasserschal_Seismik ; 
     skos:topConceptOf Systematik: .
 
 Systematik:T0_Allgemeines_Lehrbücher_der_Technik a skos:Concept ;
@@ -236,7 +236,7 @@ Systematik:T1_Tabellen_Nachschlagewerke a skos:Concept ;
 
 Systematik:T2_Messtechnik_Experimentiertechnik_Beschleuniger_Sensorik a skos:Concept ;
     skos:prefLabel "T2_Messtechnik, Experimentiertechnik, Beschleuniger, Sensorik"@de, "T2_Measurement technology, Experimental technology, Accelerator, Sensoric"@en ;
-    skos:altLabel "T2_Messmethoden, Versuchstechnik"@de, "T_Measurement methods, Experimental Engineering"@en ;
+    skos:altLabel "T2_Messmethoden, Versuchstechnik"@de, "T_Measurement methods, Experimental engineering"@en ;
     skos:notation "T2"@de, "T2"@en ;
     skos:inScheme Systematik: .
 
@@ -248,7 +248,34 @@ Systematik:T3_Elektrotechnik_Elektronik_HF-Technik_Halbleitertechnik a skos:Conc
 
 Systematik:T4_Technische Optik_Lasertechnik_Optronik_Photonik_IR-Technik a skos:Concept ;
     skos:prefLabel "T4_Technische Optik, Lasertechnik, Optronik, Photonik, IR-Technik"@de, "T4_Technical optics, Laser technology, Optronics, Photonics, IR-technics"@en ;
-    skos:altLabel "T4_Technik Optik,Kohärentes Licht"@de, "T3_E-technics, Electrics,Semiconductor-technics"@en ;
-    skos:notation "T3"@de, "T3"@en ;
+    skos:altLabel "T4_Technik Optik,Kohärentes Licht"@de, "T4_Technique optics, Coherent light, Lehre von Lichtteilchen"@en ;
+    skos:notation "T4"@de, "T4"@en ;
     skos:inScheme Systematik: .
+
+Systematik:T5_Verkehrstechnik_Antriebstechnik_Energietechnik_Kältetechnik_Werkstofftechnik_Raumfahrt a skos:Concept ;
+    skos:prefLabel "T5_Verkehrstechnik, Antriebstechnik, Energietechnik, Kältetechnik, Werkstofftechnik, Raumfahrt"@de, "Traffic engineering, Drive engineering, Power engineering, Refrigeration, Material engineering, Aerospace"@en ;
+    skos:altLabel "T5_Wechselverkehrszeichenanlage, Motortechnik, Stromtechnik, Kühltechnik, Materialtechnik, Weltraumfahrt"@de, "T5_Variable message sign system, Engine technology, Power engineering, Cooling technology, Material Technology, Space Flight"@en ;
+    skos:notation "T5"@de, "T5"@en ;
+    skos:inScheme Systematik: .
+
+Systematik:T6_Kernenergie_Reaktorphysik_Neutronenwelle_Strahlungswelle_Kerntechnik a skos:Concept ;
+    skos:prefLabel "T6_Kernenergie, Reaktorphysik, Neutronenwelle, Strahlungswelle, Kerntechnik"@de, "T6_Nuclear energy, Reactor physics, Neutron wave, Radiation wave, Nuclear Engineering"@en ;
+    skos:altLabel "T6_Atomenergie, Kernreaktorphysik, Nukleonwelle, Radioaktivitätswelle, Atomtechnik"@de, "T6_Atomic energy,Nuclear reactor physics, Nucleon wave, Radioactivity wave, Atomic technology"@en ;
+    skos:notation "T6"@de, "T6"@en ;
+    skos:inScheme Systematik: .
+
+Systematik:T7_Strahlenschutz_Dosimetrie a skos:Concept ;
+    skos:prefLabel "T7_Strahlenschutz, Dosimetrie"@de, "T7_Radiation protection, Dosimetry"@en ;
+    skos:altLabel "T7_Radioaktiver Schutz, Strahlendosimetrie"@de, "radioactive protection"@en ;
+    skos:notation "T7"@de, "T7"@en ;
+    skos:inScheme Systematik: .
+
+Systematik:T8_Technische_Akustik_Wasserschal_Seismik a skos:Concept ;
+    skos:prefLabel "T8_Technische Akustik, Wasserschall, Seismik"@de, "T8_Technical acoustics,Water sonic, Seismic"@en ;
+    skos:altLabel "T8_Technischer Klang, Wasserklang, Angewandte Geophysik"@de, "T8_Technical sound, Water sound, Applied geophysics"@en ;
+    skos:notation "T8"@de, "T8"@en ;
+    skos:inScheme Systematik: .
+
+
+
 
