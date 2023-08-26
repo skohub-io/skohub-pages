@@ -317,7 +317,7 @@ Systematik:W3_Kernwaffen_Kernwaffenwirkung  a skos:Concept ;
 
 Systematik:W4_Sicherheitspolitik_allgemeine_Verteidigungsfragen a skos:Concept ;
     skos:prefLabel "W4_Sicherheitspolitik, allgemeine Verteidigungsfragen"@de, "W4_Security policy,General defense questions"@en ;
-    skos:altLabel "W4_Verteidigungspolitik, allgemeine Sicherheitsfragen"@de, "W4_Defense policy,Ggeneral security questions"@en ;
+    skos:altLabel "W4_Verteidigungspolitik, allgemeine Sicherheitsfragen"@de, "W4_Defense policy,General security questions"@en ;
     skos:notation "W4"@de, "W4"@en ;
     skos:inScheme Systematik: .
 
