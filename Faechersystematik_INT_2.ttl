@@ -215,7 +215,7 @@ Systematik:T_Technik a skos:Concept ;
     skos:narrower Systematik:T1_Tabellen_Nachschlagewerke ; 
     skos:narrower Systematik:T2_Messtechnik_Experimentiertechnik_Beschleuniger_Sensorik ; 
     skos:narrower Systematik:T3_Elektrotechnik_Elektronik_HF-Technik_Halbleitertechnik ; 
-    skos:narrower Systematik:T4_Technische Optik_Lasertechnik_Optronik_Photonik_IR-Technik ; 
+    skos:narrower Systematik:T4_Technische_Optik_Lasertechnik_Optronik_Photonik_IR-Technik ; 
     skos:narrower Systematik:T5_Verkehrstechnik_Antriebstechnik_Energietechnik_Kältetechnik_Werkstofftechnik_Raumfahrt ; 
     skos:narrower Systematik:T6_Kernenergie_Reaktorphysik_Neutronenwelle_Strahlungswelle_Kerntechnik ;
     skos:narrower Systematik:T7_Strahlenschutz_Dosimetrie ;
