@@ -210,7 +210,7 @@ Systematik:T_Technik a skos:Concept ;
     skos:notation "T0-T8"@de, "PT0-T8"@en ;
     skos:hiddenLabel "Interne Informationen für die Bibliotheksmitarbeiter"@de, "Internal information for library staff"@en ;
     skos:changeNote "Version 1.2 geändert am 29.03.2023" ; 
-    skos:narrower Systematik:T0_Allgemeines_Lehrbücher_der_Technik, Systematik:T1_Tabellen_Nachschlagewerke, Systematik:T2_Messtechnik_Experimentiertechnik_Beschleuniger_Sensorik, Systematik:T3_Elektrotechnik_Elektronik_HF-Technik_Halbleitertechnik, Systematik:T4_Technische_Optik_Lasertechnik_Optronik_Photonik_IR-Technik, Systematik:T5_Verkehrstechnik_Antriebstechnik_Energietechnik_Kältetechnik_Werkstofftechnik_Raumfahrt, T6_Kernenergie_Reaktorphysik_Neutronenwelle_Strahlungswelle_Kerntechnik, Systematik:T7_Strahlenschutz_Dosimetrie, Systematik:T8_Technische_Akustik_Wasserschal_Seismik ;  
+    skos:narrower Systematik:T0_Allgemeines_Lehrbücher_der_Technik, Systematik:T1_Tabellen_Nachschlagewerke, Systematik:T2_Messtechnik_Experimentiertechnik_Beschleuniger_Sensorik, Systematik:T3_Elektrotechnik_Elektronik_HF-Technik_Halbleitertechnik, Systematik:T4_Technische_Optik_Lasertechnik_Optronik_Photonik_IR-Technik, Systematik:T5_Verkehrstechnik_Antriebstechnik_Energietechnik_Kältetechnik_Werkstofftechnik_Raumfahrt, Systematik:T6_Kernenergie_Reaktorphysik_Neutronenwelle_Strahlungswelle_Kerntechnik, Systematik:T7_Strahlenschutz_Dosimetrie, Systematik:T8_Technische_Akustik_Wasserschal_Seismik ;  
     skos:topConceptOf Systematik: .
 
 Systematik:T0_Allgemeines_Lehrbücher_der_Technik a skos:Concept ;
