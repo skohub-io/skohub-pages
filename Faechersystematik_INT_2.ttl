@@ -15,9 +15,7 @@ Systematik:A_Allgemeines a skos:Concept ;
     skos:altLabel "A_Universelles"@de, "A_Universal"@en ;
     skos:notation "A0-A2"@de, "A0-A2"@en ;
     skos:hiddenLabel "Interne Informationen für die Bibliotheksmitarbeiter"@de, "Internal information for library staff"@en ;
-    skos:narrower Systematik:A0_Verschiedenes ;
-    skos:narrower Systematik:A1_Lexika_alternative_Nachschlagewerke ;
-    skos:narrower Systematik:A2_Wörterbücher;
+    skos:narrower Systematik:A0_Verschiedenes, Systematik:A1_Lexika_alternative_Nachschlagewerke, Systematik:A2_Wörterbücher ;
     skos:topConceptOf Systematik: .
 
 Systematik:A0_Verschiedenes a skos:Concept ;
@@ -114,9 +112,7 @@ Systematik:OR_Operations_Research a skos:Concept ;
     skos:altLabel "OR_Betriebsforschung"@de, "OR_Business Research"@en ;
     skos:notation "OR0-OR2"@de, "OR0-OR2"@en ;
     skos:hiddenLabel "Interne Informationen für die Bibliotheksmitarbeiter"@de, "Internal information for library staff"@en ;
-    skos:narrower Systematik:OR0_Grundlagen_Systemwissenschaften_Komplexitätstheorie ;
-    skos:narrower Systematik:OR1_Mathematische_Verfahren_Kontrolltheorie_Spieltheorie_Klassisches_OR ; 
-    skos:narrower Systematik:OR2_Anwendungen_Prognosen_Modelle_Zukunftsforschung_Technologiefolgen ; 
+    skos:narrower Systematik:OR0_Grundlagen_Systemwissenschaften_Komplexitätstheorie, Systematik:OR1_Mathematische_Verfahren_Kontrolltheorie_Spieltheorie_Klassisches_OR, Systematik:OR2_Anwendungen_Prognosen_Modelle_Zukunftsforschung_Technologiefolgen  ;
     skos:topConceptOf Systematik: .
 
 Systematik:OR0_Grundlagen_Systemwissenschaften_Komplexitätstheorie a skos:Concept ;
@@ -135,7 +131,7 @@ Systematik:OR2_Anwendungen_Prognosen_Modelle_Zukunftsforschung_Technologiefolgen
     skos:prefLabel "OR2_Anwendungen, Prognosen, Modelle, Zukunftsforschung, Technologiefolgen"@de, "OR2_Applications, Forecasts, Models, Technology implications"@en ;
     skos:altLabel "OR2_Einsatz, Einschätzungen, Methoden, Perspektivforschung, Technikfolgen"@de, "OR2_Use, Assessment, Methods, Perspective research, Technology impact"@en ;
     skos:notation "OR2"@de, "OR2"@en ;
-    skos:inScheme Systematik: .
+    skos:inScheme Systematik: .    
 
 Systematik:P_Physik a skos:Concept ;
     skos:prefLabel "P_Physik"@de, "P_physics"@en ;
@@ -214,15 +210,7 @@ Systematik:T_Technik a skos:Concept ;
     skos:notation "T0-T8"@de, "PT0-T8"@en ;
     skos:hiddenLabel "Interne Informationen für die Bibliotheksmitarbeiter"@de, "Internal information for library staff"@en ;
     skos:changeNote "Version 1.2 geändert am 29.03.2023" ; 
-    skos:narrower Systematik:T0_Allgemeines_Lehrbücher_der_Technik ; 
-    skos:narrower Systematik:T1_Tabellen_Nachschlagewerke ; 
-    skos:narrower Systematik:T2_Messtechnik_Experimentiertechnik_Beschleuniger_Sensorik ; 
-    skos:narrower Systematik:T3_Elektrotechnik_Elektronik_HF-Technik_Halbleitertechnik ; 
-    skos:narrower Systematik:T4_Technische_Optik_Lasertechnik_Optronik_Photonik_IR-Technik ; 
-    skos:narrower Systematik:T5_Verkehrstechnik_Antriebstechnik_Energietechnik_Kältetechnik_Werkstofftechnik_Raumfahrt ; 
-    skos:narrower Systematik:T6_Kernenergie_Reaktorphysik_Neutronenwelle_Strahlungswelle_Kerntechnik ;
-    skos:narrower Systematik:T7_Strahlenschutz_Dosimetrie ;
-    skos:narrower Systematik:T8_Technische_Akustik_Wasserschal_Seismik ; 
+    skos:narrower Systematik:T0_Allgemeines_Lehrbücher_der_Technik, Systematik:T1_Tabellen_Nachschlagewerke, Systematik:T2_Messtechnik_Experimentiertechnik_Beschleuniger_Sensorik, Systematik:T3_Elektrotechnik_Elektronik_HF-Technik_Halbleitertechnik, Systematik:T4_Technische_Optik_Lasertechnik_Optronik_Photonik_IR-Technik, Systematik:T5_Verkehrstechnik_Antriebstechnik_Energietechnik_Kältetechnik_Werkstofftechnik_Raumfahrt, T6_Kernenergie_Reaktorphysik_Neutronenwelle_Strahlungswelle_Kerntechnik, Systematik:T7_Strahlenschutz_Dosimetrie, Systematik:T8_Technische_Akustik_Wasserschal_Seismik ;  
     skos:topConceptOf Systematik: .
 
 Systematik:T0_Allgemeines_Lehrbücher_der_Technik a skos:Concept ;
@@ -284,11 +272,7 @@ Systematik:W_Wehrwissenschaft a skos:Concept ;
     skos:altLabel "Militärwissenschaft"@de, "W_Military science"@en ;
     skos:notation "W0-W4"@de, "W0-W4"@en ;
     skos:hiddenLabel "Interne Informationen für die Bibliotheksmitarbeiter"@de, "Internal information for library staff"@en ;
-    skos:narrower Systematik:W0_Allgemeines ;
-    skos:narrower Systematik:W1_Tabellen_Nachschlagewerke ;
-    skos:narrower Systematik:W2_Wehrtechnik_Militärische_Praxis_Militärische_Ausbildung ;
-    skos:narrower Systematik:W3_Kernwaffen_Kernwaffenwirkung ;
-    skos:narrower Systematik:W4_Sicherheitspolitik_allgemeine_Verteidigungsfragen ;
+    skos:narrower Systematik:W0_Allgemeines, Systematik:W1_Tabellen_Nachschlagewerke, Systematik:W2_Wehrtechnik_Militärische_Praxis_Militärische_Ausbildung, Systematik:W3_Kernwaffen_Kernwaffenwirkung, Systematik:W4_Sicherheitspolitik_allgemeine_Verteidigungsfragen ;
     skos:topConceptOf Systematik: .
 
 Systematik:W0_Allgemeines a skos:Concept ;
