@@ -63,12 +63,7 @@ Systematik:M_Mathematik a skos:Concept ;
     skos:notation "M0-M5"@de, "M0-M5"@en ;
     skos:hiddenLabel "Interne Informationen für die Bibliotheksmitarbeiter"@de, "Internal information for library staff"@en ;
     skos:changeNote "Version 1.2 geändert am 10.05.2021" ;
-    skos:narrower Systematik:M0_Allgemeines_Lehrbücher ;
-    skos:narrower Systematik:M1_Tabellen_Nachschlagewerke ; 
-    skos:narrower Systematik:M2_Algebra_Gruppentheorie_Geometrie_Arimetrie_Zahlentheorie ; 
-    skos:narrower Systematik:M3_Analysis_Funktionsanalysis_Funktionstheorie_Spezielle_Funktionen ; 
-    skos:narrower Systematik:M4_Statistik_Wahrscheinlichkeitsrechnung ; 
-    skos:narrower Systematik:M5_Numerische_Mathematik ;
+    skos:narrower Systematik:M0_Allgemeines_Lehrbücher, Systematik:M1_Tabellen_Nachschlagewerke, Systematik:M2_Algebra_Gruppentheorie_Geometrie_Arimetrie_Zahlentheorie, Systematik:M3_Analysis_Funktionsanalysis_Funktionstheorie_Spezielle_Funktionen, Systematik:M4_Statistik_Wahrscheinlichkeitsrechnung, Systematik:M5_Numerische_Mathematik ;
     skos:topConceptOf Systematik: .
 
 Systematik:M0_Allgemeines_Lehrbücher a skos:Concept ;
@@ -139,66 +134,58 @@ Systematik:P_Physik a skos:Concept ;
     skos:notation "P0-P2"@de, "P0-P8"@en ;
     skos:hiddenLabel "Interne Informationen für die Bibliotheksmitarbeiter"@de, "Internal information for library staff"@en ;
     skos:changeNote "Version 1.3 am 18.02.2022" ; 
-    skos:narrower Systematik:P0_Allgemeines_Lehrbücher_Handbücher ; 
-    skos:narrower Systematik:P1_Tabellen_Nachschlagewerke ; 
-    skos:narrower Systematik:P2_Mathematische_Mehtoden_der_Physik ; 
-    skos:narrower Systematik:P3_Kernphysik_Neutronenphysik ; 
-    skos:narrower Systematik:P4_Atomphysik_Festkörperphysik_Strahlungseffekte_Halbleiterphysik ; 
-    skos:narrower Systematik:P5_Mechanik_Hydrodynamik_Gasdynamik_Ballistik_Synergetik ; 
-    skos:narrower Systematik:P6_Thermodynamik_Statistische_Physik_Transporttheorie ;
-    skos:narrower Systematik:P7_Optik_Elektrizität_Magnetismus_elektromagnetische_Felder ;
-    skos:narrower Systematik:P8_Plasmaphysik_Fusion_Hochtemperaturphysik ; 
+    skos:narrower Systematik:P0, Systematik:P1, Systematik:P2, Systematik:P3, Systematik:P4, Systematik:P5, Systematik:P6, Systematik:P7, Systematik:P8 ;  
     skos:topConceptOf Systematik: .
 
-Systematik:P0_Allgemeines_Lehrbücher_Handbücher a skos:Concept ;
+Systematik:P0 a skos:Concept ;
     skos:prefLabel "P0_Allgemeines, Lehrbücher, Handbücher"@de, "P0_General, Textbooks, Manuals"@en ;
     skos:altLabel "P0_Universelles, Fachbücher, Handbuch"@de, "P0_Unviversal, Reference books, User Manual"@en ;
     skos:notation "P0"@de, "P0"@en ;
     skos:inScheme Systematik: .
 
-Systematik:P1_Tabellen_Nachschlagewerke  a skos:Concept ;
+Systematik:P1 a skos:Concept ;
     skos:prefLabel "P1_Tabellen, Nachschlagewerke"@de, "P0_Tables, Reference books"@en ;
     skos:altLabel "P1_Tabellenbuch, Kompendium"@de, "P1_Tablebooks, Compendium"@en ;
     skos:notation "P1"@de, "P1"@en ;
     skos:inScheme Systematik: .
 
-Systematik:P2_Mathematische_Mehtoden_der_Physik  a skos:Concept ;
+Systematik:P2  a skos:Concept ;
     skos:prefLabel "P2_Mathematische Mehtoden der Physik"@de, "P2_Mathematical methods of physics"@en ;
     skos:altLabel "P2_Mathemethodik der Physik"@de, "P2_Math methods of physics"@en ;
     skos:notation "P2"@de, "P2"@en ;
     skos:inScheme Systematik: .
 
-Systematik:P3_Kernphysik_Neutronenphysik a skos:Concept ;
+Systematik:P3 a skos:Concept ;
     skos:prefLabel "P3_Kernphysik, Neutronenphysik"@de, "P3_Nuclear physics, Neutronics physics"@en ;
     skos:altLabel "P3_Atompyhsik, Nukleonphysik"@de, "P3_Atom physics, Nucleon physics"@en ;
     skos:notation "P3"@de, "P3"@en ;
     skos:inScheme Systematik: .
 
-Systematik:P4_Atomphysik_Festkörperphysik_Strahlungseffekte_Halbleiterphysik a skos:Concept ;
+Systematik:P4 a skos:Concept ;
     skos:prefLabel "P4_Atomphysik, Festkörperphysik, Strahlungseffekte, Halbleiterphysik"@de, "P4_Atomic physics, Solid state physics, Radiation effects, Semiconductor physics"@en ;
     skos:altLabel "P4_Nuklearphysik, Feststoffphysik, Radioaktive Effekte, Amorphe Halbleiter"@de, "P4_Nuclear physics, Solid State physics, Radiation physics,Amorphous semiconductor"@en ;
     skos:notation "P4"@de, "P4"@en ;
     skos:inScheme Systematik: .
 
-Systematik:P5_Mechanik_Hydrodynamik_Gasdynamik_Ballistik_Synergetik a skos:Concept ;
+Systematik:P5 a skos:Concept ;
     skos:prefLabel "P5 Mechanik, Hydrodynamik, Gasdynamik, Ballistik, Synergetik"@de, "P5_Mechanics, Hydrodynamics, Gas dynamics, Ballistics, Synergetic"@en ;
     skos:altLabel "P5_Mechanismus, dynamische Physik, Terminalballistik, Synergismus"@de, "P5_Mechanism, Dynamic physics, Terminal ballistics, Synergism"@en ;
     skos:notation "P5"@de, "P5"@en ;
     skos:inScheme Systematik: .
 
-Systematik:P6_Thermodynamik_Statistische_Physik_Transporttheorie a skos:Concept ;
+Systematik:P6 a skos:Concept ;
     skos:prefLabel "P6_Thermodynamik, Statistische Physik, Transporttheorie"@de, "P6_Thermodynamics, Statistical physics, Transportation theory"@en ;
     skos:altLabel "P6_Wärmelehre, Statistik der Physik, Optimaler Transport"@de, "P6_Heat theory,physics statistics,Optimal transport theory"@en ;
     skos:notation "P6"@de, "P6"@en ;
     skos:inScheme Systematik: .
 
-Systematik:P7_Optik_Elektrizität_Magnetismus_elektromagnetische_Felder a skos:Concept ;
+Systematik:P7 a skos:Concept ;
     skos:prefLabel "P7_Optik, Elektrizität, Magnetismus, elektromagnetische Felder"@de, "P7_Optics, Electricity, Magnetism, Electromagnetic fields"@en ;
     skos:altLabel "P7_Lehre vom Licht, Strom, Elektromagnetismus, Magnetische Felder"@de, "P7_Doctrine of light, Power, Electromagnetism, Magnetic fields"@en ;
     skos:notation "P7"@de, "P7"@en ;
     skos:inScheme Systematik: .
 
-Systematik:P8_Plasmaphysik_Fusion_Hochtemperaturphysik a skos:Concept ;
+Systematik:P8 a skos:Concept ;
     skos:prefLabel "P8_Plasmaphysik, Fusion, Hochtemperaturphysik"@de, "P8_Plasma physics, Fusion, High-Temperature physics"@en ;
     skos:altLabel "P8_Geformte Physik, Kernfusion, Temperaturphysik"@de, "P8_Formed physics, Nuclear fusion, physics of temperature"@en ;
     skos:notation "P8"@de, "P8"@en ;
