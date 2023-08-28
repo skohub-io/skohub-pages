@@ -8,7 +8,7 @@ Systematik: a skos:ConceptScheme ;
     dct:creator "Rene Peter Bennemann"@de ;
     dct:created "2023-08-24"^^xsd:date ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    skos:hasTopConcept Systematik:A_Allgemeines, Systematik:BC_Biowissenschaften_Chemie_Kernchemie_Pharmamedizin, Systematik:DI_Datenverarbeitung_Informatik_Informationsverarbeitung_Programmiersprache_Künstliche_Intelligenz, Systematik:GA_Geowissenschaften_Astrophysik, Systematik:M_Mathematik, Systematik:OR_Operations_Research, Systematik:P_Physik, Systematik:T_Technik, Systematik:W_Wehrwissenschaft .
+    skos:hasTopConcept Systematik:A Systematik:BC, Systematik:DI, Systematik:GA, Systematik:M, Systematik:OR, Systematik:P, Systematik:T, Systematik:W .
 
 Systematik:A a skos:Concept ;
     skos:prefLabel "A_Allgemeines"@de, "A_General"@en ;
