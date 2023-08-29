@@ -21,8 +21,9 @@ Das vorliegende SKOS-Repo digitalisiert die Aufstellungssystematik des Fraunhofe
  Die Einrichtung des SKOS-Repos verlief gut, die Dokumentation, inklusive dem Youtube-Video waren völlig ausreichend. Recht häufig tauchten Fehler bei der Validierung auf 
  (Fehlermessage: Error Validate with Script), unter anderem wurde oft ein Semikolon vergessen, oder es fehlten Leerzeichen. Das Validierungsskript half ennorm bei der 
  Fehleridentifizierung, sehr praktisch durch die Anzeige der passenden Zeile. Ein nicht zu behebender Fehler sind die Kommatas welche in der Browseransicht des Repos vor 
- jeder einzelnen Systematik stehen. Im linken Auzählungsreiter nicht vorkommend, jedoch auf der rechten detaillierten Ansicht erkennbar. Im Quellcode konnte kein Fehler 
- gefunden werden der dieses Problem auslöst. Die Lösung des Fehlers ist bis zum jetzigen Zeitpunkt unklar. 
+ jeder einzelnen Systematik stehen. Im linken Aufzählungsreiter nur dann vorkommend wenn nicht auf die Ssytematiken drauf geklickt wird, jedoch auf der rechten 
+ detaillierten Ansicht permament erkennbar. Im Quellcode konnte kein Fehler gefunden werden der dieses Problem auslöst. Die Lösung des Fehlers ist bis zum jetzigen 
+ Zeitpunkt unklar. 
 
 
 3. Ergebnis und Ausblick
