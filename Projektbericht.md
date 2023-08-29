@@ -1,4 +1,5 @@
 MALIS22_IT2 kleines Projekt 
+
 Dozent: Pohl, Adrian
 
 Publikation eines kontrollierten Vokabulars mit SkoHub Vocabs
@@ -19,7 +20,7 @@ Das vorliegende SKOS-Repo digitalisiert die Aufstellungssystematik des Fraunhofe
 
  Die Einrichtung des SKOS-Repos verlief gut, die Dokumentation, inklusive dem Youtube-Video waren völlig ausreichend. Recht häufig tauchten Fehler bei der Validierung auf 
  (Fehlermessage: Error Validate with Script), unter anderem wurde oft ein Semikolon vergessen, oder es fehlten Leerzeichen. Das Validierungsskript half ennorm bei der 
- Fehleridentifierung, sehr praktisch durch die Anzeige der passenden Zeile. Ein nicht zu behebender Fehler sind die Kommatas welche in der Browseransicht des Repos vor 
+ Fehleridentifizierung, sehr praktisch durch die Anzeige der passenden Zeile. Ein nicht zu behebender Fehler sind die Kommatas welche in der Browseransicht des Repos vor 
  jeder einzelnen Systematik stehen. Im linken Auzählungsreiter nicht vorkommend, jedoch auf der rechten detaillierten Ansicht erkennbar. Im Quellcode konnte kein Fehler 
  gefunden werden der dieses Problem auslöst. Die Lösung des Fehlers ist bis zum jetzigen Zeitpunkt unklar. 
 
@@ -29,5 +30,5 @@ Das vorliegende SKOS-Repo digitalisiert die Aufstellungssystematik des Fraunhofe
 Durch die SKOS-Repräsentation der Aufstellungssystematik konnte eine längst angestrebte Digitalisierung der Systematik vorgenommen werden die nun, zumindest potentiell, einem breiten Publikum zugänglich gemacht werden kann.
 Durch die Suchfunktionen lässt sich bequem nach Begriffen suchen. Ein weiterer Vorteil ist, das zu den einzelnen Fachbereichen zusätzliche beschreibende Informationen und Definitionen eingepflegt werden können und durch diese Anreicherungen ein Mehrwert für die Bibliothek aber auch für die Nutzerinnen und Nutzer der Bibliothek entsteht. Durch die Möglichkeit der Mehrsprachigkeit, beziehungsweise der Umsetzung auch auf Englisch ist es nun auch möglich unseren internationalen Wissenschaftlern einen verständlichen Zugang zu unserer Systematik zu gewährleisten.
 
-Ich plane für kommendes Jahr ein neues Bibliothekskonzept zu erstellen, inklusive einer überarbeiteten Systematik. Im Zuge dessen das hier erstellte SKOS-Vokabular einfließen und weiterentwickelt wird, um eine digitale, ortsunabhängige mit zusätzlichen Informationen angereicherte Systematik unseren Nutzern anbieten zu können. Zu überlegen bleibt wie öffentlich zugänglich die Systematik wird, das wird sich im kommenden Jahr zeigen. Das Repo bleibt indes ein weiterentwickelndes Projekt. 
+Ich plane für das kommende Jahr ein neues Bibliothekskonzept zu erstellen, inklusive einer überarbeiteten Systematik. Im Zuge dessen das hier erstellte SKOS-Vokabular einfließen und weiterentwickelt wird, um eine digitale, ortsunabhängige mit zusätzlichen Informationen angereicherte Systematik unseren Nutzern anbieten zu können. Zu überlegen bleibt wie öffentlich zugänglich die Systematik wird, das wird sich im kommenden Jahr zeigen. Das Repo bleibt indes ein lebendes Projekt. 
 
