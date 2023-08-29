@@ -15,7 +15,11 @@ Das vorliegende SKOS-Repo digitalisiert die Aufstellungssystematik des Fraunhofe
  für die sie im Gegenzug Auftragsforschung betreibt. Daher ist das Intranet auch lediglich über einen VPN-Zugang erreichbar. Aus genannten Gründen wurde die 
  Außendarstellung des INT als Beispiel-URL in Form „@prefix Systematik: <https://www.int.fraunhofer.de/> .“ hinterlegt.
 
-Die Einrichtung des SKOS-Repos verlief gut, die Dokumentation, inklusive dem Youtube-Video waren völlig ausreichend. Recht häufig tauchten Fehler bei der Validierung auf (Fehlermessage: Error Validate with Script), unter anderem wurde oft ein Semikolon vergessen, oder es fehlten Leerzeichen. Das Validierungsskript half ennorm bei der Fehleridentifierung, sehr praktisch durch die Anzeige der passenden Zeile. Ein nicht zu behebender Fehler sind die Kommatas welche in der Browseransicht des Repos vor jeder einzelnen Systematik stehen. Im linken Auzählungsreiter nicht vorkommend, jedoch auf der rechten detaillierten Ansicht erkennbar. Im Quellcode konnte kein Fehler gefunden werden der dieses Problem auslöst. Die Lösung des Fehlers ist bis zum jetzigen Zeitpunkt unklar. 
+ Die Einrichtung des SKOS-Repos verlief gut, die Dokumentation, inklusive dem Youtube-Video waren völlig ausreichend. Recht häufig tauchten Fehler bei der Validierung auf 
+ (Fehlermessage: Error Validate with Script), unter anderem wurde oft ein Semikolon vergessen, oder es fehlten Leerzeichen. Das Validierungsskript half ennorm bei der 
+ Fehleridentifierung, sehr praktisch durch die Anzeige der passenden Zeile. Ein nicht zu behebender Fehler sind die Kommatas welche in der Browseransicht des Repos vor 
+ jeder einzelnen Systematik stehen. Im linken Auzählungsreiter nicht vorkommend, jedoch auf der rechten detaillierten Ansicht erkennbar. Im Quellcode konnte kein Fehler 
+ gefunden werden der dieses Problem auslöst. Die Lösung des Fehlers ist bis zum jetzigen Zeitpunkt unklar. 
 
 
 4. Ergebnis und Ausblick
