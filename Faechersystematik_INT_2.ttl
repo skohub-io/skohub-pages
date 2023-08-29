@@ -5,6 +5,8 @@
 
 Systematik: a skos:ConceptScheme ;
     dct:title "Aufstellungssystematik der Bibliothek des Fraunhofer INT"@de, "Classification of the Fraunhofer INT library"@en ;
+    dct:alternative "Institutsfächersystematik"@de ;
+    dct:description "Diese SKOS-Klassifikation basiert auf der INT-Fächersystematik die vor dreißig Jahren vom ehemaligen Institutsöeiter ins Leben gerufen wurde."@de ;
     dct:creator "Rene Peter Bennemann"@de ;
     dct:created "2023-08-24"^^xsd:date ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
