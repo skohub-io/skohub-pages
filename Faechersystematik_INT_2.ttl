@@ -39,14 +39,14 @@ Systematik:A2 a skos:Concept ;
     skos:inScheme Systematik: .
 
 Systematik:BC a skos:Concept ;
-    skos:prefLabel "BC_Biowissenschaften, Chemie, Kernchemie, Pharmamedizin"@de, "BC_Bioscience, chemistry, nuclear chemistry, pharmaceutical medicine"@en ;
+    skos:prefLabel "BC_Biowissenschaften, Chemie, Kernchemie, Pharmamedizin"@de, "BC_Bioscience, Chemistry, Nuclear chemistry, Pharmaceutical medicine"@en ;
     skos:altLabel "BC_Biologie, Chemie, Medizin"@de, "BC_biology, chemistry, medicine"@en ;
     skos:notation "BC"@de, "BC"@en ;
     skos:hiddenLabel "Interne Informationen für die Bibliotheksmitarbeiter"@de, "Internal information for library staff"@en ;
     skos:topConceptOf Systematik: .
 
 Systematik:DI a skos:Concept ;
-    skos:prefLabel "DI_Datenverarbeitung, Informatik, Informationsverarbeitung, Programmiersprache, Künstliche Intelligenz"@de, "DI_Data proceesing, Informatics, Information processing, Programming language, artificial intelligence"@en ;
+    skos:prefLabel "DI_Datenverarbeitung, Informatik, Informationsverarbeitung, Programmiersprache, Künstliche Intelligenz"@de, "DI_Data proceesing, Informatics, Information processing, Programming language, Artificial intelligence"@en ;
     skos:altLabel "DI_Dateninformatik, KI"@de, "DI_Data science, AI"@en ;
     skos:notation "DI"@de, "DI"@en ;
     skos:hiddenLabel "Interne Informationen für die Bibliotheksmitarbeiter"@de, "Internal information for library staff"@en ;
@@ -141,7 +141,7 @@ Systematik:P a skos:Concept ;
 
 Systematik:P0 a skos:Concept ;
     skos:prefLabel "P0_Allgemeines, Lehrbücher, Handbücher"@de, "P0_General, Textbooks, Manuals"@en ;
-    skos:altLabel "P0_Universelles, Fachbücher, Handbuch"@de, "P0_Unviversal, Reference books, User Manual"@en ;
+    skos:altLabel "P0_Universelles, Fachbücher, Handbuch"@de, "P0_Unviversal, Reference books, User manual"@en ;
     skos:notation "P0"@de, "P0"@en ;
     skos:inScheme Systematik: .
 
@@ -222,7 +222,7 @@ Systematik:T2 a skos:Concept ;
 
 Systematik:T3 a skos:Concept ;
     skos:prefLabel "T3_Elektrotechnik, Elektronik, HF-Technik, Halbleitertechnik"@de, "T3_Electrical engineering, Electronic, HF-Technics, Semiconductor technics"@en ;
-    skos:altLabel "T3_E-Technik, Elektrik, Halbleiter-Technik"@de, "T3_E-technics, Electrics,Semiconductor-technics"@en ;
+    skos:altLabel "T3_E-Technik, Elektrik, Halbleiter-Technik"@de, "T3_E-technics, Electrics, Semiconductor-technics"@en ;
     skos:notation "T3"@de, "T3"@en ;
     skos:inScheme Systematik: .
 
@@ -234,19 +234,19 @@ Systematik:T4 a skos:Concept ;
 
 Systematik:T5 a skos:Concept ;
     skos:prefLabel "T5_Verkehrstechnik, Antriebstechnik, Energietechnik, Kältetechnik, Werkstofftechnik, Raumfahrt"@de, "Traffic engineering, Drive engineering, Power engineering, Refrigeration, Material engineering, Aerospace"@en ;
-    skos:altLabel "T5_Wechselverkehrszeichenanlage, Motortechnik, Stromtechnik, Kühltechnik, Materialtechnik, Weltraumfahrt"@de, "T5_Variable message sign system, Engine technology, Power engineering, Cooling technology, Material Technology, Space Flight"@en ;
+    skos:altLabel "T5_Wechselverkehrszeichenanlage, Motortechnik, Stromtechnik, Kühltechnik, Materialtechnik, Weltraumfahrt"@de, "T5_Variable message sign system, Engine technology, Power engineering, Cooling technology, Material technology, Space flight"@en ;
     skos:notation "T5"@de, "T5"@en ;
     skos:inScheme Systematik: .
 
 Systematik:T6 a skos:Concept ;
     skos:prefLabel "T6_Kernenergie, Reaktorphysik, Neutronenwelle, Strahlungswelle, Kerntechnik"@de, "T6_Nuclear energy, Reactor physics, Neutron wave, Radiation wave, Nuclear Engineering"@en ;
-    skos:altLabel "T6_Atomenergie, Kernreaktorphysik, Nukleonwelle, Radioaktivitätswelle, Atomtechnik"@de, "T6_Atomic energy,Nuclear reactor physics, Nucleon wave, Radioactivity wave, Atomic technology"@en ;
+    skos:altLabel "T6_Atomenergie, Kernreaktorphysik, Nukleonwelle, Radioaktivitätswelle, Atomtechnik"@de, "T6_Atomic energy, Nuclear reactor physics, Nucleon wave, Radioactivity wave, Atomic technology"@en ;
     skos:notation "T6"@de, "T6"@en ;
     skos:inScheme Systematik: .
 
 Systematik:T7 a skos:Concept ;
     skos:prefLabel "T7_Strahlenschutz, Dosimetrie"@de, "T7_Radiation protection, Dosimetry"@en ;
-    skos:altLabel "T7_Radioaktiver Schutz, Strahlendosimetrie"@de, "radioactive protection"@en ;
+    skos:altLabel "T7_Radioaktiver Schutz, Strahlendosimetrie"@de, "Radioactive protection"@en ;
     skos:notation "T7"@de, "T7"@en ;
     skos:inScheme Systematik: .
 
@@ -283,14 +283,14 @@ Systematik:W2 a skos:Concept ;
     skos:inScheme Systematik: .
 
 Systematik:W3  a skos:Concept ;
-    skos:prefLabel "W3_Kernwaffen, Kernwaffenwirkung"@de, "W3_Nuclear weapons, Nuclear Weapons effect"@en ;
+    skos:prefLabel "W3_Kernwaffen, Kernwaffenwirkung"@de, "W3_Nuclear weapons, Nuclear weapons effect"@en ;
     skos:altLabel "W3_Atomwaffen, Atomawaffenwirkung"@de, "W3_Atomic weapons, Atomic weapons effect"@en ;
     skos:notation "W3"@de, "W3"@en ;
     skos:inScheme Systematik: .
 
 Systematik:W4 a skos:Concept ;
-    skos:prefLabel "W4_Sicherheitspolitik, allgemeine Verteidigungsfragen"@de, "W4_Security policy,General defense questions"@en ;
-    skos:altLabel "W4_Verteidigungspolitik, allgemeine Sicherheitsfragen"@de, "W4_Defense policy,General security questions"@en ;
+    skos:prefLabel "W4_Sicherheitspolitik, allgemeine Verteidigungsfragen"@de, "W4_Security policy, General defense questions"@en ;
+    skos:altLabel "W4_Verteidigungspolitik, allgemeine Sicherheitsfragen"@de, "W4_Defense policy, General security questions"@en ;
     skos:notation "W4"@de, "W4"@en ;
     skos:inScheme Systematik: .
 
