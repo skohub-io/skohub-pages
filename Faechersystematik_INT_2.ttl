@@ -15,6 +15,7 @@ Systematik: a skos:ConceptScheme ;
 Systematik:A a skos:Concept ;
     skos:prefLabel "A_Allgemeines"@de, "A_General"@en ;
     skos:altLabel "A_Universelles"@de, "A_Universal"@en ;
+    skos:definition "A0-A2"@de, "A0-A2"@en ;
     skos:hiddenLabel "Interne Informationen für die Bibliotheksmitarbeiter"@de, "Internal information for library staff"@en ;
     skos:narrower Systematik:A0, Systematik:A1, Systematik:A2 ;
     skos:topConceptOf Systematik: .
