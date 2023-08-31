@@ -15,7 +15,6 @@ Systematik: a skos:ConceptScheme ;
 Systematik:A a skos:Concept ;
     skos:prefLabel "A_Allgemeines"@de, "A_General"@en ;
     skos:altLabel "A_Universelles"@de, "A_Universal"@en ;
-    skos:notation "A0-A2"@de, "A0-A2"@en ;
     skos:hiddenLabel "Interne Informationen für die Bibliotheksmitarbeiter"@de, "Internal information for library staff"@en ;
     skos:narrower Systematik:A0, Systematik:A1, Systematik:A2 ;
     skos:topConceptOf Systematik: .
@@ -23,46 +22,46 @@ Systematik:A a skos:Concept ;
 Systematik:A0 a skos:Concept ;
     skos:prefLabel "A0_Verschiedenes"@de, "A0_Various"@en ;
     skos:altLabel "A0_Diverses"@de, "A0_Miscellaneous"@en ;
-    skos:notation "A0"@de, "A0"@en ;
+    skos:definition "A0"@de, "A0"@en ;
     skos:inScheme Systematik: .
 
 Systematik:A1 a skos:Concept ;
     skos:prefLabel "A1_Lexika_alternative_Nachschlagewerke"@de, "A1_Lexica, Alternative reference books"@en ;
     skos:altLabel "A1_Enzyklopädie, Kompendium"@de, "A1_Encyclopedia, Compendium"@en ;
-    skos:notation "A1"@de, "A1"@en ;
+    skos:definition "A1"@de, "A1"@en ;
     skos:inScheme Systematik: .
 
 Systematik:A2 a skos:Concept ;
     skos:prefLabel "A2_Wörterbücher"@de, "A2_Dictionaries"@en ;
     skos:altLabel "A2_Vokabularium"@de, "A2_Vocabulary"@en ;
-    skos:notation "A2"@de, "A2"@en ;
+    skos:definition "A2"@de, "A2"@en ;
     skos:inScheme Systematik: .
 
 Systematik:BC a skos:Concept ;
     skos:prefLabel "BC_Biowissenschaften, Chemie, Kernchemie, Pharmamedizin"@de, "BC_Bioscience, Chemistry, Nuclear chemistry, Pharmaceutical medicine"@en ;
     skos:altLabel "BC_Biologie, Chemie, Medizin"@de, "BC_biology, chemistry, medicine"@en ;
-    skos:notation "BC"@de, "BC"@en ;
+    skos:definition "BC"@de, "BC"@en ;
     skos:hiddenLabel "Interne Informationen für die Bibliotheksmitarbeiter"@de, "Internal information for library staff"@en ;
     skos:topConceptOf Systematik: .
 
 Systematik:DI a skos:Concept ;
     skos:prefLabel "DI_Datenverarbeitung, Informatik, Informationsverarbeitung, Programmiersprache, Künstliche Intelligenz"@de, "DI_Data proceesing, Informatics, Information processing, Programming language, Artificial intelligence"@en ;
     skos:altLabel "DI_Dateninformatik, KI"@de, "DI_Data science, AI"@en ;
-    skos:notation "DI"@de, "DI"@en ;
+    skos:definition "DI"@de, "DI"@en ;
     skos:hiddenLabel "Interne Informationen für die Bibliotheksmitarbeiter"@de, "Internal information for library staff"@en ;
     skos:topConceptOf Systematik: .
 
 Systematik:GA a skos:Concept ;
     skos:prefLabel "GA_Geowissenschaften, Astrophysik"@de, "GA_Geosciences, Astro physics"@en ;
     skos:altLabel "Geographie, Astronomie"@de, "Geography, Astronomy"@en ;
-    skos:notation "GA"@de, "GA"@en ;
+    skos:definition "GA"@de, "GA"@en ;
     skos:hiddenLabel "Interne Informationen für die Bibliotheksmitarbeiter"@de, "Internal information for library staff"@en ;
     skos:topConceptOf Systematik: .
 
 Systematik:M a skos:Concept ;
     skos:prefLabel "M_Mathematik"@de, "M_Mathematics"@en ;
     skos:altLabel "M_Mathe"@de, "M_Math"@en ;
-    skos:notation "M0-M5"@de, "M0-M5"@en ;
+    skos:definition "M0-M5"@de, "M0-M5"@en ;
     skos:hiddenLabel "Interne Informationen für die Bibliotheksmitarbeiter"@de, "Internal information for library staff"@en ;
     skos:changeNote "Version 1.2 geändert am 10.05.2021" ;
     skos:narrower Systematik:M0, Systematik:M1, Systematik:M2, Systematik:M3, Systematik:M4, Systematik:M5 ;
@@ -71,43 +70,43 @@ Systematik:M a skos:Concept ;
 Systematik:M0 a skos:Concept ;
     skos:prefLabel "M0_Allgemeines, Lehrbücher"@de, "M0_General, Textbooks"@en ;
     skos:altLabel "M0_Universelles, Fachbücher"@de, "M0_Reference books"@en ;
-    skos:notation "M0"@de, "M0"@en ;
+    skos:definition "M0"@de, "M0"@en ;
     skos:inScheme Systematik: .
 
 Systematik:M1 a skos:Concept ;
     skos:prefLabel "M1_Tabellen, Nachschlagewerke"@de, "M1_Tables, Reference books"@en ;
     skos:altLabel "M1_Tabellenbuch, Kompendium"@de, "M1_Tablebooks, Compendium"@en ;
-    skos:notation "M1"@de, "M1"@en ;
+    skos:definition"M1"@de, "M1"@en ;
     skos:inScheme Systematik: .
 
 Systematik:M2 a skos:Concept ;
     skos:prefLabel "M2_Algebra, Gruppentheorie, Geometrie, Arimetrie, Zahlentheorie"@de, "M2_Algebra, Group theory, Geometry, Arimetry, Theory of numbers"@en ;
     skos:altLabel "M2_Allgemeine Algebra, Raumlehre"@de, "M2_General algebra, Spatial science"@en ;
-    skos:notation "M2"@de, "M2"@en ;
+    skos:definition "M2"@de, "M2"@en ;
     skos:inScheme Systematik: .
 
 Systematik:M3 a skos:Concept ;
     skos:prefLabel "M3_Analysis, Funktionsanalysis, Funktionstheorie, Spezielle Funktionen"@de, "M3_Analysis, Functional analysis, Functional theory, Special functions"@en ;
     skos:altLabel "M3_Analyse, Funktionen"@de, "Functions"@en ;
-    skos:notation "M3"@de, "M3"@en ;
+    skos:definition "M3"@de, "M3"@en ;
     skos:inScheme Systematik: .
 
 Systematik:M4 a skos:Concept ;
     skos:prefLabel "M4_Statistik, Wahrscheinlichkeitsrechnung"@de, "M4_Statistics, Probability calculation"@en ;
     skos:altLabel "M4_Quantitative Informationen, Wahrscheinlichkeitslehre"@de, "M4_Quantitative information, Probability theory "@en ;
-    skos:notation "M4"@de, "M4"@en ;
+    skos:definition "M4"@de, "M4"@en ;
     skos:inScheme Systematik: .
 
 Systematik:M5 a skos:Concept ;
     skos:prefLabel "M5 Numerische Mathematik"@de, "M5_Numerical mathematics"@en ;
     skos:altLabel "M5_Numerik"@de, "M5_Numerics"@en ;
-    skos:notation "M5"@de, "M5"@en ;
+    skos:definition "M5"@de, "M5"@en ;
     skos:inScheme Systematik: .
 
 Systematik:OR a skos:Concept ;
     skos:prefLabel "OR_Operations Research"@de, "OR_Operations Research"@en ;
     skos:altLabel "OR_Betriebsforschung"@de, "OR_Business Research"@en ;
-    skos:notation "OR0-OR2"@de, "OR0-OR2"@en ;
+    skos:definition "OR0-OR2"@de, "OR0-OR2"@en ;
     skos:hiddenLabel "Interne Informationen für die Bibliotheksmitarbeiter"@de, "Internal information for library staff"@en ;
     skos:narrower Systematik:OR0, Systematik:OR1, Systematik:OR2;
     skos:topConceptOf Systematik: .
@@ -115,25 +114,25 @@ Systematik:OR a skos:Concept ;
 Systematik:OR0 a skos:Concept ;
     skos:prefLabel "OR0_Grundlagen, Systemwissenschaften, Komplexitätstheorie"@de, "OR0_Basics, System sciences, Theory of complexity"@en ;
     skos:altLabel "OR0_Grundbegriffe, Ordnungswissenschaften, Komplextheorie"@de, "OR0_Basic terms, Regulatory sciences, Complex Theory"@en ;
-    skos:notation "OR0"@de, "OR0"@en ;
+    skos:definition "OR0"@de, "OR0"@en ;
     skos:inScheme Systematik: .
 
 Systematik:OR1 a skos:Concept ;
     skos:prefLabel "OR1_Mathematische Verfahren, Kontrolltheorie, Spieltheorie, Klassiches OR"@de, "OR1_Mathematical methods, Control theory, Game theory, Classic OR"@en ;
     skos:altLabel "OR1_Verfahren der Mathematik, Entscheidungstheorie, Ursprüngliches OR"@de, "OR1_Mathematics procedure, Theory of decision, Original OR"@en ;
-    skos:notation "OR1"@de, "OR1"@en ;
+    skos:definition"OR1"@de, "OR1"@en ;
     skos:inScheme Systematik: .
 
 Systematik:OR2 a skos:Concept ;
     skos:prefLabel "OR2_Anwendungen, Prognosen, Modelle, Zukunftsforschung, Technologiefolgen"@de, "OR2_Applications, Forecasts, Models, Technology implications"@en ;
     skos:altLabel "OR2_Einsatz, Einschätzungen, Methoden, Perspektivforschung, Technikfolgen"@de, "OR2_Use, Assessment, Methods, Perspective research, Technology impact"@en ;
-    skos:notation "OR2"@de, "OR2"@en ;
+    skos:definition "OR2"@de, "OR2"@en ;
     skos:inScheme Systematik: .    
 
 Systematik:P a skos:Concept ;
     skos:prefLabel "P_Physik"@de, "P_physics"@en ;
     skos:altLabel "P_Physikalisch"@de, "P_Physical"@en ;
-    skos:notation "P0-P2"@de, "P0-P8"@en ;
+    skos:definition "P0-P2"@de, "P0-P8"@en ;
     skos:hiddenLabel "Interne Informationen für die Bibliotheksmitarbeiter"@de, "Internal information for library staff"@en ;
     skos:changeNote "Version 1.3 am 18.02.2022" ; 
     skos:narrower Systematik:P0, Systematik:P1, Systematik:P2, Systematik:P3, Systematik:P4, Systematik:P5, Systematik:P6, Systematik:P7, Systematik:P8 ;  
@@ -142,61 +141,61 @@ Systematik:P a skos:Concept ;
 Systematik:P0 a skos:Concept ;
     skos:prefLabel "P0_Allgemeines, Lehrbücher, Handbücher"@de, "P0_General, Textbooks, Manuals"@en ;
     skos:altLabel "P0_Universelles, Fachbücher, Handbuch"@de, "P0_Unviversal, Reference books, User manual"@en ;
-    skos:notation "P0"@de, "P0"@en ;
+    skos:definition "P0"@de, "P0"@en ;
     skos:inScheme Systematik: .
 
 Systematik:P1 a skos:Concept ;
     skos:prefLabel "P1_Tabellen, Nachschlagewerke"@de, "P0_Tables, Reference books"@en ;
     skos:altLabel "P1_Tabellenbuch, Kompendium"@de, "P1_Tablebooks, Compendium"@en ;
-    skos:notation "P1"@de, "P1"@en ;
+    skos:definition "P1"@de, "P1"@en ;
     skos:inScheme Systematik: .
 
 Systematik:P2  a skos:Concept ;
     skos:prefLabel "P2_Mathematische Mehtoden der Physik"@de, "P2_Mathematical methods of physics"@en ;
     skos:altLabel "P2_Mathemethodik der Physik"@de, "P2_Math methods of physics"@en ;
-    skos:notation "P2"@de, "P2"@en ;
+    skos:definition "P2"@de, "P2"@en ;
     skos:inScheme Systematik: .
 
 Systematik:P3 a skos:Concept ;
     skos:prefLabel "P3_Kernphysik, Neutronenphysik"@de, "P3_Nuclear physics, Neutronics physics"@en ;
     skos:altLabel "P3_Atompyhsik, Nukleonphysik"@de, "P3_Atom physics, Nucleon physics"@en ;
-    skos:notation "P3"@de, "P3"@en ;
+    skos:definition "P3"@de, "P3"@en ;
     skos:inScheme Systematik: .
 
 Systematik:P4 a skos:Concept ;
     skos:prefLabel "P4_Atomphysik, Festkörperphysik, Strahlungseffekte, Halbleiterphysik"@de, "P4_Atomic physics, Solid state physics, Radiation effects, Semiconductor physics"@en ;
     skos:altLabel "P4_Nuklearphysik, Feststoffphysik, Radioaktive Effekte, Amorphe Halbleiter"@de, "P4_Nuclear physics, Solid State physics, Radiation physics,Amorphous semiconductor"@en ;
-    skos:notation "P4"@de, "P4"@en ;
+    skos:definition "P4"@de, "P4"@en ;
     skos:inScheme Systematik: .
 
 Systematik:P5 a skos:Concept ;
     skos:prefLabel "P5 Mechanik, Hydrodynamik, Gasdynamik, Ballistik, Synergetik"@de, "P5_Mechanics, Hydrodynamics, Gas dynamics, Ballistics, Synergetic"@en ;
     skos:altLabel "P5_Mechanismus, dynamische Physik, Terminalballistik, Synergismus"@de, "P5_Mechanism, Dynamic physics, Terminal ballistics, Synergism"@en ;
-    skos:notation "P5"@de, "P5"@en ;
+    skos:definition "P5"@de, "P5"@en ;
     skos:inScheme Systematik: .
 
 Systematik:P6 a skos:Concept ;
     skos:prefLabel "P6_Thermodynamik, Statistische Physik, Transporttheorie"@de, "P6_Thermodynamics, Statistical physics, Transportation theory"@en ;
     skos:altLabel "P6_Wärmelehre, Statistik der Physik, Optimaler Transport"@de, "P6_Heat theory,physics statistics,Optimal transport theory"@en ;
-    skos:notation "P6"@de, "P6"@en ;
+    skos:definition "P6"@de, "P6"@en ;
     skos:inScheme Systematik: .
 
 Systematik:P7 a skos:Concept ;
     skos:prefLabel "P7_Optik, Elektrizität, Magnetismus, elektromagnetische Felder"@de, "P7_Optics, Electricity, Magnetism, Electromagnetic fields"@en ;
     skos:altLabel "P7_Lehre vom Licht, Strom, Elektromagnetismus, Magnetische Felder"@de, "P7_Doctrine of light, Power, Electromagnetism, Magnetic fields"@en ;
-    skos:notation "P7"@de, "P7"@en ;
+    skos:definition "P7"@de, "P7"@en ;
     skos:inScheme Systematik: .
 
 Systematik:P8 a skos:Concept ;
     skos:prefLabel "P8_Plasmaphysik, Fusion, Hochtemperaturphysik"@de, "P8_Plasma physics, Fusion, High-Temperature physics"@en ;
     skos:altLabel "P8_Geformte Physik, Kernfusion, Temperaturphysik"@de, "P8_Formed physics, Nuclear fusion, physics of temperature"@en ;
-    skos:notation "P8"@de, "P8"@en ;
+    skos:definition "P8"@de, "P8"@en ;
     skos:inScheme Systematik: .
 
 Systematik:T a skos:Concept ;
     skos:prefLabel "T_Technik"@de, "T_Technics"@en ;
     skos:altLabel "T_Technologie"@de, "PT_Technology"@en ;
-    skos:notation "T0-T8"@de, "PT0-T8"@en ;
+    skos:definition "T0-T8"@de, "PT0-T8"@en ;
     skos:hiddenLabel "Interne Informationen für die Bibliotheksmitarbeiter"@de, "Internal information for library staff"@en ;
     skos:changeNote "Version 1.2 geändert am 29.03.2023" ; 
     skos:narrower Systematik:T0, Systematik:T1, Systematik:T2, Systematik:T3, Systematik:T4, Systematik:T5, Systematik:T6, Systematik:T7, Systematik:T8 ;  
@@ -205,61 +204,61 @@ Systematik:T a skos:Concept ;
 Systematik:T0 a skos:Concept ;
     skos:prefLabel "T0 Allgemeines, Lehrbücher der Technik"@de, "T0_General, Textbooks"@en ;
     skos:altLabel "T0_Universelles, Fachbücher der Technik"@de, "T0_Universal, Reference books"@en ;
-    skos:notation "T0"@de, "T0"@en ;
+    skos:definition "T0"@de, "T0"@en ;
     skos:inScheme Systematik: .
 
 Systematik:T1 a skos:Concept ;
     skos:prefLabel "T1_Tabellen, Nachschlagewerke"@de, "T1_Tables, Reference books"@en ;
     skos:altLabel "T1_Tabellenbuch, Kompendium"@de, "T1_Tablebooks, Compendium"@en ;
-    skos:notation "T1"@de, "T1"@en ;
+    skos:definition "T1"@de, "T1"@en ;
     skos:inScheme Systematik: .
 
 Systematik:T2 a skos:Concept ;
     skos:prefLabel "T2_Messtechnik, Experimentiertechnik, Beschleuniger, Sensorik"@de, "T2_Measurement technology, Experimental technology, Accelerator, Sensoric"@en ;
     skos:altLabel "T2_Messmethoden, Versuchstechnik"@de, "T_Measurement methods, Experimental engineering"@en ;
-    skos:notation "T2"@de, "T2"@en ;
+    skos:definition "T2"@de, "T2"@en ;
     skos:inScheme Systematik: .
 
 Systematik:T3 a skos:Concept ;
     skos:prefLabel "T3_Elektrotechnik, Elektronik, HF-Technik, Halbleitertechnik"@de, "T3_Electrical engineering, Electronic, HF-Technics, Semiconductor technics"@en ;
     skos:altLabel "T3_E-Technik, Elektrik, Halbleiter-Technik"@de, "T3_E-technics, Electrics, Semiconductor-technics"@en ;
-    skos:notation "T3"@de, "T3"@en ;
+    skos:definition "T3"@de, "T3"@en ;
     skos:inScheme Systematik: .
 
 Systematik:T4 a skos:Concept ;
     skos:prefLabel "T4_Technische Optik, Lasertechnik, Optronik, Photonik, IR-Technik"@de, "T4_Technical optics, Laser technology, Optronics, Photonics, IR-technics"@en ;
     skos:altLabel "T4_Technik Optik,Kohärentes Licht"@de, "T4_Technique optics, Coherent light, Lehre von Lichtteilchen"@en ;
-    skos:notation "T4"@de, "T4"@en ;
+    skos:definition "T4"@de, "T4"@en ;
     skos:inScheme Systematik: .
 
 Systematik:T5 a skos:Concept ;
     skos:prefLabel "T5_Verkehrstechnik, Antriebstechnik, Energietechnik, Kältetechnik, Werkstofftechnik, Raumfahrt"@de, "Traffic engineering, Drive engineering, Power engineering, Refrigeration, Material engineering, Aerospace"@en ;
     skos:altLabel "T5_Wechselverkehrszeichenanlage, Motortechnik, Stromtechnik, Kühltechnik, Materialtechnik, Weltraumfahrt"@de, "T5_Variable message sign system, Engine technology, Power engineering, Cooling technology, Material technology, Space flight"@en ;
-    skos:notation "T5"@de, "T5"@en ;
+    skos:definition "T5"@de, "T5"@en ;
     skos:inScheme Systematik: .
 
 Systematik:T6 a skos:Concept ;
     skos:prefLabel "T6_Kernenergie, Reaktorphysik, Neutronenwelle, Strahlungswelle, Kerntechnik"@de, "T6_Nuclear energy, Reactor physics, Neutron wave, Radiation wave, Nuclear Engineering"@en ;
     skos:altLabel "T6_Atomenergie, Kernreaktorphysik, Nukleonwelle, Radioaktivitätswelle, Atomtechnik"@de, "T6_Atomic energy, Nuclear reactor physics, Nucleon wave, Radioactivity wave, Atomic technology"@en ;
-    skos:notation "T6"@de, "T6"@en ;
+    skos:definition "T6"@de, "T6"@en ;
     skos:inScheme Systematik: .
 
 Systematik:T7 a skos:Concept ;
     skos:prefLabel "T7_Strahlenschutz, Dosimetrie"@de, "T7_Radiation protection, Dosimetry"@en ;
     skos:altLabel "T7_Radioaktiver Schutz, Strahlendosimetrie"@de, "Radioactive protection"@en ;
-    skos:notation "T7"@de, "T7"@en ;
+    skos:definition "T7"@de, "T7"@en ;
     skos:inScheme Systematik: .
 
 Systematik:T8 a skos:Concept ;
     skos:prefLabel "T8_Technische Akustik, Wasserschall, Seismik"@de, "T8_Technical acoustics,Water sonic, Seismic"@en ;
     skos:altLabel "T8_Technischer Klang, Wasserklang, Angewandte Geophysik"@de, "T8_Technical sound, Water sound, Applied geophysics"@en ;
-    skos:notation "T8"@de, "T8"@en ;
+    skos:definition "T8"@de, "T8"@en ;
     skos:inScheme Systematik: .
 
 Systematik:W a skos:Concept ;
     skos:prefLabel "W_Wehrwissenschaft"@de, "W_Defence science"@en ;
     skos:altLabel "Militärwissenschaft"@de, "W_Military science"@en ;
-    skos:notation "W0-W4"@de, "W0-W4"@en ;
+    skos:definition "W0-W4"@de, "W0-W4"@en ;
     skos:hiddenLabel "Interne Informationen für die Bibliotheksmitarbeiter"@de, "Internal information for library staff"@en ;
     skos:narrower Systematik:W0, Systematik:W1, Systematik:W2, Systematik:W3, Systematik:W4 ;
     skos:topConceptOf Systematik: .
@@ -267,31 +266,31 @@ Systematik:W a skos:Concept ;
 Systematik:W0 a skos:Concept ;
     skos:prefLabel "W0_Allgemeines"@de, "W0_General"@en ;
     skos:altLabel "W0_Universelles"@de, "W0_Universal"@en ;
-    skos:notation "W0"@de, "W0"@en ;
+    skos:definition "W0"@de, "W0"@en ;
     skos:inScheme Systematik: .
 
 Systematik:W1 a skos:Concept ;
     skos:prefLabel "W1_Tabellen, Nachschlagewerke"@de, "W1_Tables, Reference books"@en ;
     skos:altLabel "W1_Tabellenbuch, Kompendium"@de, "W1_Tablebooks, Compedium"@en ;
-    skos:notation "W1"@de, "W1"@en ;
+    skos:definition "W1"@de, "W1"@en ;
     skos:inScheme Systematik: .
 
 Systematik:W2 a skos:Concept ;
     skos:prefLabel "W2_Wehrtechnik, Militärische Praxis, Militärische Ausbildung"@de, "W2_Defense engineering, Military practice, Military training"@en ;
     skos:altLabel "W2_Militärtechnik, Wehrpraxis, Wehrausblidung"@de, "W2_Military technology, Defense Practice, Defense training"@en ;
-    skos:notation "W2"@de, "W2"@en ;
+    skos:definition "W2"@de, "W2"@en ;
     skos:inScheme Systematik: .
 
 Systematik:W3  a skos:Concept ;
     skos:prefLabel "W3_Kernwaffen, Kernwaffenwirkung"@de, "W3_Nuclear weapons, Nuclear weapons effect"@en ;
     skos:altLabel "W3_Atomwaffen, Atomawaffenwirkung"@de, "W3_Atomic weapons, Atomic weapons effect"@en ;
-    skos:notation "W3"@de, "W3"@en ;
+    skos:definition "W3"@de, "W3"@en ;
     skos:inScheme Systematik: .
 
 Systematik:W4 a skos:Concept ;
     skos:prefLabel "W4_Sicherheitspolitik, allgemeine Verteidigungsfragen"@de, "W4_Security policy, General defense questions"@en ;
     skos:altLabel "W4_Verteidigungspolitik, allgemeine Sicherheitsfragen"@de, "W4_Defense policy, General security questions"@en ;
-    skos:notation "W4"@de, "W4"@en ;
+    skos:definition "W4"@de, "W4"@en ;
     skos:inScheme Systematik: .
 
 
