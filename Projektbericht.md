@@ -16,7 +16,7 @@ Das vorliegende SKOS-Repo digitalisiert die Aufstellungssystematik des Fraunhofe
  werden. Vor der Bearbeitung war praktisch keine Erfahrung mit SkoHub Vocabs vorhanden. Langfristige URIs sind leider aktuell nicht zulässig, da die Systematik 
  grundsätzlich vertraulich ist und nur im Rahmen des Projektes zeitlich befristet öffentlich einsehbar sein darf.  
  Das INT unterliegt dem Geheimschutz und wird teils vom Bund und der Bundeswehr finanziert, für das es im Gegenzug Auftragsforschung betreibt.
- Bundeswehr finanziert, für die sie im Gegenzug Auftragsforschung betreibt. Daher ist das Intranet auch lediglich über einen VPN-Zugang erreichbar. Aus den genannten 
+ Daher ist das Intranet auch lediglich über einen VPN-Zugang erreichbar. Aus den genannten 
  Gründen wurde die Außendarstellung des INT als Beispiel-URL in Form „@prefix Systematik: <https://www.int.fraunhofer.de/> .“ hinterlegt.
 
  Die Einrichtung des SKOS-Repos verlief gut, die Dokumentation inklusive des YouTube-Videos waren völlig ausreichend. Recht häufig tauchten Fehler bei der Validierung auf 
