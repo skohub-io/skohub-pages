@@ -99,7 +99,7 @@ Systematik:M4 a skos:Concept ;
     skos:inScheme Systematik: .
 
 Systematik:M5 a skos:Concept ;
-    skos:prefLabel "Numerical mathematics"@en ;
+    skos:prefLabel "Numerical mathematics"@en, "Numerische Mathematik"@de ;
     skos:altLabel "Numerik"@de, "Numerics"@en ;
     skos:notation "M5" ;
     skos:inScheme Systematik: .
