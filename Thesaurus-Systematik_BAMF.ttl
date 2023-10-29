@@ -1,4 +1,4 @@
-@base <https://example.org/colour/> .
+@base <http://purl.org/and-har/subjects#> . #Persistent Identifier
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix dct: <http://purl.org/dc/terms/> .
@@ -7,8 +7,8 @@
   skos:prefLabel "Auszug aus dem systematischen Teil des Thesaurus"@de, "Excerpt from the systematic section of the thesaurus"@en ;
   dct:title "Auszug aus dem systematischen Teil des Thesaurus"@de, "Excerpt from the systematic section of the thesaurus"@en ;
   dct:description "Die Systematikgruppe 4 aus dem systematischen Teil des Thesaurus der Bibliothek des Bundesamts für Migration und Flüchtlinge"@de, "Classification group 4 from the systematic part of the thesaurus of the Library of the Federal Office for Migration and Refugees"@en ;
-  dct:creator "http://viaf.org/viaf/26968941" ;
-  dct:issued "2022-01", "Version 4" ;
+  dct:creator "http://viaf.org/viaf/26968941" ; #Identifier
+  dct:issued "2022-01", "Version 4" ; #1.Angabe nach ISO 8601
   skos:hasTopConcept <4.0>, <4.50>, <4.60>, <4.70>, <4.80>.
 
 <4.0> a skos:Concept ;
