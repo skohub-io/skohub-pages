@@ -1,17 +1,87 @@
-@prefix colour: <https://example.org/colour/> .
-@prefix dct: <http://purl.org/dc/terms/> .
+@base <https://and-har.github.io/skohub-docker-vocabs/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dct: <http://purl.org/dc/terms/> .
 
-colour: a skos:ConceptScheme ;
-    dct:title "Colour Vocabulary"@en, "Farbvokabular"@de ;
-    dct:creator "Hans Dampf"@de ;
-    dct:created "2021-11-02"^^xsd:date ;
-    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    skos:hasTopConcept colour:violet .
+<scheme> a skos:ConceptScheme ;
+  skos:prefLabel "Auszug aus dem systematischen Teil des Thesaurus"@de, "Excerpt from the systematic section of the thesaurus"@en ;
+  dct:title "Auszug aus dem systematischen Teil des Thesaurus"@de, "Excerpt from the systematic section of the thesaurus"@en ;
+  dct:description "Die Systematikgruppe 4 aus dem systematischen Teil des Thesaurus der Bibliothek des Bundesamts für Migration und Flüchtlinge"@de, "Classification group 4 from the systematic part of the thesaurus of the Library of the Federal Office for Migration and Refugees"@en ;
+  dct:creator "http://viaf.org/viaf/26968941" ;
+  dct:issued "2022-01", "Version 4" ;
+  skos:hasTopConcept <4.0>, <4.50>, <4.60>, <4.70>, <4.80>.
 
-colour:violet a skos:Concept ;
-    skos:prefLabel "Violett"@de, "violet"@en ;
-    skos:altLabel "Lila"@de, "purple"@en ;
-    skos:topConceptOf colour: .
+<4.0> a skos:Concept ;
+  skos:prefLabel "Politik und Sicherheitsfragen"@de, "Political and security issues"@en ;
+  skos:notation "4.0" ;
+  skos:topConceptOf <scheme> .
 
+<4.50> a skos:Concept ;
+  skos:prefLabel "Innere Sicherheit und politische Kontrolle"@de, "Internal security and political control"@en ;
+  skos:notation "4.50" ;
+  skos:narrower <4.51>, <4.52>, <4.53>, <4.54> ;
+  skos:topConceptOf <scheme> .
+
+<4.60> a skos:Concept ;
+  skos:prefLabel "Politische Auseinandersetzungen und Konflikte, Bürgerkriege und Kriege, Terrorismus"@de, "Political disputes and conflicts, civil wars and wars, terrorism"@en ;
+  skos:notation "4.60" ;
+  skos:narrower <4.61>, <4.62>, <4.63>, <4.64> ;
+  skos:topConceptOf <scheme> .
+
+<4.70> a skos:Concept ;
+  skos:prefLabel "Maßnahmen im politischen Konflikt"@de, "Measures in political conflict"@en ;
+  skos:notation "4.70" ;
+  skos:topConceptOf <scheme> .
+
+<4.80> a skos:Concept ;
+  skos:prefLabel "Politische Zusammenarbeit und Konfliktbewältigung"@de, "Political cooperation and conflict management"@en ;
+  skos:notation "4.80" ;
+  skos:topConceptOf <scheme> .
+
+<4.51> a skos:Concept ;
+  skos:prefLabel "Polizei und nichtmilitärische Sicherheitsorgane"@de, "Police and non-military security agencies"@en ;
+  skos:notation "4.51" ;
+  skos:broader <4.50> ;
+  skos:inScheme <scheme> .
+
+<4.52> a skos:Concept ;
+  skos:prefLabel "Streitkräfte und militärische Verbände"@de, "Armed forces and military associations"@en ;
+  skos:notation "4.52" ;
+  skos:broader <4.50> ;
+  skos:inScheme <scheme> .
+
+<4.53> a skos:Concept ;
+  skos:prefLabel "Private bewaffnete Verbände"@de, "Private armed associations"@en ;
+  skos:notation "4.53" ;
+  skos:broader <4.50> ;
+  skos:inScheme <scheme> .
+
+<4.54> a skos:Concept ;
+  skos:prefLabel "Umgang mit Staatsangehörigen, die ihr HKL verlassen haben"@de, "Treatment of nationals who have left their COI"@en ;
+  skos:notation "4.54" ;
+  skos:broader <4.50> ;
+  skos:inScheme <scheme> .
+
+<4.61> a skos:Concept ;
+  skos:prefLabel "Widerstand und Extremismus, Gewalt und Unruhen"@de, "Resistance and extremism, violence and unrest"@en ;
+  skos:notation "4.61" ;
+  skos:broader <4.60> ;
+  skos:inScheme <scheme> .
+
+<4.62> a skos:Concept ;
+  skos:prefLabel "Autonomie-, Sezessions- und Unabhängigkeitsbewegungen, Bürgerkrieg"@de, "Autonomy, secession and independence movements, civil war"@en ;
+  skos:notation "4.62" ;
+  skos:broader <4.50> ;
+  skos:inScheme <scheme> .
+
+<4.63> a skos:Concept ;
+  skos:prefLabel "Bilaterale und regionale Konflikte und Kriege"@de, "Bilateral and regional conflicts and wars"@en ;
+  skos:notation "4.63" ;
+  skos:broader <4.50> ;
+  skos:inScheme <scheme> .
+
+<4.64> a skos:Concept ;
+  skos:prefLabel "Terrorismus und terroristische Aktivitäten"@de, "Terrorism and terrorist activities"@en ;
+  skos:notation "4.64" ;
+  skos:broader <4.50> ;
+  skos:inScheme <scheme> .
