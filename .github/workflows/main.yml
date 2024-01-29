@@ -26,11 +26,12 @@ jobs:
         with:
           files: |
             **/*.ttl
+            **/*.yml
           json: "true"
 
       - name: Set matrix
         id: set-matrix
-        run: echo "ttl=${{ steps.changed-files.outputs.all_changed_files }}" >> $GITHUB_OUTPUT
+        run: echo "ttl=$(echo ${{ steps.changed-files.outputs.all_changed_files }} | grep '\.ttl$')" >> $GITHUB_OUTPUT
 
   validate:
     runs-on: ubuntu-latest
