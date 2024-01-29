@@ -16,22 +16,34 @@ jobs:
     runs-on: ubuntu-latest
     outputs:
       ttl: ${{ steps.set-matrix.outputs.ttl }}
+      yml: ${{ steps.set-matrix.outputs.yml }}
     steps:
       - uses: actions/checkout@v3
         with:
           fetch-depth: 2
-      - name: Get changed files
-        id: changed-files
+      - name: Get changed ttl-files
+        id: changed-ttl-files
         uses: tj-actions/changed-files@v42
         with:
           files: |
             **/*.ttl
+          json: "true"
+
+      - name: Get changed yml-files
+        id: changed-yml-files
+        uses: tj-actions/changed-files@v42
+        with:
+          files: |
             **/*.yml
           json: "true"
 
-      - name: Set matrix
-        id: set-matrix
-        run: echo "ttl=$(echo ${{ steps.changed-files.outputs.all_changed_files }} | grep '\.ttl$')" >> $GITHUB_OUTPUT
+      - name: Set turtle file matrix
+        id: set-ttl-matrix
+        run: echo "ttl=${{ steps.changed-ttl-files.outputs.all_changed_files }}" >> $GITHUB_OUTPUT
+
+      - name: Set yml file matrix
+        id: set-yml-matrix
+        run: echo "yml=${{ steps.changed-yml-files.outputs.all_changed_files }}" >> $GITHUB_OUTPUT
 
   validate:
     runs-on: ubuntu-latest
