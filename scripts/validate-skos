@@ -97,7 +97,7 @@ echo "Starting validation container"
 
 while [ $attempt -le $max_attempts ]; do
   # start fuseki
-  docker run -d --rm --name validate-skos-fuseki -p 0:3030 -v /fuseki/config_inference.ttl:/fuseki/config_inference.ttl skohub/jena-fuseki:latest /jena-fuseki/fuseki-server --config /fuseki/config_inference.ttl > /dev/null
+  docker run -d --rm --name validate-skos-fuseki -p 0:3030 -v $(pwd)/fuseki/config_inference.ttl:/fuseki/config_inference.ttl skohub/jena-fuseki:latest /jena-fuseki/fuseki-server --config /fuseki/config_inference.ttl > /dev/null
   port=$(docker port validate-skos-fuseki 3030/tcp | head -1 | awk -F: '{print $2}')
   sleep $delay
   curl "http://localhost:$port/$/ping" > /dev/null && break 
