@@ -2,11 +2,6 @@ name: Build /public and deploy to gh-pages with docker container
 
 on:
   push:
-    branches:
-      - master
-      - main
-      - dev
-      - gh-pages
   workflow_dispatch:
     inputs:
       logLevel:
