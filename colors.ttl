@@ -8,10 +8,10 @@ colour: a skos:ConceptScheme ;
     dct:creator "Hans Dampf"@de ;
     dct:created "2021-11-02"^^xsd:date ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    skos:hasTopConcept colour:violet, colour:blue .
+    skos:hasTopConcept colour:violet .
 
 colour:violet a skos:Concept ;
-    skos:prefLabel "Violett"@de, "violet"
+    skos:prefLabel "Violett"@de, "violet"@en;
     skos:altLabel "Lila"@de, "purple"@en ;
     skos:topConceptOf colour: .
 
