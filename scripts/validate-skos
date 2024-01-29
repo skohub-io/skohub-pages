@@ -26,8 +26,6 @@ die() {
 
 cleanup() {
     echo "Cleaning up"
-    rm -f -- $testfile
-    rm -f -- $result
     docker container stop validate-skos-fuseki > /dev/null
 }
 
