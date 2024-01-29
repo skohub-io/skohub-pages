@@ -124,14 +124,12 @@ curl --request POST \
   --data-binary @$shape > "$result" 
 
 echo "Checking validation result"
-cat $result
-cat ./checkForViolation.rq
 
 if [[ "$report" -eq 1 ]]; then
   cat "$result"
 else
   # changed to v flag for mounting
-  validationResult="$(docker run --rm -v ./checkForViolation.rq:/rdf/checkForViolation.rq -v $result:/rdf/result.ttl skohub/jena:4.6.1 arq --data /rdf/result.ttl --query /rdf/checkForViolation.rq)"
+  validationResult="$(docker run --rm -v ./checkForBoth.rq:/rdf/checkForViolation.rq -v $result:/rdf/result.ttl skohub/jena:4.6.1 arq --data /rdf/result.ttl --query /rdf/checkForViolation.rq)"
 
   lines=$(echo "$validationResult" | wc -l )
 
