@@ -12,11 +12,33 @@ on:
         description: 'Test scenario tags'
 
 jobs:
+  all-ttl-files:
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.set-matrix.outputs.file-list }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Find TTL files
+        id: find-ttl
+        run: |
+          ttl_files=$(find . -name '*.ttl' -printf '"%p",' | sed 's/,$//')
+          echo "ttl_files=$ttl_files" 
+          echo "::set-env name=ttl_files::$ttl_files"
+
+      - name: Set matrix for TTL files
+        id: set-matrix
+        run: echo "::set-output name=file-list::[${ttl_files}]"
+
+      - name: List all changed files
+        run: echo "${ttl_files}"
+
   changedfiles:
     runs-on: ubuntu-latest
     outputs:
-      ttl: ${{ steps.set-matrix.outputs.ttl }}
-      yml: ${{ steps.set-matrix.outputs.yml }}
+      ttl: ${{ steps.set-ttl-matrix.outputs.ttl }}
+      yml: ${{ steps.set-yml-matrix.outputs.yml }}
     steps:
       - uses: actions/checkout@v3
         with:
@@ -27,7 +49,7 @@ jobs:
         with:
           files: |
             **/*.ttl
-          json: "true"
+          json: true
 
       - name: Get changed yml-files
         id: changed-yml-files
@@ -35,7 +57,7 @@ jobs:
         with:
           files: |
             **/*.yml
-          json: "true"
+          json: true
 
       - name: Set turtle file matrix
         id: set-ttl-matrix
@@ -45,15 +67,24 @@ jobs:
         id: set-yml-matrix
         run: echo "yml=${{ steps.changed-yml-files.outputs.all_changed_files }}" >> $GITHUB_OUTPUT
 
+      - name: List all changed files
+        run: echo '${{ steps.changed-ttl-files.outputs.all_changed_files }}'
+
+      - name: List all changed files
+        run: echo '${{ steps.changed-yml-files.outputs.all_changed_files }}'
+
   validate:
     runs-on: ubuntu-latest
-    needs: changedfiles
+    needs: [changedfiles, all-ttl-files]
     # only run there are changed files
-    if: ${{needs.changedfiles.outputs.ttl != '[]'}}
+    if: ${{needs.changedfiles.outputs.ttl != '[]' || needs.changedfiles.outputs.yml != '[]'}}
     strategy:
+      max-parallel: 1
       fail-fast: false # other validation jobs should continue checking even if one file is invalid
       matrix:
-        file: ${{ fromJson(needs.changedfiles.outputs.ttl) }}
+        # file: ${{ fromJSON(needs.changedfiles.outputs.ttl) || fromJson(needs.all-ttl-files.outputs.matrix) }}
+        file: ${{ fromJson(needs.all-ttl-files.outputs.matrix) }}
+      
     steps:
       - uses: actions/checkout@v3
       - name: echo changed files
@@ -62,55 +93,70 @@ jobs:
       - name: get shape
         run: curl https://raw.githubusercontent.com/skohub-io/shapes/main/skohub.shacl.ttl --output skohub.shacl.ttl
 
-      - name: make scripts directory
-        run: mkdir scripts
+      # - name: make scripts directory
+      #   run: mkdir scripts
 
-      - name: get script
-        run: curl https://raw.githubusercontent.com/skohub-io/shapes/main/scripts/validate-skos --output scripts/validate-skos
+      - name: make fuseki directory
+        run: mkdir fuseki
 
+      - name: get fuseki inference config
+        run: curl https://raw.githubusercontent.com/skohub-io/shapes/main/fuseki/config_inference.ttl --output fuseki/config_inference.ttl
+
+      # TODO turn on after fixing
+      # - name: get script
+      #   run: curl https://raw.githubusercontent.com/skohub-io/shapes/main/scripts/validate-skos --output scripts/validate-skos
       - name: get violation query
-        run: curl https://raw.githubusercontent.com/skohub-io/shapes/main/scripts/checkForViolation.rq --output scripts/checkForViolation.rq
-
+        run: curl https://raw.githubusercontent.com/skohub-io/shapes/main/scripts/checkForViolation.rq --output checkForViolation.rq
+      - name: get violation query
+        run: curl https://raw.githubusercontent.com/skohub-io/shapes/main/scripts/checkForWarning.rq --output scripts/checkForWarning.rq
+      - name: get violation query
+        run: curl https://raw.githubusercontent.com/skohub-io/shapes/main/scripts/checkForBoth.rq --output scripts/checkForBoth.rq
+      - run: |
+          ls -la
+          ls -la scripts
+          ls -la fuseki
+      - run: docker image ls
       - name: Validate with script
-        run: bash ${GITHUB_WORKSPACE}/scripts/validate-skos -s skohub.shacl.ttl ${{ matrix.file }}
+        # run: bash ${GITHUB_WORKSPACE}/scripts/validate-skos -s skohub.shacl.ttl ${{ matrix.file }}
+        run: bash ./scripts/validate-skos -s skohub.shacl.ttl ${{ matrix.file }}
 
-  build:
-    runs-on: ubuntu-latest
-    needs: [changedfiles, validate]
-    steps:
-      - name: Checkout 🛎️
-        uses: actions/checkout@v2 # If you're using actions/checkout@v2 you must set persist-credentials to false in most cases for the deployment to work correctly.
-        with:
-          persist-credentials: false
+  # build:
+  #   runs-on: ubuntu-latest
+  #   needs: [changedfiles, validate]
+  #   steps:
+  #     - name: Checkout 🛎️
+  #       uses: actions/checkout@v2 # If you're using actions/checkout@v2 you must set persist-credentials to false in most cases for the deployment to work correctly.
+  #       with:
+  #         persist-credentials: false
 
-      - name: remove public and data-dir if already exists
-        run: rm -rf public data
+  #     - name: remove public and data-dir if already exists
+  #       run: rm -rf public data
 
-      - run: mkdir public
+  #     - run: mkdir public
 
-      - run: chmod -R 777 public # user in container is node which won't have write access to public
+  #     - run: chmod -R 777 public # user in container is node which won't have write access to public
 
-      - run: mkdir data
+  #     - run: mkdir data
 
-      - run: chmod -R 777 data # user in container is node which won't have write access to public
+  #     - run: chmod -R 777 data # user in container is node which won't have write access to public
 
-      - run: git clone https://github.com/skohub-io/skohub-docker-vocabs.git data/ # <-- add link to your repo here
+  #     - run: git clone https://github.com/skohub-io/skohub-docker-vocabs.git data/ # <-- add link to your repo here
 
-      - name: make .env file
+  #     - name: make .env file
 
-        run: echo "BASEURL=/skohub-docker-vocabs" > .env
+  #       run: echo "BASEURL=/skohub-docker-vocabs" > .env
 
-      - name: build public dir with docker image
-        run: >
-          docker run
-          -v $(pwd)/public:/app/public
-          -v $(pwd)/data:/app/data
-          -v $(pwd)/.env:/app/.env
-          -e GATSBY_RESPOSITORY_URL=https://github.com/skohub-io/skohub-docker-vocabs.git
-          skohub/skohub-vocabs-docker:latest
+  #     - name: build public dir with docker image
+  #       run: >
+  #         docker run
+  #         -v $(pwd)/public:/app/public
+  #         -v $(pwd)/data:/app/data
+  #         -v $(pwd)/.env:/app/.env
+  #         -e GATSBY_RESPOSITORY_URL=https://github.com/skohub-io/skohub-docker-vocabs.git
+  #         skohub/skohub-vocabs-docker:latest
 
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
+  #     - name: Deploy
+  #       uses: peaceiris/actions-gh-pages@v3
+  #       with:
+  #         github_token: ${{ secrets.GITHUB_TOKEN }}
+  #         publish_dir: ./public

@@ -1,0 +1,138 @@
+#!/bin/bash
+set -euo pipefail
+
+scripts=$(realpath $(dirname -- "$0"))
+shape=$(realpath "$scripts/../skos.shacl.ttl")
+severity=all
+report=
+
+usage() {
+    echo "$0 [OPTION]... FILE"
+    echo "Validate SKOS file (Turtle syntax). No return message means everything is fine."
+    echo
+    echo "Options:"
+    echo "  -s FILE  shape file (default: $shape)"
+    echo "  -l LEVEL severity violation|warning|all (default: $severity)"
+    echo "  -o FILE  keep full validation report in this file"
+    echo "  -r       show raw validation report and exit"
+    echo "  -h       show this help message"
+    exit $1
+}
+
+die() {
+    echo "$*" >&2
+    exit 1
+}
+
+cleanup() {
+    echo "Cleaning up"
+    #rm -f -- $testfile
+    #rm -f -- $result
+    docker container stop validate-skos-fuseki > /dev/null
+}
+
+trap cleanup 0 2 3 15 
+
+while getopts s:l:o:rh flag
+do
+    case "${flag}" in
+        s) shape=${OPTARG};;
+        l) severity=${OPTARG};;
+        o) result=${OPTARG};;
+        r) report=1;;
+        h) usage 0;;
+        *) usage 1;;
+    esac
+done
+shift $(($OPTIND - 1))
+
+[ -z "${1:-}" ] && usage 1
+
+file=$(realpath "$1")
+[ -f "$file" ] || die "File not found: $file"
+# create temporary testfile and make sure it gets deleted
+testfile=$(mktemp /tmp/validate-script.XXXXXX)
+
+
+shape=$(realpath "$shape")
+[ -f "$shape" ] || die "File not found: $shape"
+# add the skos definitions to the file if the shape is "skos.shacl.ttl"
+if [ "$(basename $shape)" = "skos.shacl.ttl" ]; then
+  cat $file $(realpath skosClassAndPropertyDefinitions.ttl) > $testfile
+else
+  cat $file > $testfile
+fi
+
+grep -vE '^\s*(#.*)?$' "$file" >/dev/null || die "File contains no RDF statements: $testfile"
+
+if [[ $severity == "warning" ]]; then
+    SEVERITY_FILE="./scripts/checkForWarning.rq"
+elif [[ $severity == "all" ]]; then
+    SEVERITY_FILE="./scripts/checkForBoth.rq"
+elif [[ $severity == "violation" ]]; then
+    SEVERITY_FILE="./scripts/checkForViolation.rq"
+else
+    die "Unknown severity: $severity"
+fi
+
+# create temporary file (will be deleted in cleanup function)
+if [[ -z "${result:-}" ]]; then
+    result=$(mktemp /tmp/validate-script.XXXXXX)
+else
+    result=$(realpath "$result")
+fi
+
+# Check if the container is running
+if docker ps | grep -q "validate-skos-fuseki"; then
+  docker stop validate-skos-fuseki
+  sleep 1
+fi
+
+# wait till fuseki is up
+max_attempts=5
+delay=3
+attempt=1
+
+echo "Starting validation container"
+
+while [ $attempt -le $max_attempts ]; do
+  # start fuseki
+  docker run -d --rm --name validate-skos-fuseki -p 0:3030 -v /fuseki/config_inference.ttl:/fuseki/config_inference.ttl skohub/jena-fuseki:latest /jena-fuseki/fuseki-server --config /fuseki/config_inference.ttl > /dev/null
+  port=$(docker port validate-skos-fuseki 3030/tcp | head -1 | awk -F: '{print $2}')
+  sleep $delay
+  curl "http://localhost:$port/$/ping" > /dev/null && break 
+  attempt=$((attempt + 1))
+done
+
+if [ $attempt -gt $max_attempts ]; then
+  echo "The command has failed after $max_attempts attempts."
+  exit 1
+fi
+
+# upload file
+curl --request POST \
+  --url "http://localhost:$port/dataset/data?graph=default" \
+  --header 'Content-Type: text/turtle' \
+  --data-binary @$testfile > /dev/null
+
+# validate w/ shacl
+curl --request POST \
+  --url "http://localhost:$port/dataset/shacl?graph=default" \
+  --header 'Content-Type: text/turtle' \
+  --data-binary @$shape > "$result" 
+
+echo "Checking validation result"
+ls -la /
+
+if [[ "$report" -eq 1 ]]; then
+  cat "$result"
+else
+  # changed to v flag for mounting
+  validationResult="$(docker run --rm -v ./checkForViolation.rq:/rdf/checkForViolation.rq -v $result:/rdf/result.ttl skohub/jena:4.6.1 arq --data /rdf/result.ttl --query /rdf/checkForViolation.rq)"
+
+  lines=$(echo "$validationResult" | wc -l )
+
+  # Correct validation has 4 lines of output
+  [[ ${lines} -eq 4 ]] || die "$validationResult"
+
+fi
