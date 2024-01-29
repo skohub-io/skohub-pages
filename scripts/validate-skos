@@ -109,6 +109,9 @@ if [ $attempt -gt $max_attempts ]; then
   exit 1
 fi
 
+# TODO remove later
+cat $testfile
+
 # upload file
 curl --request POST \
   --url "http://localhost:$port/dataset/data?graph=default" \

@@ -116,7 +116,6 @@ jobs:
           ls -la
           ls -la scripts
           ls -la fuseki
-      - run: docker image ls
       - name: Validate with script
         # run: bash ${GITHUB_WORKSPACE}/scripts/validate-skos -s skohub.shacl.ttl ${{ matrix.file }}
         run: bash ./scripts/validate-skos -s skohub.shacl.ttl ${{ matrix.file }}
