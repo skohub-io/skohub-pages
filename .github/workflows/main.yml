@@ -52,19 +52,11 @@ jobs:
         run: echo "${{ matrix.file }}"
 
       - name: get shape
-        run: curl https://raw.githubusercontent.com/skohub-io/shapes/main/skohub.shacl.ttl --output skohub.shacl.ttl
-
-      - name: make scripts directory
-        run: mkdir scripts
-
-      - name: get script
-        run: curl https://raw.githubusercontent.com/skohub-io/shapes/main/scripts/validate-skos --output scripts/validate-skos
-
-      - name: get violation query
-        run: curl https://raw.githubusercontent.com/skohub-io/shapes/main/scripts/checkForViolation.rq --output scripts/checkForViolation.rq
+        run: curl https://raw.githubusercontent.com/skohub-io/shapes/main/skos.shacl.ttl --output skos.shacl.ttl
 
       - name: Validate with script
-        run: bash ${GITHUB_WORKSPACE}/scripts/validate-skos -s skohub.shacl.ttl ${{ matrix.file }}
+        run: bash ${GITHUB_WORKSPACE}/scripts/validate-skos.sh -f ${{ matrix.file }}
+
 
   build:
     runs-on: ubuntu-latest
