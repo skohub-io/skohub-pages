@@ -25,7 +25,7 @@ jobs:
         run: |
           ttl_files=$(find . -name '*.ttl' -printf '"%p",' | sed 's/,$//')
           echo "ttl_files=$ttl_files" 
-          echo "::set-env name=ttl_files::$ttl_files"
+          echo "ttl_files=$ttl_files" >> "$GITHUB_ENV"
 
       - name: Set matrix for TTL files
         id: set-matrix
