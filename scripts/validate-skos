@@ -122,7 +122,8 @@ curl --request POST \
   --data-binary @$shape > "$result" 
 
 echo "Checking validation result"
-ls -la /
+cat $result
+cat ./checkForViolation.rq
 
 if [[ "$report" -eq 1 ]]; then
   cat "$result"
