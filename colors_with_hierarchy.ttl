@@ -11,7 +11,7 @@ colour: a skos:ConceptScheme ;
     skos:hasTopConcept colour:violet, colour:green .
 
 colour:violet a skos:Concept ;
-    skos:prefLabel "Violett"@de, "violet"@en ;
+    skos:prefLabel "Violett"@de, "violet"@en, "test"@uk ;
     skos:altLabel "Lila"@de, "purple"@en ;
     skos:topConceptOf colour: .
 
