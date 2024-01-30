@@ -67,25 +67,34 @@ jobs:
         id: set-yml-matrix
         run: echo "yml=${{ steps.changed-yml-files.outputs.all_changed_files }}" >> $GITHUB_OUTPUT
 
-      - name: List all changed files
-        run: echo '${{ steps.changed-ttl-files.outputs.all_changed_files }}'
+  prepare-matrix:
+    runs-on: ubuntu-latest
+    needs: [changedfiles, all-ttl-files]
+    outputs:
+      matrix: ${{ steps.set-matrix.outputs.matrix }}
+    steps:
+      - name: Determine matrix
+        id: set-matrix
+        run: |
+          changed_files=${{ fromJson(needs.changedfiles.outputs.ttl) }}
+          all_files=${{ fromJson(needs.all-ttl-files.outputs.matrix) }}
 
-      - name: List all changed files
-        run: echo '${{ steps.changed-yml-files.outputs.all_changed_files }}'
+          if [ ${#changed_files[@]} -ne 0 ]; then
+            echo "::set-output name=matrix::${{ toJSON(needs.changedfiles.outputs.ttl) }}"
+          else
+            echo "::set-output name=matrix::${{ toJSON(needs.all-ttl-files.outputs.matrix) }}"
+          fi
 
   validate:
     runs-on: ubuntu-latest
-    needs: [changedfiles, all-ttl-files]
+    needs: [prepare-matrix]
     # only run there are changed files
-    # TODO enable after testing
-    # if: ${{needs.changedfiles.outputs.ttl != '[]' || needs.changedfiles.outputs.yml != '[]'}}
+    if: ${{needs.changedfiles.outputs.ttl != '[]' || needs.changedfiles.outputs.yml != '[]'}}
     strategy:
       max-parallel: 1
       fail-fast: false # other validation jobs should continue checking even if one file is invalid
       matrix:
-        # file: ${{ fromJSON(needs.changedfiles.outputs.ttl) || fromJson(needs.all-ttl-files.outputs.matrix) }}
-        file: ${{ fromJson(needs.all-ttl-files.outputs.matrix) }}
-      
+        file: ${{ fromJson(needs.prepare-matrix.outputs.matrix) }}
     steps:
       - uses: actions/checkout@v3
       - name: echo changed files
@@ -102,10 +111,7 @@ jobs:
 
       - name: get query to check for violations
         run: curl https://raw.githubusercontent.com/skohub-io/shapes/main/scripts/checkForViolation.rq --output scripts/checkForViolation.rq
-      - run: |
-          ls -la
-          ls -la scripts
-          ls -la fuseki
+
       - name: Validate with script
         run: bash ./scripts/validate-skos -l violation -s skohub.shacl.ttl ${{ matrix.file }}
 
