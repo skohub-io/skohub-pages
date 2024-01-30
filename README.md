@@ -97,3 +97,4 @@ jobs:
 
 - In an earlier version, there was the .env variable `PATH_PREFIX` set to point to the repository the vocabulary is hosted at. To align with rest of code, this was changed to `BASEURL`.
 - The docker image now also support i18n
+
