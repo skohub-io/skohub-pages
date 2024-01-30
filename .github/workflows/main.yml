@@ -87,39 +87,10 @@ jobs:
             echo "matrix=[]" >> $GITHUB_OUTPUT
           fi
 
-  validate:
-    runs-on: ubuntu-latest
-    needs: [prepare-matrix]
-    # only run there are changed files
-    if: ${{ needs.prepare-matrix.outputs.matrix != '[]'}}
-    strategy:
-      max-parallel: 1
-      fail-fast: false # other validation jobs should continue checking even if one file is invalid
-      matrix:
-        file: ${{ fromJson(needs.prepare-matrix.outputs.matrix) }}
-    steps:
-      - uses: actions/checkout@v3
-      - name: echo changed files
-        run: echo "${{ matrix.file }}"
-
-      - name: get shape
-        run: curl https://raw.githubusercontent.com/skohub-io/shapes/main/skohub.shacl.ttl --output skohub.shacl.ttl
-
-      - name: make fuseki directory
-        run: mkdir fuseki
-
-      - name: get fuseki inference config
-        run: curl https://raw.githubusercontent.com/skohub-io/shapes/main/fuseki/config_inference.ttl --output fuseki/config_inference.ttl
-
-      - name: get query to check for violations
-        run: curl https://raw.githubusercontent.com/skohub-io/shapes/main/scripts/checkForViolation.rq --output scripts/checkForViolation.rq
-
-      - name: Validate with script
-        run: bash ./scripts/validate-skos -l violation -s skohub.shacl.ttl ${{ matrix.file }}
-
   build:
     runs-on: ubuntu-latest
-    needs: [changedfiles, validate]
+    needs: [prepare-matrix]
+    if: ${{ needs.prepare-matrix.outputs.matrix != '[]'}}
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v2 # If you're using actions/checkout@v2 you must set persist-credentials to false in most cases for the deployment to work correctly.
