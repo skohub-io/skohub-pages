@@ -29,7 +29,7 @@ jobs:
 
       - name: Set matrix for TTL files
         id: set-matrix
-        run: echo "::set-output name=file-list::[${ttl_files}]"
+        run: echo "file-list=[${ttl_files}]" >> $GITHUB_OUTPUT
 
       - name: List all changed files
         run: echo "${ttl_files}"
@@ -79,16 +79,12 @@ jobs:
           changed_files_ttl=${{ toJSON(needs.changedfiles.outputs.ttl) }}
           changed_files_yml=${{ toJSON(needs.changedfiles.outputs.yml) }}
 
-          echo "$changed_files_ttl" | jq length
-          echo "$changed_files_yml" | jq length
           if [ $(echo "$changed_files_ttl" | jq length) -gt 0 ]; then
-            echo ttl changed
-            echo "::set-output name=matrix::${{ toJSON(needs.changedfiles.outputs.ttl) }}"
+            echo "matrix=${{ toJSON(needs.changedfiles.outputs.ttl) }}" >> $GITHUB_OUTPUT
           elif [ $(echo "$changed_files_yml" | jq length) -gt 0 ]; then
-            echo yml changed
-            echo "::set-output name=matrix::${{ toJSON(needs.all-ttl-files.outputs.matrix) }}"
+            echo "matrix=${{ toJSON(needs.all-ttl-files.outputs.matrix) }}" >> $GITHUB_OUTPUT
           else
-            echo "::set-output name=matrix::[]"
+            echo "matrix=[]" >> $GITHUB_OUTPUT
           fi
 
   validate:
@@ -106,58 +102,58 @@ jobs:
       - name: echo changed files
         run: echo "${{ matrix.file }}"
 
-      # - name: get shape
-      #   run: curl https://raw.githubusercontent.com/skohub-io/shapes/main/skohub.shacl.ttl --output skohub.shacl.ttl
+      - name: get shape
+        run: curl https://raw.githubusercontent.com/skohub-io/shapes/main/skohub.shacl.ttl --output skohub.shacl.ttl
 
-      # - name: make fuseki directory
-      #   run: mkdir fuseki
+      - name: make fuseki directory
+        run: mkdir fuseki
 
-      # - name: get fuseki inference config
-      #   run: curl https://raw.githubusercontent.com/skohub-io/shapes/main/fuseki/config_inference.ttl --output fuseki/config_inference.ttl
+      - name: get fuseki inference config
+        run: curl https://raw.githubusercontent.com/skohub-io/shapes/main/fuseki/config_inference.ttl --output fuseki/config_inference.ttl
 
-      # - name: get query to check for violations
-      #   run: curl https://raw.githubusercontent.com/skohub-io/shapes/main/scripts/checkForViolation.rq --output scripts/checkForViolation.rq
+      - name: get query to check for violations
+        run: curl https://raw.githubusercontent.com/skohub-io/shapes/main/scripts/checkForViolation.rq --output scripts/checkForViolation.rq
 
-      # - name: Validate with script
-      #   run: bash ./scripts/validate-skos -l violation -s skohub.shacl.ttl ${{ matrix.file }}
+      - name: Validate with script
+        run: bash ./scripts/validate-skos -l violation -s skohub.shacl.ttl ${{ matrix.file }}
 
-  # build:
-  #   runs-on: ubuntu-latest
-  #   needs: [changedfiles, validate]
-  #   steps:
-  #     - name: Checkout 🛎️
-  #       uses: actions/checkout@v2 # If you're using actions/checkout@v2 you must set persist-credentials to false in most cases for the deployment to work correctly.
-  #       with:
-  #         persist-credentials: false
+  build:
+    runs-on: ubuntu-latest
+    needs: [changedfiles, validate]
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v2 # If you're using actions/checkout@v2 you must set persist-credentials to false in most cases for the deployment to work correctly.
+        with:
+          persist-credentials: false
 
-  #     - name: remove public and data-dir if already exists
-  #       run: rm -rf public data
+      - name: remove public and data-dir if already exists
+        run: rm -rf public data
 
-  #     - run: mkdir public
+      - run: mkdir public
 
-  #     - run: chmod -R 777 public # user in container is node which won't have write access to public
+      - run: chmod -R 777 public # user in container is node which won't have write access to public
 
-  #     - run: mkdir data
+      - run: mkdir data
 
-  #     - run: chmod -R 777 data # user in container is node which won't have write access to public
+      - run: chmod -R 777 data # user in container is node which won't have write access to public
 
-  #     - run: git clone https://github.com/skohub-io/skohub-docker-vocabs.git data/ # <-- add link to your repo here
+      - run: git clone https://github.com/skohub-io/skohub-docker-vocabs.git data/ # <-- add link to your repo here
 
-  #     - name: make .env file
+      - name: make .env file
 
-  #       run: echo "BASEURL=/skohub-docker-vocabs" > .env
+        run: echo "BASEURL=/skohub-docker-vocabs" > .env
 
-  #     - name: build public dir with docker image
-  #       run: >
-  #         docker run
-  #         -v $(pwd)/public:/app/public
-  #         -v $(pwd)/data:/app/data
-  #         -v $(pwd)/.env:/app/.env
-  #         -e GATSBY_RESPOSITORY_URL=https://github.com/skohub-io/skohub-docker-vocabs.git
-  #         skohub/skohub-vocabs-docker:latest
+      - name: build public dir with docker image
+        run: >
+          docker run
+          -v $(pwd)/public:/app/public
+          -v $(pwd)/data:/app/data
+          -v $(pwd)/.env:/app/.env
+          -e GATSBY_RESPOSITORY_URL=https://github.com/skohub-io/skohub-docker-vocabs.git
+          skohub/skohub-vocabs-docker:latest
 
-  #     - name: Deploy
-  #       uses: peaceiris/actions-gh-pages@v3
-  #       with:
-  #         github_token: ${{ secrets.GITHUB_TOKEN }}
-  #         publish_dir: ./public
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
