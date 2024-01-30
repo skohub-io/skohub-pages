@@ -76,20 +76,23 @@ jobs:
       - name: Determine matrix
         id: set-matrix
         run: |
-          changed_files=${{ fromJson(needs.changedfiles.outputs.ttl) }}
+          changed_files_ttl=${{ fromJson(needs.changedfiles.outputs.ttl) }}
+          changed_files_yml=${{ fromJson(needs.changedfiles.outputs.yml) }}
           all_files=${{ fromJson(needs.all-ttl-files.outputs.matrix) }}
 
-          if [ ${#changed_files[@]} -ne 0 ]; then
+          if [ ${#changed_files_ttl[@]} -ne 0 ]; then
             echo "::set-output name=matrix::${{ toJSON(needs.changedfiles.outputs.ttl) }}"
-          else
+          elif [ ${#changed_files_yml[@]} -ne 0 ]; then 
             echo "::set-output name=matrix::${{ toJSON(needs.all-ttl-files.outputs.matrix) }}"
+          else
+            echo "::set-output name=matrix::[]"
           fi
 
   validate:
     runs-on: ubuntu-latest
     needs: [prepare-matrix]
     # only run there are changed files
-    if: ${{needs.changedfiles.outputs.ttl != '[]' || needs.changedfiles.outputs.yml != '[]'}}
+    if: ${{ needs.prepare-matrix.outputs.matrix != '[]'}}
     strategy:
       max-parallel: 1
       fail-fast: false # other validation jobs should continue checking even if one file is invalid
