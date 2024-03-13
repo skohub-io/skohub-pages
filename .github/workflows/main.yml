@@ -108,7 +108,7 @@ jobs:
 
       - run: chmod -R 777 data # user in container is node which won't have write access to public
 
-      - run: git clone https://github.com/skohub-io/skohub-docker-vocabs.git data/ # <-- add link to your repo here
+      - run: git clone https://github.com/$GITHUB_REPOSITORY.git data/ # <-- add link to your repo here
 
       - name: make .env file
 
@@ -120,7 +120,7 @@ jobs:
           -v $(pwd)/public:/app/public
           -v $(pwd)/data:/app/data
           -v $(pwd)/.env:/app/.env
-          -e GATSBY_RESPOSITORY_URL=https://github.com/skohub-io/skohub-docker-vocabs.git
+          -e GATSBY_RESPOSITORY_URL=https://github.com/$GITHUB_REPOSITORY.git
           skohub/skohub-vocabs-docker:latest
 
       - name: Deploy
