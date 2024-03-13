@@ -122,7 +122,7 @@ jobs:
           -v $(pwd)/public:/app/public
           -v $(pwd)/data:/app/data
           -v $(pwd)/.env:/app/.env
-          -e GATSBY_RESPOSITORY_URL=https://github.com/$GITHUB_REPOSITORY.git
+          -e GATSBY_RESPOSITORY_URL=https://github.com/$GITHUB_REPOSITORY
           skohub/skohub-vocabs-docker:latest
 
       - name: Deploy
