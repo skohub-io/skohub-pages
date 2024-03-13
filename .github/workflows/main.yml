@@ -111,8 +111,10 @@ jobs:
       - run: git clone https://github.com/$GITHUB_REPOSITORY.git data/ # <-- add link to your repo here
 
       - name: make .env file
-
-        run: echo "BASEURL=/skohub-docker-vocabs" > .env
+        run: |
+          input=$GITHUB_REPOSITORY
+          repo=${input#*/}
+          echo "BASEURL=/$repo" > .env
 
       - name: build public dir with docker image
         run: >
