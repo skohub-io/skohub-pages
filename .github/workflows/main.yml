@@ -57,6 +57,7 @@ jobs:
         with:
           files: |
             **/*.yml
+            **/*.yaml
           json: true
 
       - name: Set turtle file matrix
@@ -122,6 +123,7 @@ jobs:
           -v $(pwd)/public:/app/public
           -v $(pwd)/data:/app/data
           -v $(pwd)/.env:/app/.env
+          -v $(pwd)/config.yaml:/app/config.yaml
           -e GATSBY_RESPOSITORY_URL=https://github.com/$GITHUB_REPOSITORY
           skohub/skohub-vocabs-docker:latest
 
