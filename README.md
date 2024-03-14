@@ -1,89 +1,23 @@
-# SkoHub Docker Vocabs
+# SkoHub Vocabs "Serverless"
+
+(we all know serverless does not exist)
 
 This is a example repository to show how you can publish your SKOS vocabulary using GitHub infrastructure.
 
-Every time a push is made to the repository a GitHub-workflow-action is triggered to publish the most recent vocabulary to the `gh-pages`-branch, which is used by GitHub pages.
-It spins up a Docker-Container made out the [SkoHub-Vocabs](https://github.com/hbz/skohub-vocabs)-tool. You can have a look at the Dockerfile [at this branch of skohub-vocabs](https://github.com/skohub-io/skohub-vocabs/tree/docker-gh-pages).
+Every time a change is made to a vocabulary a GitHub-workflow-action is triggered to publish the most recent vocabulary to the `gh-pages`-branch, which is used by GitHub pages.
+It spins up a Docker-Container made from [SkoHub-Vocabs](https://github.com/hbz/skohub-vocabs).
 
-## Reuse
+## Usage
 
-If you want to reuse this repo and have your vocabulary automatically pushed und published via GitHub-Pages, follow these steps (also explained [in these slides including screenshots](https://pad.gwdg.de/p/2022-11-30-swib22-skos-workshop-slides#/51)):
+If you want to reuse this repo and have your vocabulary automatically pushed und published via GitHub-Pages, follow these steps:
 
-1. Fork this repo
-
-2. go to the `.github/workflows/main.yml`-file, make sure to replace the following lines:
-
-- `run: git clone https://github.com/skohub-io/skohub-docker-vocabs.git data/` ⬅ adjust the path to point to **YOUR** repository
-- `run: echo "BASEURL=/skohub-docker-vocabs" > .env` ⬅ the `BASEURL` has to be set to **YOUR** repository name (only necessary if you changed the repository name; if you just forked and did not rename, leave it as it is)
-
-3. in your repository settings go to the "GitHub Pages" setting and select `gh-pages` as the branch your site is being built from. If it is not available yet, you might have to push something to your repo, so the GitHub-Action gets triggered or you can trigger it manually with going to "Actions" in the menubar, then select the workflow "Build /public and deploy..." and click "Run workflow". This way you can trigger the workflow automatically.
-
-4. after that your vocabulary will be automatically published every time a push to this repo is made.
-
-5. Any issues? Please open up a issue [here](https://github.com/skohub-io/skohub-docker-vocabs/issues)
-
-## Example workflow file
-
-```yaml
-name: Build /public and delpoy to gh-pages with docker container
-
-on:
-  push:
-    branches:
-      - master
-      - main
-      - gh-pages
-  workflow_dispatch:
-    inputs:
-      logLevel:
-        description: 'Log level'
-        required: true
-        default: 'warning'
-      tags:
-        description: 'Test scenario tags'
-
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout 🛎️
-        uses: actions/checkout@v2 # If you're using actions/checkout@v2 you must set persist-credentials to false in most cases for the deployment to work correctly.
-        with:
-          persist-credentials: false
-
-      - name: remove public and data-dir if already exists
-        run: rm -rf public data
-
-      - run: mkdir public
-
-      - run: chmod -R 777 public # user in container is node which won't have write access to public
-
-      - run: mkdir data
-
-      - run: chmod -R 777 data # user in container is node which won't have write access to public
-
-      - run: git clone https://github.com/skohub-io/skohub-docker-vocabs.git data/ # <-- add link to your repo here
-
-      - name: make .env file
-
-        run: echo "BASEURL=/skohub-docker-vocabs" > .env
-
-      # below add link to your repo after -e GATSBY_REPOSITORY_URL=...
-      - name: build public dir with docker image
-        run: >
-          docker run
-          -v $(pwd)/public:/app/public
-          -v $(pwd)/data:/app/data
-          -v $(pwd)/.env:/app/.env
-          -e GATSBY_RESPOSITORY_URL=https://github.com/skohub-io/skohub-docker-vocabs.git
-          skohub/skohub-vocabs-docker:latest
-
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
-```
+1. Fork this repo. Uncheck the box to only fork the main branch.
+1. Go to "Actions" tab and if not already activated, activate GitHub Actions.
+1. Go to "Settings", navigate to the "GitHub Pages" setting and select `gh-pages` as the branch your site is being built from. If it is not available yet, you might have to push something to your repo, so the GitHub-Action gets triggered or you can trigger it manually with going to "Actions" in the menubar, then select the workflow "Build /public and deploy..." and click "Run workflow". This way you can trigger the workflow automatically.
+1. Go back to the main page of your repo and click the little gear icon in the top right of the "About" section.
+1. Check the box at "Use your GitHub Pages website".
+1. After that your vocabulary will be automatically published every time a push to this repo is made (sometimes it takes a little to see the changes, remember to do some hard refreshing).
+1. Any issues? Please open up a issue [here](https://github.com/skohub-io/skohub-docker-vocabs/issues)
 
 ## FAQ
 
