@@ -27,7 +27,7 @@ You probably only forked the main branch.
 You have two options:
 
 - Delete the repo and fork it again, but make sure to uncheck the box to only fork the main branch
-- Make sure the GitHub Action is activated ➡️ Go to "Actions" tab and activate it. After commit changes to a vocabulary in the main branch. This should trigger the build and create a `gh-pages` branch.
+- Make sure the GitHub Action is activated ➡️ Go to "Actions" tab and activate it. After that commit changes to a vocabulary in the main branch. This should trigger the build and create a `gh-pages` branch.
 
 ### I push changes, but they seem to have no effect. My vocabulary stays the same
 
