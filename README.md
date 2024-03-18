@@ -19,6 +19,19 @@ If you want to reuse this repo and have your vocabulary automatically pushed und
 
 Any issues? Please open up a issue [here](https://github.com/skohub-io/skohub-docker-vocabs/issues)
 
+## Custom Domain
+
+If you want to host your vocabularies under your GitHub pages domain (so no W3 perma-id or purl.org redirect), you have to provide that domain in the [`config.yaml`](./config.yaml).
+
+Example:
+
+Your GitHub Pages domain is: `https://skohub-io.github.io/skohub-docker-vocabs/`
+Then provide `https://skohub-io.github.io/skohub-docker-vocabs/` as `custom_domain` in your `config.yaml`.
+
+The base of your concept scheme could then be something like: `https://skohub-io.github.io/skohub-docker-vocabs/colours/`
+
+Notice that this will apply to all your hosted vocabularies.
+
 ## Troubleshooting
 
 ### There is no `gh-pages` branch to select for GitHub Pages
