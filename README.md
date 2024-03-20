@@ -1,11 +1,9 @@
-# SkoHub Vocabs "Serverless"
+# SkoHub Pages
 
-(we all know serverless does not exist)
-
-This is a example repository to show how you can publish your SKOS vocabulary using GitHub infrastructure.
+This is a example repository to show how you can publish your SKOS vocabulary using GitHub infrastructure (Actions and Pages).
 
 Every time a change is made to a vocabulary a GitHub-workflow-action is triggered to publish the most recent vocabulary to the `gh-pages`-branch, which is used by GitHub pages.
-It spins up a Docker-Container made from [SkoHub-Vocabs](https://github.com/hbz/skohub-vocabs).
+It spins up a Docker container made from [SkoHub Vocabs](https://github.com/hbz/skohub-vocabs).
 
 ## Usage
 
@@ -17,7 +15,7 @@ If you want to reuse this repo and have your vocabulary automatically pushed und
 1. Go back to the main page of your repo and click the little gear icon in the top right of the "About" section. Check the box at "Use your GitHub Pages website".
 1. Add a commit to the main branch and your vocabulary will be automatically published (sometimes it takes a little to see the changes, remember to do some hard refreshing).
 
-Any issues? Please open up a issue [here](https://github.com/skohub-io/skohub-docker-vocabs/issues)
+Any issues? Please open up a issue [here](https://github.com/skohub-io/skohub-pages/issues)
 
 ## Custom Domain
 
@@ -25,10 +23,10 @@ If you want to host your vocabularies under your GitHub pages domain (so no W3 p
 
 Example:
 
-Your GitHub Pages domain is: `https://skohub-io.github.io/skohub-docker-vocabs/`
-Then provide `https://skohub-io.github.io/skohub-docker-vocabs/` as `custom_domain` in your `config.yaml`.
+Your GitHub Pages domain is: `https://skohub-io.github.io/skohub-pages/`
+Then provide `https://skohub-io.github.io/skohub-pages/` as `custom_domain` in your `config.yaml`.
 
-The base of your concept scheme could then be something like: `https://skohub-io.github.io/skohub-docker-vocabs/colours/`
+The base of your concept scheme could then be something like: `https://skohub-io.github.io/skohub-pages/colours/`
 
 Notice that this will apply to all your hosted vocabularies.
 
