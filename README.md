@@ -1,6 +1,6 @@
 # SkoHub Pages
 
-This is a example repository (formerly named `skohub-docker-vocabs`) to show how you can publish your SKOS vocabulary using GitHub infrastructure (Actions and Pages).
+This is an example repository (formerly named `skohub-docker-vocabs`) to show how you can publish your SKOS vocabulary using GitHub infrastructure (Actions and Pages).
 
 Every time a change is made to a vocabulary a GitHub-workflow-action is triggered to publish the most recent vocabulary to the `gh-pages`-branch, which is used by GitHub pages.
 It spins up a Docker container made from [SkoHub Vocabs](https://github.com/hbz/skohub-vocabs).
