@@ -12,7 +12,6 @@ If you want to reuse this repo and have your vocabulary automatically pushed und
 1. Fork this repo. **Uncheck the box to only fork the main branch**.
 1. Go to "Actions" tab and if not already activated, activate GitHub Actions.
 1. Go to "Settings", navigate to the "Pages" setting and select `gh-pages` as the branch your site is being built from. 
-1. Go back to the main page of your repo and click the little gear icon in the top right of the "About" section. Check the box at "Use your GitHub Pages website".
 1. Add a commit to the main branch and your vocabulary will be automatically published (sometimes it takes a little to see the changes, remember to do some hard refreshing).
 
 Any issues? Please open up a issue [here](https://github.com/skohub-io/skohub-pages/issues)
