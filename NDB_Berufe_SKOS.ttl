@@ -1,0 +1,192 @@
+@prefix NDB: <https://example.org/NDB#> . # @base <https://normdb.ivz.cn.ard.de/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<NDB> a skos:ConceptScheme ;
+  skos:prefLabel "Berufe und Funktionen"@de, "Professions and functions"@en ; # die NDB der ARD wird nur in deutscher Sprache gepflegt. Alle englischen Übersetzungen wurden für die Aufgabenlösung selbst erstellt.
+  dct:title "Berufe und Funktionen"@de, "Professions and functions"@en ;
+  dct:description "SKOS-kodierter Ausschnitt aus der Normdatenbank, die in der ARD zur Inhaltserschließung genutzt wird"@de, "SKOS-coded excerpt from the standard database which is used for context indexing in the ARD"@en ;
+  dct:creator "Arbeitsgemeinschaft der öffentlich-rechtlichen Rundfunkanstalten der Bundesrepublik Deutschland"@de, "Association of Public Broadcasting Corporations of the Federal Republic of Germany"@en ;
+  dct:issued "2025-30-01" ;
+  dct:license "https://creativecommons.org/licenses/by-nc-sa/4.0/" ;
+  skos:hasTopConcept <Berufe> .
+
+<Berufe> a skos:Concept ;
+  skos:prefLabel "Berufe"@de, "Professions"@en ;
+  skos:definition "Arbeit oder Tätigkeit, mit der jemand sein Geld verdient"@de, "work or activity with which someone earns money"@en ;
+  skos:narrower <Altphilologe>, <Anatom>, <Arbeiter>, <Architekt>, <Archivar>, <Astrologe>, <Astronom>, <Autor>, <Außenminister>, <Bakteriologe>, <Bergarbeiter>, <Bibliothekar>, <Botschafter>, <Cellist>, <Clown>, <Dokumentar>, <Ethnologe>, <Fotograf>, <Geiger>, <Historiker>, <Instrumentenbauer>, <Juwelier> ; # die gewählten Berufe stellen lediglich eine willkürliche Auswahl des vollständigen Vokabulars dar.
+  skos:topConceptOf <NDB> .
+
+<Altphilologe> a skos:Concept ;
+  skos:prefLabel "Altphilologe"@de, "classical philologist"@en ;
+  skos:definition "Wissenschaftler, der sich mit den klassischen Sprachen Altgriechisch und Latein beschäftigt"@de, "Scientist who studies the classic languages Old Greek and Latin"@en ; # Die deutsche Definition entspricht einer Verkürzung der "Erläuterung" in der NDB. In einigen Fällen, in denen keine Erläuterung vorlag, wurde auf die Definition von Wikipedia oder Duden zurückgegriffen.
+  skos:broader <Berufe> ;
+  skos:notation "135490" ; # Die Notation entspricht der Vokabel-ID in der NDB
+  skos:inScheme <NDB> .
+
+<Anatom> a skos:Concept ;
+  skos:prefLabel "Anatom"@de, "anatomist"@en ;
+  skos:definition "Wissenschaftler, der den Aufbau des Körpers von Lebewesen untersucht"@de, "scientist who studies the structure of the body of living beings"@en ;
+  skos:broader <Berufe> ;
+  skos:notation "135494" ;
+  skos:inScheme <NDB> .
+
+<Arbeiter> a skos:Concept ;
+  skos:prefLabel "Arbeiter"@de, "Worker"@en ;
+  skos:altLabel "Lohnarbeit"@de, "wage worker"@en ;
+  skos:definition "Arbeitnehmer, der traditionell durch körperlicher Arbeit sein Geld verdient."@de, "Worker who traditionally earns his money through physical labor."@en ;
+  skos:broader <Berufe> ;
+  skos:narrower <Gastarbeiter> ;
+  skos:notation "135500" ;
+  skos:inScheme <NDB> .
+
+<Gastarbeiter> a skos:Concept ;
+  skos:prefLabel "Gastarbeiter"@de, "guest worker"@en ;
+  skos:definition "Mitglieder einer Personengruppe, denen aufgrund von Anwerbeabkommen ein zeitlich befristeter Aufenthalt in der Bundesrepublik Deutschland, der DDR, Österreich oder der Schweiz zur Arbeitsaufnahme gewährt wurde."@de, "Members of a group of persons who have been granted a temporary residence permit in the Federal Republic of Germany, the GDR, Austria or Switzerland to take up employment on the basis of recruitment agreements"@en ;
+  skos:broader <Arbeiter> ;
+  skos:notation "135609" ;
+  skos:inScheme <NDB> .
+
+<Architekt> a skos:Concept ;
+  skos:prefLabel "Architekt"@de, "Architect"@en ;
+  skos:definition "Der Architekt befasst sich mit der technischen, wirtschaftlichen, funktionalen und gestalterischen Planung und Errichtung oder Änderung von Gebäuden und Bauwerken vorwiegend des Hochbaues."@de, "The architect deals with the technical, economic, functional and design planning and construction or modification of buildings and structures, primarily in the field of structural engineering."@en ;
+  skos:broader <Berufe> ;
+  skos:narrower <Innenarchitekt> ;
+  skos:notation "135503" ;
+  skos:inScheme <NDB> .
+
+<Innenarchitekt> a skos:Concept ;
+  skos:prefLabel "Innenarchitekt"@de, "Interior architect"@en ;
+  skos:definition "Architekt, der sich mit der Gestaltung von Innenräumen befasst."@de, "Architect who deals with the design of interior spaces."@en ;
+  skos:broader <Architekt> ;
+  skos:notation "135666" ;
+  skos:inScheme <NDB> .
+
+<Archivar> a skos:Concept ;
+  skos:prefLabel "Archivar"@de, "Archivist"@en ;
+  skos:definition "Umfasst das Bewerten, Sichern und Erschließen von Archivgut."@de, "Includes the evaluation, securing and indexing of archival material."@en ;
+  skos:broader <Berufe> ;
+  skos:notation "135504" ;
+  skos:inScheme <NDB> .
+
+<Astrologe> a skos:Concept ;
+  skos:prefLabel "Astrologe"@de, "Astrologist"@en ;
+  skos:definition "Person, die sich mit Astrologie beschäftigt (Sterndeuter)."@de, "Person who deals with astrology."@en ;
+  skos:broader <Berufe> ;
+  skos:notation "135508" ;
+  skos:inScheme <NDB> .
+
+<Astronom> a skos:Concept ;
+  skos:prefLabel "Astronom"@de, "Astronomer"@en ;
+  skos:definition "Wissenschaftler auf dem Gebiet der Astronomie."@de, "Scientist in the field of astronomy."@en ;
+  skos:broader <Berufe> ;
+  skos:notation "135510" ;
+  skos:inScheme <NDB> .
+
+<Autor> a skos:Concept ;
+  skos:prefLabel "Autor"@de, "Author"@en ;
+  skos:definition "Urheber eines originellen Kunstwerks"@de, "Creator of an original work of art."@en ;
+  skos:broader <Berufe> ;
+  skos:notation "135514" ;
+  skos:inScheme <NDB> .
+
+<Außenminister> a skos:Concept ;
+  skos:prefLabel "Außenminister"@de, "Minister of foreign affairs"@en ;
+  skos:definition "Minister für auswärtige Angelegenheiten."@de, "Minister of foreign affairs."@en ;
+  skos:broader <Berufe> ;
+  skos:notation "135513" ;
+  skos:inScheme <NDB> .
+
+<Bakteriologe> a skos:Concept ;
+  skos:prefLabel "Bakteriologe"@de, "bacteriologist"@en ;
+  skos:definition "Wissenschaftler auf dem Gebiet der Bakteriologie"@de, "Scientist in the field of bacteriology"@en ;
+  skos:broader <Berufe> ;
+  skos:notation "135516" ;
+  skos:inScheme <NDB> .
+
+<Bergarbeiter> a skos:Concept ;
+  skos:prefLabel "Bergarbeiter"@de, "Minder"@en ;
+  skos:altLabel "Bergmann"@de ;
+  skos:definition "Arbeiter im Tage- oder Untertagebau, der unmittelbar beim Abbauen und Fördern beschäftigt ist."@de, "Worker in open-cast or underground mining who is directly involved in mining and extraction."@en ;
+  skos:broader <Berufe> ;
+  skos:notation "135521" ;
+  skos:inScheme <NDB> .
+
+<Bibliothekar> a skos:Concept ;
+  skos:prefLabel "Bibliothekar"@de, "librarian"@en ;
+  skos:definition "Angestellter einer Bibliothek."@de, "Library employee."@en ;
+  skos:broader <Berufe> ;
+  skos:notation "135527" ;
+  skos:inScheme <NDB> .
+
+<Botschafter> a skos:Concept ;
+  skos:prefLabel "Botschafter"@de, "Ambassador"@en ;
+  skos:definition "Ranghöchster diplomatischer Vertreter eines Staates im Ausland."@de, "Highest ranking diplomatic representative of a state in a foreign country."@en ;
+  skos:broader <Berufe> ;
+  skos:notation "135535" ;
+  skos:inScheme <NDB> .
+
+<Cellist> a skos:Concept ;
+  skos:prefLabel "Cellist"@de, "Cellist"@en ;
+  skos:definition "Person, die berufsmäßig Cello spielt."@de, "Person who plays cello for a living."@en ;
+  skos:broader <Berufe> ;
+  skos:notation "135544" ;
+  skos:inScheme <NDB> .
+
+<Clown> a skos:Concept ;
+  skos:prefLabel "Clown"@de, "Clown"@en ;
+  skos:definition "Spaßmacher im Zirkus oder Varieté."@de, "entertainer in the circus or a variety show."@en ;
+  skos:broader <Berufe> ;
+  skos:notation "135550" ;
+  skos:inScheme <NDB> .
+
+<Dokumentar> a skos:Concept ;
+  skos:prefLabel "Dokumentar"@de, "Information specialist"@en ;
+  skos:definition "Person, die nach einer wissenschaftlichen Fachausbildung in einer Dokumentationsstelle oder in einer Spezialbibliothek tätig ist."@de, "Person who, after specialist scientific training, works in a documentation center or in a special library."@en ;
+  skos:broader <Berufe> ;
+  skos:notation "135561" ;
+  skos:inScheme <NDB> .
+
+<Ethnologe> a skos:Concept ;
+  skos:prefLabel "Ethnologe"@de, "ethnologist"@en ;
+  skos:definition "Wissenschaftler auf dem Gebiet der Ethnologie."@de, "Scientist in the field of ethnology."@en ;
+  skos:broader <Berufe> ;
+  skos:notation "135577" ;
+  skos:inScheme <NDB> .
+
+<Fotograf> a skos:Concept ;
+  skos:prefLabel "Fotograf"@de, "photographer"@en ;
+  skos:altLabel "Fotograph"@de ;
+  skos:definition "Person, die Fotografien erstellt."@de, "Person who creates photographies."@en ;
+  skos:broader <Berufe> ;
+  skos:notation "135596" ;
+  skos:inScheme <NDB> .
+
+<Geiger> a skos:Concept ;
+  skos:prefLabel "Geiger"@de, "violinist"@en ;
+  skos:definition "Person, die beruflich Geige spielt."@de, "Person who plays the violin for a living."@en ;
+  skos:broader <Berufe> ;
+  skos:notation "135611" ;
+  skos:inScheme <NDB> .
+
+<Historiker> a skos:Concept ;
+  skos:prefLabel "Historiker"@de, "historian"@en ;
+  skos:definition "Wissenschaftler, Forscher, Kenner auf dem Gebiet der Geschichte."@de, "Scientist, researcher, expert in the field of history."@en ;
+  skos:broader <Berufe> ;
+  skos:notation "135650" ;
+  skos:inScheme <NDB> .
+
+<Instrumentenbauer> a skos:Concept ;
+  skos:prefLabel "Instrumentenbauer"@de, "luthier"@en ;
+  skos:definition "Person, die Musikinstrumente baut."@de, "Person who builds musical instruments."@en ;
+  skos:broader <Berufe> ;
+  skos:notation "135667" ;
+  skos:inScheme <NDB> .
+
+<Juwelier> a skos:Concept ;
+  skos:prefLabel "Juwelier"@de, "jeweler"@en ;
+  skos:definition "Person, die Schmuck herstellt oder repariert."@de, "Person who creates or repairs jewelry."@en ;
+  skos:broader <Berufe> ;
+  skos:notation "135678" ;
+  skos:inScheme <NDB> .
