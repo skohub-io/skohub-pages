@@ -1,4 +1,4 @@
-@base <https://normdb.ivz.cn.ard.de/> .
+@base <https://shoeing1.github.io/MALIS24_NDB/Berufe> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix dct: <http://purl.org/dc/terms/> .
