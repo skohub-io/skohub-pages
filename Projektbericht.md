@@ -28,7 +28,8 @@ Die Normdatenbank ist in mehrere Teilbereiche untergliedert, in denen neben Voka
 
 Der für das Projekt relevante Teil _Vokabulare_ ist in 17 Teile unterteilt. Die vorliegende Arbeit basiert dem Vokabular _Berufe und Funktionen_. 
 
-![Screenshot des NDB-Eintrags _Arbeiter_](https://github.com/shoeing1/MALIS24_NDB/blob/main/NDB%20Screenshot.png)
+![](https://github.com/shoeing1/MALIS24_NDB/blob/main/NDB%20Screenshot.png)
+_Abb. 1: Screenshot des NDB-Eintrags _Arbeiter_
 
 <a name="2"></a>
 ## **2. Kapitelname**
