@@ -19,6 +19,8 @@ Rieke Paetsch-Saleh (Matrikelnummer: xxxxxxxx )
 
 <a name="1"></a>
 ## **1. Auswahl und Beschreibung des Vokabulars**
+In der Normdatenbank (kurz NDB) der ARD wird das standartisierte, für die inhaltliche Erschließung von gesendetem Material genutzte Vokabular gesammelt. Zur Vereinheitlichung der Erschließung und der vereinfachten Recherche über Anstaltsgrenzen hinaus wird dieses Vokabular in der gesamten ARD verwendet. Da zwei Mitglieder dieser Projektgruppe durch vergangene oder derzeitige Anstellung im WDR mit der Normdatenbank vertraut sind wurde diese als Grundlage für die Lösung der Aufgabe genutzt.
+
 
 
 <a name="2"></a>
