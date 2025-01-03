@@ -33,6 +33,8 @@ Jeder Eintrag der NDB erhält eine Vokabel-ID, über die dieser eindeutig identi
 ![](https://github.com/shoeing1/MALIS24_NDB/blob/main/NDB%20Screenshot.png)
 Abb. 1: Screenshot des NDB-Eintrags _Arbeiter_
 
+Im weiteren Verlauf des Projektberichtes wird darauf eingegangen, welche Felder der NDB für relevant erachtet und wie diese in der SKOS-Kodierung implementiert wurden.
+
 <a name="2"></a>
 ## **2. Kapitelname**
 
