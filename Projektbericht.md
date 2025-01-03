@@ -26,10 +26,12 @@ In der Normdatenbank (kurz NDB) der ARD wird das standartisierte, für die inhal
 ### 1.1 Aufbau der Normdatenbank
 Die Normdatenbank ist in mehrere Teilbereiche untergliedert, in denen neben Vokabeln unter anderem auch Personen, Institutionen und für das ARD-Programm relevante Sendereihen vereinheitlicht sind. In der inhaltlichen Erschließung von Archivmaterial kann eine Eintragung mit der NDB synchonisiert werden, wodurch beispielsweise Personen oder Homonyme eindeutig identifizierbar werden.
 
-Der für das Projekt relevante Teil _Vokabulare_ ist in 17 Teile unterteilt. Die vorliegende Arbeit basiert dem Vokabular _Berufe und Funktionen_. 
+Der für das Projekt relevante Teil _Vokabulare_ ist in 17 Teile unterteilt. Die vorliegende Arbeit basiert auf einer Auswahl von Begriffen aus dem Vokabular _Berufe und Funktionen_. Die Berufsbezeichnungen sind alphabetisch geordnet und liegen in den meisten Fällen sowohl in männlicher als auch in weiblicher Form vor. Um eine größere Anzahl unterschiedlicher Berufe in der SKOS-Kodierung abzubilden, wurde entschieden, für das Projekt lediglich die männliche Ansetzungsform zu verwenden.
+
+Jeder Eintrag der NDB erhält eine Vokabel-ID, über die dieser eindeutig identifizierbar gemacht wird. Im Eintrag einer Vokabel befinden sich zudem Verweise auf alternative Bezeichnungen, ggf. tiefere Hierarchieebenen und in vielen Fällen eine Erläuterung des Begriffs.
 
 ![](https://github.com/shoeing1/MALIS24_NDB/blob/main/NDB%20Screenshot.png)
-_Abb. 1: Screenshot des NDB-Eintrags _Arbeiter_ _
+Abb. 1: Screenshot des NDB-Eintrags _Arbeiter_
 
 <a name="2"></a>
 ## **2. Kapitelname**
