@@ -12,10 +12,10 @@ Rieke Paetsch-Saleh (Matrikelnummer: xxxxxxxx )
 
 ## Inhalt
 - [1. Auswahl und Beschreibung des Vokabulars](#1)
-- [2. Kapitelname] (#2)
-- [3. Kapitelname] (#3)
-- [4. Kapitelname] (#4)
-- [5. Kapitelname] (#5)
+- [2. Kapitelname](#2)
+- [3. Kapitelname](#3)
+- [4. Kapitelname](#4)
+- [5. Kapitelname](#5)
 
 <a name="1"></a>
 ## **1. Auswahl und Beschreibung des Vokabulars**
