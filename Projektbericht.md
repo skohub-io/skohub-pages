@@ -12,7 +12,7 @@ Rieke Paetsch-Saleh (Matrikelnummer: xxxxxxxx )
 
 ## Inhalt
 - [1. Auswahl und Beschreibung des Vokabulars](#1)
-- [1.1 Aufbau der Normdatenbank](#1.1)
+    - [1.1 Aufbau der Normdatenbank](#1.1)
 - [2. Kapitelname](#2)
 - [3. Kapitelname](#3)
 - [4. Kapitelname](#4)
