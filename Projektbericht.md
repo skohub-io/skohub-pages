@@ -27,7 +27,7 @@ In der Normdatenbank (kurz NDB) der ARD wird das standartisierte, für die inhal
 Die Normdatenbank ist in mehrere Teilbereiche untergliedert, in denen neben Vokabeln unter anderem auch Personen, Institutionen und für das ARD-Programm relevante Sendereihen vereinheitlicht sind. In der inhaltlichen Erschließung von Archivmaterial kann eine Eintragung mit der NDB synchonisiert werden, wodurch beispielsweise Personen oder Homonyme eindeutig identifizierbar werden.
 Der für das Projekt relevante Teil _Vokabulare_ ist in 17 Teile unterteilt. Die vorliegende Arbeit basiert dem Vokabular _Berufe und Funktionen_. 
 
-![](file:///C:/Users/hoein/OneDrive%20-%20TH%20K%C3%B6ln/MALIS/WS24/IT2/Aufgaben/Projekt/NDB%20Screenshot.png)
+![](/assets/images/NDB Screenshot.png)
 
 <a name="2"></a>
 ## **2. Kapitelname**
