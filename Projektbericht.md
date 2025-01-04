@@ -13,11 +13,13 @@ Rieke Paetsch-Saleh (Matrikelnummer: xxxxxxxx )
 ## Inhalt
 - [1. Auswahl und Beschreibung des Vokabulars](#1)
     - [1.1 Aufbau der Normdatenbank](#1.1)
-- [2. Kapitelname](#2)
-- [3. Kapitelname](#3)
+- [2. Organisation der Zusammenarbeit ???](#2)
+- [3. Umsetzungsphase](#3)
+    - [3.1 SKOS-Kodierung des Vokabulars](#3.1)
+    - [3.2 Veröffentlichung über SKOHub Pages](#3.2)
 - [4. Kapitelname](#4)
 - [5. Kapitelname](#5)
-
+  
 <a name="1"></a>
 ## **1. Auswahl und Beschreibung des Vokabulars**
 In der Normdatenbank (kurz NDB) der ARD wird das standartisierte, für die inhaltliche Erschließung von gesendetem Material genutzte Vokabular gesammelt. Zur Vereinheitlichung der Erschließung und der vereinfachten Recherche über Anstaltsgrenzen hinaus wird dieses Vokabular in der gesamten ARD verwendet. Da zwei Mitglieder dieser Projektgruppe durch vergangene oder derzeitige Anstellung im WDR mit der Normdatenbank vertraut sind und diese noch nicht SKOS-kodiert vorliegt, wurde die NDB als Grundlage für die Lösung der Aufgabe genutzt. Da die Normdatenbank Eintragungen im siebenstelligen Bereich enthält wurde für das Projekt lediglich ein kleiner Teil des Gesamtvokabulars genutzt. Dabei wurde besonderer Wert auf die Auswahl einzelner Vokabeln gelegt, die sich durch zusätzliche Felder von anderen unterscheiden. So wurden gezielt einige Begriffe ausgewählt, die beispielsweise alternative Bezeichnungen oder weitere Unterelemente enthalten.
@@ -40,7 +42,24 @@ Im weiteren Verlauf des Projektberichtes wird darauf eingegangen, welche Felder 
 
 
 <a name="3"></a>
-## **3. Kapitelname**
+## **3. Umsetzungsphase**
+Im Folgenden wird die Umsetzung genauer Beschrieben. Dabei soll zunächst detailliert darauf eingegangen werden, welche Felder der NDB genutzt und wie diese in die SKOS-Kodierung eingearbeitet wurden. Im zweiten Schritt wird auf den Veröffentlichungsvorgang des Vokabulars ober SKOHub Pages eingegangen. In der Beschreibung wird auch auf Probleme eingegangen, die bei der Umsetzung aufgetreten sind.
+
+<a name="3.1"></a>
+### 3.1 SKOS-Kodierung des Vokabulars
+
+
+```
+<Anatom> a skos:Concept ;
+  skos:prefLabel "Anatom"@de, "Anatomist"@en ;
+  skos:definition "Wissenschaftler, der den Aufbau des Körpers von Lebewesen untersucht."@de, "scientist who studies the structure of the body of living beings."@en ;
+  skos:broader <Berufe> ;
+  skos:notation "135494" ;
+  skos:inScheme <NDB> .
+```
+
+<a name="3.2"></a>
+### 3.2 Veröffentlichung über SKOHub Pages
 
 
 <a name="4"></a>
