@@ -35,6 +35,8 @@ Jeder Eintrag der NDB erhält eine Vokabel-ID, über die dieser eindeutig identi
 ![](https://github.com/shoeing1/MALIS24_NDB/blob/main/NDB%20Screenshot.png)
 Abb. 1: Screenshot des NDB-Eintrags _Arbeiter_
 
+Die Normdatenbank wird lediglich in deutscher Sprache geführt. Die Gruppe hat sich dennoch für die Erstellung eines zweisprachigen SKOS-Vokabulars entschieden, für das die entsprechenden Felder eigenständig übersetzt wurden. In einigen Fällen fehlte eine Definition der Vokabel in der NDB. Statt auf eine Begriffserklärung zu verzichten wurde für entsprechende Begfiffe auf die jeweilige Definitionen des Dudens zurückgegriffen.
+
 Im weiteren Verlauf des Projektberichtes wird darauf eingegangen, welche Felder der NDB für relevant erachtet und wie diese in der SKOS-Kodierung implementiert wurden.
 
 <a name="2"></a>
@@ -45,16 +47,20 @@ Im weiteren Verlauf des Projektberichtes wird darauf eingegangen, welche Felder 
 ## **3. Umsetzungsphase**
 Im Folgenden wird die Umsetzung genauer Beschrieben. Dabei soll zunächst detailliert darauf eingegangen werden, welche Felder der NDB genutzt und wie diese in die SKOS-Kodierung eingearbeitet wurden. Im zweiten Schritt wird auf den Veröffentlichungsvorgang des Vokabulars ober SKOHub Pages eingegangen. In der Beschreibung wird auch auf Probleme eingegangen, die bei der Umsetzung aufgetreten sind.
 
+
 <a name="3.1"></a>
 ### 3.1 SKOS-Kodierung des Vokabulars
+Als Grundlage für die Bearbeitung der Aufgabe und um ein Verständnis für SKOS zu gewinnen wurde von den Gruppenmitgliedern die in der Aufgabenstellung verlinkte _Einführung in SKOS_ von Felix Lohmeier, Adrian Pohl und Jakob Voß gelesen und das dort bereitgestellte Tutorial durchgearbeitet.[^1] Viele der dort beschriebenen Schritte konnten 
+
+
 
 
 ```
-<Anatom> a skos:Concept ;
-  skos:prefLabel "Anatom"@de, "Anatomist"@en ;
-  skos:definition "Wissenschaftler, der den Aufbau des Körpers von Lebewesen untersucht."@de, "scientist who studies the structure of the body of living beings."@en ;
+<_Berufsbezeichnung_> a skos:Concept ;
+  skos:prefLabel "_Deutsche Bezeichnung_"@de, "_Englische Bezeichnung_"@en ;
+  skos:definition "_Deutsche Definition."@de, "Englische Definition."@en ;
   skos:broader <Berufe> ;
-  skos:notation "135494" ;
+  skos:notation "_Vokabel-ID_" ;
   skos:inScheme <NDB> .
 ```
 
@@ -68,3 +74,9 @@ Im Folgenden wird die Umsetzung genauer Beschrieben. Dabei soll zunächst detail
 
 <a name="5"></a>
 ## **5. Kapitelname**
+
+
+
+
+
+[^1] Felix Lohmeier, Adrian Pohl und Jakob Voß: Einführung in SKOS, o. D., [online] https://dini-ag-kim.github.io/skos-einfuehrung/#/.
