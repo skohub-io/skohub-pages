@@ -79,7 +79,28 @@ Die ersten vier Codezeilen wurden aus dem Tutorial übernommen, lediglich die ba
 @prefix dct: <http://purl.org/dc/terms/> .
 ```
 
-_Erstellung der Base, des ConceptSchemes und des Concepts ergänzen_
+Anschließend wurde das Vokabular definiert. Entsprechend der Quelle wurde das Vokabular _NDB_ genannt, da die vorliegende Auswahl lediglich aus Begriffen des Vokabulars _Berufe und Funktionen_ besteht, wurde diese Bezeichnung als dct:prefLabel und dct:title angegeben. Bei einer umfangreicheren SKOS-Kodierung der Normdatenbank müssten diese Begriffe gegebenenfalls abgeändert und _Berufe und Funktionen_ als TopConcept verwendet werden. In dct:discription befindet sich eine Kurzbeschreibung des erstellten Vokabulars. Da es sich beim Quellvokabular um das der ARD handelt und in der Normdatenbank keine sonstigen Urheber angegeben sind, wurde für das Feld dct:creator die ARD als Urheber angegeben. Das Feld dct:issued entspricht dem Datum der Projektabgabe, in dct:licence ist die CC-by Lizenz angegeben. Als Bezeichnung des TopConcepts wurde in skos:hasTopConcept _Berufe_ gewählt.
+
+```
+<NDB> a skos:ConceptScheme ;
+  skos:prefLabel "Berufe und Funktionen"@de, "Professions and functions"@en ; # die NDB der ARD wird nur in deutscher Sprache gepflegt. Alle englischen Übersetzungen wurden für die Aufgabenlösung selbst erstellt.
+  dct:title "Berufe und Funktionen"@de, "Professions and functions"@en ;
+  dct:description "SKOS-kodierter Ausschnitt aus der Normdatenbank, die in der ARD zur Inhaltserschließung genutzt wird."@de, "SKOS-coded excerpt from the standard database which is used for context indexing in the ARD."@en ;
+  dct:creator "Arbeitsgemeinschaft der öffentlich-rechtlichen Rundfunkanstalten der Bundesrepublik Deutschland"@de, "Association of Public Broadcasting Corporations of the Federal Republic of Germany"@en ;
+  dct:issued "2025-30-01" ;
+  dct:license "https://creativecommons.org/licenses/by-nc-sa/4.0/" ;
+  skos:hasTopConcept <Berufe> .
+```
+
+Im nächsten Abschnitt ist das TopConcept definiert. Dieses wurde im Feld skos:definition mit einer Beschreibung versehen, alle ausgewählten Berufe der Normdatenbank wurden in skos:narrower als Unterelemente definiert.
+
+```
+<Berufe> a skos:Concept ;
+  skos:prefLabel "Berufe"@de, "Professions"@en ;
+  skos:definition "Arbeit oder Tätigkeit, mit der jemand sein Geld verdient."@de, "work or activity with which someone earns money."@en ;
+  skos:narrower <Altphilologe>, <Anatom>, <Arbeiter>, <Architekt>, <Archivar>, <Astrologe>, <Astronom>, <Autor>, <Außenminister>, <Bakteriologe>, <Bergarbeiter>, <Bibliothekar>, <Botschafter>, <Cellist>, <Clown>, <Dokumentar>, <Ethnologe>, <Fotograf>, <Geiger>, <Historiker>, <Instrumentenbauer>, <Juwelier> ; # die gewählten Berufe stellen lediglich eine willkürliche Auswahl des vollständigen Vokabulars dar.
+  skos:topConceptOf <NDB> .
+```
 
 Für die nun in die SKOS-Kodierung zu überführenden Vokabeln konnte ausgehend von den im Tutorial gelernten Basiskenntnissen und den zuvor identifizierten NDB-Feldern eine Vorlage erarbeitet werden, in der lediglich die entsprechenden Eintragungen manuell zu ergänzen waren.
 
