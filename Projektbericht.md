@@ -52,7 +52,18 @@ Im Folgenden wird die Umsetzung genauer Beschrieben. Dabei soll zunächst detail
 ### 3.1 SKOS-Kodierung des Vokabulars
 Als Grundlage für die Bearbeitung der Aufgabe und um ein Verständnis für SKOS zu gewinnen wurde von den Gruppenmitgliedern die in der Aufgabenstellung verlinkte _Einführung in SKOS_ von Felix Lohmeier, Adrian Pohl und Jakob Voß gelesen und das dort bereitgestellte Tutorial durchgearbeitet.[^1] Viele der dort beschriebenen Schritte und Vorgehensweisen konnten für die Bearbeitung der Aufgabe direkt übernommen werden. 
 
-Der Großteil des Codes wurde zunächst im Turtle Web Editor[^2] geschrieben, der auch für die Bearbeitung des Tutorials empfohlen wird. Eben
+Vor der eigentlichen Kodierung wurde eine finale Liste der zu überführenden Begriffe erstellt. Die NDB-Felder wurden wie in der folgenden Tabelle dargestellt den jeweiligen SKOS-Elementen zugewiesen:
+
+| NDB-Feld      | SKOS          |
+| ------------- | ------------- |
+| Deskriptor    | prefLabel     |
+| Synonym       | altLabel      |
+| Erläuterung   | description   |
+| Vokabel-ID    | notation      |
+
+
+
+Der Codes wurde zunächst im Turtle Web Editor[^2] geschrieben, der auch für die Bearbeitung des Tutorials empfohlen wird. 
 
 _Erstellung der Base, des ConceptSchemes und des Concepts ergänzen_
 
