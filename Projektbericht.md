@@ -63,16 +63,25 @@ Vor der eigentlichen Kodierung wurde eine finale Liste der zu überführenden Be
 | Vokabel-ID    | notation      |
 | Untergeordnete Elemente | narrower |
 
-
+_skos:narrower_ konnte in den meisten Fällen mit der Bezeichnung des _concepts_ "Berufe" ausgefüllt werden. Lediglich in Fällen, in denen ein Begriff in einer tieferen Hierarchieebene eingeordnet war, musste dieser geändert werden.
 
 <a name="3.2"></a>
 ### 3.2 SKOS-Kodierung des Vokabulars
 
-Der Codes wurde zunächst im Turtle Web Editor[^2] geschrieben, der auch für die Bearbeitung des Tutorials empfohlen wird. 
+Der Code wurde zunächst im Turtle Web Editor[^2] geschrieben, der auch für die Bearbeitung des Tutorials empfohlen wird. 
+
+Die ersten vier Codezeilen wurden aus dem Tutorial übernommen, lediglich die base-URL wurde geändert:
+
+```
+@base <https://normdb.ivz.cn.ard.de/> .  # die URL musste zu einem späteren Zeitpunkt fehlerbedingt erneut geändert werden. Siehe dazu Kapitel 3.3 des Projektberichtes
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+```
 
 _Erstellung der Base, des ConceptSchemes und des Concepts ergänzen_
 
-Für die nun in die SKOS-Kodierung zu überführenden Vokabeln konnte ausgehend von den im Tutorial gelernten Basiskenntnissen eine Vorlage erarbeitet werden, in der lediglich die entsprechenden Eintragungen manuell zu ergänzen waren.
+Für die nun in die SKOS-Kodierung zu überführenden Vokabeln konnte ausgehend von den im Tutorial gelernten Basiskenntnissen und den zuvor identifizierten NDB-Feldern eine Vorlage erarbeitet werden, in der lediglich die entsprechenden Eintragungen manuell zu ergänzen waren.
 
 ```
 <x> a skos:Concept ;                # Berufsbezeichnung
