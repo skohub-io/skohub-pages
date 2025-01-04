@@ -15,8 +15,9 @@ Rieke Paetsch-Saleh (Matrikelnummer: xxxxxxxx )
     - [1.1 Aufbau der Normdatenbank](#1.1)
 - [2. Organisation der Zusammenarbeit ???](#2)
 - [3. Umsetzungsphase](#3)
-    - [3.1 SKOS-Kodierung des Vokabulars](#3.1)
-    - [3.2 Veröffentlichung mit SKOHub Pages](#3.2)
+    - [3.1 Vorbereitung der Kodierung](#3.1)
+    - [3.1 SKOS-Kodierung des Vokabulars](#3.2)
+    - [3.2 Veröffentlichung mit SKOHub Pages](#3.3)
 - [4. Kapitelname](#4)
 - [5. Kapitelname](#5)
   
@@ -49,10 +50,10 @@ Im Folgenden wird die Umsetzung genauer Beschrieben. Dabei soll zunächst detail
 
 
 <a name="3.1"></a>
-### 3.1 SKOS-Kodierung des Vokabulars
+### 3.1 Vorbereitung der Kodierung
 Als Grundlage für die Bearbeitung der Aufgabe und um ein Verständnis für SKOS zu gewinnen wurde von den Gruppenmitgliedern die in der Aufgabenstellung verlinkte _Einführung in SKOS_ von Felix Lohmeier, Adrian Pohl und Jakob Voß gelesen und das dort bereitgestellte Tutorial durchgearbeitet.[^1] Viele der dort beschriebenen Schritte und Vorgehensweisen konnten für die Bearbeitung der Aufgabe direkt übernommen werden. 
 
-Vor der eigentlichen Kodierung wurde eine finale Liste der zu überführenden Begriffe erstellt. Die NDB-Felder wurden wie in der folgenden Tabelle dargestellt den jeweiligen SKOS-Elementen zugewiesen:
+Vor der eigentlichen Kodierung wurde eine finale Liste der zu überführenden Begriffe erstellt. Da ein zweisprachiges Vokabular erstellt werden sollte, waren mindestens 20 Begriffe zu wählen. Wie bereits beschrieben wurde hier Wert darauf gelegt, auch Begriffe mit Synonymen oder weiteren Unterelementen auszuwählen. Anschließend wurden die relevanten NDB-Felder identifiziert und wie in der folgenden Tabelle dargestellt den jeweiligen SKOS-Elementen zugewiesen:
 
 | NDB-Feld      | SKOS          |
 | ------------- | ------------- |
@@ -60,8 +61,12 @@ Vor der eigentlichen Kodierung wurde eine finale Liste der zu überführenden Be
 | Synonym       | altLabel      |
 | Erläuterung   | description   |
 | Vokabel-ID    | notation      |
+| Untergeordnete Elemente | narrower |
 
 
+
+<a name="3.2"></a>
+### 3.2 SKOS-Kodierung des Vokabulars
 
 Der Codes wurde zunächst im Turtle Web Editor[^2] geschrieben, der auch für die Bearbeitung des Tutorials empfohlen wird. 
 
@@ -83,8 +88,8 @@ Einige Vokabeln enthielten weitere Unterelemente. Für diese musste das Feld _sk
 Desweiteren waren einige Vokabeln in der NDB mit Synonymen versehen. Für diese war das Feld _skos:altLabel "x"@de, "x"@en_ mit entsprechendem Synonym in deutscher und englischer Sprache zu ergänzen.
 
 
-<a name="3.2"></a>
-### 3.2 Veröffentlichung mit SKOHub Pages
+<a name="3.3"></a>
+### 3.3 Veröffentlichung mit SKOHub Pages
 
 Für die Veröffentlichung mit SKOHub Pages wurde zunächst von einem Gruppenmitlied das skohub-pages-Repositorium geforked und entsprechend der dort hinterlegten Beschreibung vorbereitet.[^3] Zugunsten der Übersichtlichkeit wurden die Dateien _colors.ttl_ und _colors_with_hierarchy.ttl_ entfernt. Nun wurde die zuvor erfolgreich mit dem SKOS testing tool auf korrekte Syntax überprüfte Datei _NDB_Berufe_SKOS.ttl_ ins Repositorium hochgeladen.
 
