@@ -117,13 +117,20 @@ Einige Vokabeln enthielten weitere Unterelemente. Für diese musste das Feld _sk
 
 Desweiteren waren einige Vokabeln in der NDB mit Synonymen versehen. Für diese war das Feld _skos:altLabel "x"@de, "x"@en_ mit entsprechendem Synonym in deutscher und englischer Sprache zu ergänzen.
 
+Mit einer kleinen Auswahl an SKOS-Kodierten Vokabeln wurde anschließend ein erster Test im SKOS testing tool durchgeführt.[^4] Dieser sollte zeigen, ob die bis hierhin getätigten Eintragungen in base, ConceptScheme, TopConcept und den ersten Vokabeln korrekt sind. Erwartungsgemäß zeigte das Testing Tool im unvollständigen Code mehrere Fehlermeldungen an: _Missing Labels_, _Undocumented Concepts_ und _Unidirectionally Related Concepts_. Da diese alle auf das Fehlen von im TopConcept definierten Unterlementen zurückzuführen waren, konnte der Code bis hierhin als in Ordnung angesehen werden. Konkrete Änderungen waren keine Vorzunehmen, lediglich die fehlenden Elemente waren zu ergänzen.
+
+Nach erfolgter Ergänzung der weiteren Vokabeln wurde ein erneuter Test durchgeführt, der nun zusätzliche Fehlermeldungen lieferte. Nach Vergleich der Meldungen mit dem Code waren diese auf zwei Flüchtigkeitsfehler zurückzuführen: ein _Concept_ wurde versehentlich mit der identischen Bezeichnung versehen wie das vorherige, wodurch der Fehler _Ambiguous Notation References_ aufgrund zweier Notationen für denselben Begriff erzeugt wurde. Zudem war der Fehler _Missing Labels_ weiterhin existent, da ein im TopConcept definierter Begriff weiterhin fehlte. Desweiteren wurde das Concept <Gastarbeiter>, bei dem es sich um ein Unterelement von <Arbeiter> handelt, direkt dem TopConcept <Berufe> zugeordnet. Dadurch wurde die hierarchische Ordnung gestört.
+
+Die nun noch existierenden Fehler konnten durch kleinere Anpassungen im Code ausgebessert werden: Die doppelt vergebene Concept-Bezeichnung wurde korrigiert, im Concept <Gastarbeiter> wurde das Feld skos:narrower angepasst. Ein erneuter Test verlief fehlerfrei.
+
+
 
 <a name="3.3"></a>
 ### 3.3 Veröffentlichung mit SKOHub Pages
 
 Für die Veröffentlichung mit SKOHub Pages wurde zunächst von einem Gruppenmitlied das skohub-pages-Repositorium geforked und entsprechend der dort hinterlegten Beschreibung vorbereitet.[^3] Zugunsten der Übersichtlichkeit wurden die Dateien _colors.ttl_ und _colors_with_hierarchy.ttl_ entfernt. Nun wurde die zuvor erfolgreich mit dem SKOS testing tool auf korrekte Syntax überprüfte Datei _NDB_Berufe_SKOS.ttl_ ins Repositorium hochgeladen.
 
-Beim Öffnen des entstandenen SkoHub Vocabs zeigte sich ein weiterer Fehler. Der in @base verwendete Link zur Normdatenbank konnte nicht verarbeitet werden, da dieser nicht über das öffentliche Internet, sondern nur über das ARD-Netz zugänglich ist. Der Link wurde stattdessen durch den Link zu SkoHub Vocabs ersetzt, wonach das Vokabular erfolgreich veröffentlicht wurde und geöffnet werden konnte. Im Folgenden mussten am Vokabular lediglich Rechtschreibung und Orthographie korrigiert und vereinheitlicht werden.
+Beim Öffnen des entstandenen SkoHub Vocabs zeigte sich ein weiterer Fehler. Der in @base verwendete Link zur Normdatenbank konnte nicht verarbeitet werden, da dieser nicht über das öffentliche Internet, sondern nur über das ARD-Netz zugänglich ist. Der Link wurde stattdessen durch den Link zu SkoHub Vocabs ersetzt, wonach das Vokabular erfolgreich veröffentlicht wurde und geöffnet werden konnte. Abschließend mussten am Vokabular lediglich Rechtschreibung und Orthographie korrigiert und vereinheitlicht werden.
 
 <a name="4"></a>
 ## **4. Kapitelname**
@@ -139,3 +146,4 @@ Beim Öffnen des entstandenen SkoHub Vocabs zeigte sich ein weiterer Fehler. Der
 [^1]: Felix Lohmeier, Adrian Pohl und Jakob Voß: Einführung in SKOS, o. D., [online] https://dini-ag-kim.github.io/skos-einfuehrung/#/.
 [^2]: https://felixlohmeier.github.io/turtle-web-editor/. 
 [^3]: https://github.com/skohub-io/skohub-pages.
+[^4]: https://skos-play.sparna.fr/skos-testing-tool/.
