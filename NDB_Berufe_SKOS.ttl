@@ -65,7 +65,7 @@
 
 <Archivar> a skos:Concept ;
   skos:prefLabel "Archivar"@de, "Archivist"@en ;
-  skos:definition "Umfasst das Bewerten, Sichern und Erschließen von Archivgut."@de, "Includes the evaluation, securing and indexing of archival material."@en ;
+  skos:definition "Person, die sich mit dem Bewerten, Sichern und Erschließen von Archivgut befasst."@de, "Person who deals with the evaluation, securing and indexing of archival material."@en ;
   skos:broader <Berufe> ;
   skos:notation "135504" ;
   skos:inScheme <NDB> .
