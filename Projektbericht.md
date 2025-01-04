@@ -50,19 +50,27 @@ Im Folgenden wird die Umsetzung genauer Beschrieben. Dabei soll zunächst detail
 
 <a name="3.1"></a>
 ### 3.1 SKOS-Kodierung des Vokabulars
-Als Grundlage für die Bearbeitung der Aufgabe und um ein Verständnis für SKOS zu gewinnen wurde von den Gruppenmitgliedern die in der Aufgabenstellung verlinkte _Einführung in SKOS_ von Felix Lohmeier, Adrian Pohl und Jakob Voß gelesen und das dort bereitgestellte Tutorial durchgearbeitet.[^1] Viele der dort beschriebenen Schritte konnten 
+Als Grundlage für die Bearbeitung der Aufgabe und um ein Verständnis für SKOS zu gewinnen wurde von den Gruppenmitgliedern die in der Aufgabenstellung verlinkte _Einführung in SKOS_ von Felix Lohmeier, Adrian Pohl und Jakob Voß gelesen und das dort bereitgestellte Tutorial durchgearbeitet.[^1] Viele der dort beschriebenen Schritte konnten für die Bearbeitung der Aufgabe direkt übernommen werden. 
 
+Der Großteil des Codes wurde zunächst im Turtle Web Editor[^2] geschrieben, der auch für die Bearbeitung des Tutorials empfohlen wird. 
 
+_Erstellung der Base, des ConceptSchemes und des Concepts ergänzen_
 
+Für die nun in die SKOS-Kodierung zu überführenden Vokabeln konnte ausgehend von den im Tutorial gelernten Basiskenntnissen eine Vorlage erarbeitet werden, in der lediglich die entsprechenden Eintragungen manuell zu ergänzen waren.
 
 ```
-<_Berufsbezeichnung_> a skos:Concept ;
-  skos:prefLabel "_Deutsche Bezeichnung_"@de, "_Englische Bezeichnung_"@en ;
-  skos:definition "_Deutsche Definition."@de, "Englische Definition."@en ;
-  skos:broader <Berufe> ;
-  skos:notation "_Vokabel-ID_" ;
+<x> a skos:Concept ;                # Berufsbezeichnung
+  skos:prefLabel "x"@de, "x"@en ;   # Berufsbezeichnung in deutscher und englischer Sprache
+  skos:definition "x"@de, "x"@en ;  # Definition des Berufs in deutscher und englischer Sprache
+  skos:broader <Berufe> ;           # zu ersetzen, sollte die Vokabel hierarchisch nicht direkt _Berufe_ untergeordnet sein
+  skos:notation "x" ;               # Vokabel-ID der NDB
   skos:inScheme <NDB> .
 ```
+
+Einige Vokabeln enthielten weitere Unterelemente. Für diese musste das Feld _skos:narrower <x>_ mit der entsprechenden Bezeichnung der untergeordneten Vokabel ergänzt werden. Zusätzlich war in der untergeordneten Vokabel _skos:broader <x>_ entsprechend zu ändern.
+
+Desweiteren waren einige Vokabeln in der NDB mit Synonymen versehen. Für diese war das Feld _skos:altLabel "x"@de, "x"@en_ mit entsprechendem Synonym in deutscher und englischer Sprache zu ergänzen.
+
 
 <a name="3.2"></a>
 ### 3.2 Veröffentlichung über SKOHub Pages
@@ -80,3 +88,4 @@ Als Grundlage für die Bearbeitung der Aufgabe und um ein Verständnis für SKOS
 
 
 [^1] Felix Lohmeier, Adrian Pohl und Jakob Voß: Einführung in SKOS, o. D., [online] https://dini-ag-kim.github.io/skos-einfuehrung/#/.
+[^2] https://felixlohmeier.github.io/turtle-web-editor/ 
