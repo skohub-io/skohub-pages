@@ -16,7 +16,7 @@ Rieke Paetsch-Saleh (Matrikelnummer: xxxxxxxx )
 - [2. Organisation der Zusammenarbeit ???](#2)
 - [3. Umsetzungsphase](#3)
     - [3.1 SKOS-Kodierung des Vokabulars](#3.1)
-    - [3.2 Veröffentlichung über SKOHub Pages](#3.2)
+    - [3.2 Veröffentlichung mit SKOHub Pages](#3.2)
 - [4. Kapitelname](#4)
 - [5. Kapitelname](#5)
   
@@ -50,9 +50,9 @@ Im Folgenden wird die Umsetzung genauer Beschrieben. Dabei soll zunächst detail
 
 <a name="3.1"></a>
 ### 3.1 SKOS-Kodierung des Vokabulars
-Als Grundlage für die Bearbeitung der Aufgabe und um ein Verständnis für SKOS zu gewinnen wurde von den Gruppenmitgliedern die in der Aufgabenstellung verlinkte _Einführung in SKOS_ von Felix Lohmeier, Adrian Pohl und Jakob Voß gelesen und das dort bereitgestellte Tutorial durchgearbeitet.[^1] Viele der dort beschriebenen Schritte konnten für die Bearbeitung der Aufgabe direkt übernommen werden. 
+Als Grundlage für die Bearbeitung der Aufgabe und um ein Verständnis für SKOS zu gewinnen wurde von den Gruppenmitgliedern die in der Aufgabenstellung verlinkte _Einführung in SKOS_ von Felix Lohmeier, Adrian Pohl und Jakob Voß gelesen und das dort bereitgestellte Tutorial durchgearbeitet.[^1] Viele der dort beschriebenen Schritte und Vorgehensweisen konnten für die Bearbeitung der Aufgabe direkt übernommen werden. 
 
-Der Großteil des Codes wurde zunächst im Turtle Web Editor[^2] geschrieben, der auch für die Bearbeitung des Tutorials empfohlen wird. 
+Der Großteil des Codes wurde zunächst im Turtle Web Editor[^2] geschrieben, der auch für die Bearbeitung des Tutorials empfohlen wird. Eben
 
 _Erstellung der Base, des ConceptSchemes und des Concepts ergänzen_
 
@@ -73,8 +73,11 @@ Desweiteren waren einige Vokabeln in der NDB mit Synonymen versehen. Für diese 
 
 
 <a name="3.2"></a>
-### 3.2 Veröffentlichung über SKOHub Pages
+### 3.2 Veröffentlichung mit SKOHub Pages
 
+Für die Veröffentlichung mit SKOHub Pages wurde zunächst von einem Gruppenmitlied das skohub-pages-Repositorium geforked und entsprechend der dort hinterlegten Beschreibung vorbereitet.[^3] Zugunsten der Übersichtlichkeit wurden die Dateien _colors.ttl_ und _colors_with_hierarchy.ttl_ entfernt. Nun wurde die zuvor erfolgreich mit dem SKOS testing tool auf korrekte Syntax überprüfte Datei _NDB_Berufe_SKOS.ttl_ ins Repositorium hochgeladen.
+
+Beim Öffnen des entstandenen SkoHub Vocabs zeigte sich ein weiterer Fehler. Der in @base verwendete Link zur Normdatenbank konnte nicht verarbeitet werden, da dieser nicht über das öffentliche Internet, sondern nur über das ARD-Netz zugänglich ist. Der Link wurde stattdessen durch den Link zu SkoHub Vocabs ersetzt, wonach das Vokabular erfolgreich veröffentlicht wurde und geöffnet werden konnte. Im Folgenden mussten am Vokabular lediglich Rechtschreibung und Orthographie korrigiert und vereinheitlicht werden.
 
 <a name="4"></a>
 ## **4. Kapitelname**
@@ -88,4 +91,5 @@ Desweiteren waren einige Vokabeln in der NDB mit Synonymen versehen. Für diese 
 
 
 [^1] Felix Lohmeier, Adrian Pohl und Jakob Voß: Einführung in SKOS, o. D., [online] https://dini-ag-kim.github.io/skos-einfuehrung/#/.
-[^2] https://felixlohmeier.github.io/turtle-web-editor/ 
+[^2] https://felixlohmeier.github.io/turtle-web-editor/. 
+[^3] https://github.com/skohub-io/skohub-pages.
