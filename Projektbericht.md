@@ -90,6 +90,6 @@ Beim Öffnen des entstandenen SkoHub Vocabs zeigte sich ein weiterer Fehler. Der
 
 
 
-[^1] Felix Lohmeier, Adrian Pohl und Jakob Voß: Einführung in SKOS, o. D., [online] https://dini-ag-kim.github.io/skos-einfuehrung/#/.
-[^2] https://felixlohmeier.github.io/turtle-web-editor/. 
-[^3] https://github.com/skohub-io/skohub-pages.
+[^1]: Felix Lohmeier, Adrian Pohl und Jakob Voß: Einführung in SKOS, o. D., [online] https://dini-ag-kim.github.io/skos-einfuehrung/#/.
+[^2]: https://felixlohmeier.github.io/turtle-web-editor/. 
+[^3]: https://github.com/skohub-io/skohub-pages.
