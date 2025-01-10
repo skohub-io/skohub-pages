@@ -41,7 +41,8 @@ Die Normdatenbank wird lediglich in deutscher Sprache geführt. Die Gruppe hat s
 Im weiteren Verlauf des Projektberichtes wird darauf eingegangen, welche Felder der NDB für relevant erachtet und wie diese in der SKOS-Kodierung implementiert wurden.
 
 <a name="2"></a>
-## **2. Kapitelname**
+## **2. Organisation der Zusammenarbeit**
+Da die Gruppenmitglieder nicht alle in derselben Stadt wohnen, haben sie sich mehrmals in Online-Konferenzen getroffen und sich über die Aufgabe und das Vorgehen ausgetauscht. Zudem wurden Neuigkeiten oder Hinweise auch in einer Chatgruppe spontan mitgeteilt.  
 
 
 <a name="3"></a>
