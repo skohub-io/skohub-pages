@@ -57,8 +57,7 @@ schulf:deutsch a skos:Concept ;
     skos:broader schulf:sprachen ;
     skos:inScheme schulf: ;
     dct:publisher "Deutsche Schule Helsinki" ;
-    dct:modified "2018-06-20"^^xsd:date ;
-    skos:topConceptOf schulf: .
+    dct:modified "2018-06-20"^^xsd:date .
 
 schulf:finnisch_muttersprache a skos:Concept ;
     skos:prefLabel "Finnisch als Muttersprache"@de, "Suomi äidinkielenä"@fi ;
@@ -68,8 +67,7 @@ schulf:finnisch_muttersprache a skos:Concept ;
     skos:broader schulf:sprachen ;
     skos:inScheme schulf: ;
     dct:publisher "Deutsche Schule Helsinki" ;
-    dct:modified "2018-06-20"^^xsd:date ;
-    skos:topConceptOf schulf: .
+    dct:modified "2018-06-20"^^xsd:date .
 
 schulf:finnisch_fremsprache a skos:Concept ;
     skos:prefLabel "Finnisch als Fremdsprache"@de, "Suomi vieraana kielenä"@fi ;
@@ -79,8 +77,7 @@ schulf:finnisch_fremsprache a skos:Concept ;
     skos:broader schulf:sprachen ;
     skos:inScheme schulf: ;
     dct:publisher "Deutsche Schule Helsinki" ;
-    dct:modified "2018-06-20"^^xsd:date ;
-    skos:topConceptOf schulf: .
+    dct:modified "2018-06-20"^^xsd:date .
 
 schulf:englisch a skos:Concept ;
     skos:prefLabel "Englisch"@de, "Englanti"@fi ;
@@ -90,8 +87,7 @@ schulf:englisch a skos:Concept ;
     skos:broader schulf:sprachen ;
     skos:inScheme schulf: ;
     dct:publisher "Deutsche Schule Helsinki" ;
-    dct:modified "2018-06-20"^^xsd:date ;
-    skos:topConceptOf schulf: .
+    dct:modified "2018-06-20"^^xsd:date .
 
 schulf:schwedisch a skos:Concept ;
     skos:prefLabel "Schwedisch"@de, "Ruotsi"@fi ;
@@ -101,8 +97,7 @@ schulf:schwedisch a skos:Concept ;
     skos:broader schulf:sprachen ;
     skos:inScheme schulf: ;
     dct:publisher "Deutsche Schule Helsinki" ;
-    dct:modified "2018-06-20"^^xsd:date ;
-    skos:topConceptOf schulf: .
+    dct:modified "2018-06-20"^^xsd:date .
 
 schulf:mathematik a skos:Concept ;
     skos:prefLabel "Mathematik"@de, "Matematiikka"@fi ;
@@ -112,8 +107,7 @@ schulf:mathematik a skos:Concept ;
     skos:broader schulf:naturwissenschaften ;
     skos:inScheme schulf: ;
     dct:publisher "Deutsche Schule Helsinki" ;
-    dct:modified "2018-06-20"^^xsd:date ;
-    skos:topConceptOf schulf: .
+    dct:modified "2018-06-20"^^xsd:date .
 
 schulf:sachkunde a skos:Concept ;
     skos:prefLabel "Sachkunde"@de, "Ympäristö- ja luonnontieto"@fi ;
@@ -123,8 +117,7 @@ schulf:sachkunde a skos:Concept ;
     skos:broader schulf:naturwissenschaften ;
     skos:inScheme schulf: ;
     dct:publisher "Deutsche Schule Helsinki" ;
-    dct:modified "2018-06-20"^^xsd:date ;
-    skos:topConceptOf schulf: .
+    dct:modified "2018-06-20"^^xsd:date .
 
 schulf:biologie a skos:Concept ;
     skos:prefLabel "Biologie"@de, "Biologia"@fi ;
@@ -134,8 +127,7 @@ schulf:biologie a skos:Concept ;
     skos:broader schulf:naturwissenschaften ;
     skos:inScheme schulf: ;
     dct:publisher "Deutsche Schule Helsinki" ;
-    dct:modified "2018-06-20"^^xsd:date ;
-    skos:topConceptOf schulf: .
+    dct:modified "2018-06-20"^^xsd:date .
 
 schulf:erdkunde a skos:Concept ;
     skos:prefLabel "Erdkunde"@de, "Maantieto"@fi ;
@@ -145,8 +137,7 @@ schulf:erdkunde a skos:Concept ;
     skos:broader schulf:naturwissenschaften ;
     skos:inScheme schulf: ;
     dct:publisher "Deutsche Schule Helsinki" ;
-    dct:modified "2018-06-20"^^xsd:date ;
-    skos:topConceptOf schulf: .
+    dct:modified "2018-06-20"^^xsd:date .
 
 schulf:physik a skos:Concept ;
     skos:prefLabel "Physik"@de, "Fysiikka"@fi ;
@@ -156,8 +147,7 @@ schulf:physik a skos:Concept ;
     skos:broader schulf:naturwissenschaften ;
     skos:inScheme schulf: ;
     dct:publisher "Deutsche Schule Helsinki" ;
-    dct:modified "2018-06-20"^^xsd:date ;
-    skos:topConceptOf schulf: .
+    dct:modified "2018-06-20"^^xsd:date .
 
 schulf:chemie a skos:Concept ;
     skos:prefLabel "Chemie"@de, "Kemia"@fi ;
@@ -167,8 +157,7 @@ schulf:chemie a skos:Concept ;
     skos:broader schulf:naturwissenschaften ;
     skos:inScheme schulf: ;
     dct:publisher "Deutsche Schule Helsinki" ;
-    dct:modified "2018-06-20"^^xsd:date ;
-    skos:topConceptOf schulf: .
+    dct:modified "2018-06-20"^^xsd:date .
 
 schulf:gesundheitserziehung a skos:Concept ;
     skos:prefLabel "Gesundheitserziehung"@de, "Terveystieto"@fi ;
@@ -178,8 +167,7 @@ schulf:gesundheitserziehung a skos:Concept ;
     skos:broader schulf:naturwissenschaften ;
     skos:inScheme schulf: ;
     dct:publisher "Deutsche Schule Helsinki" ;
-    dct:modified "2018-06-20"^^xsd:date ;
-    skos:topConceptOf schulf: .
+    dct:modified "2018-06-20"^^xsd:date .
 
 schulf:religion_ethik a skos:Concept ;
     skos:prefLabel "Religion, Ethik"@de, "Uskonto, elämänkatsomustieto"@fi ;
@@ -189,8 +177,7 @@ schulf:religion_ethik a skos:Concept ;
     skos:broader schulf:geisteswissenschaften ;
     skos:inScheme schulf: ;
     dct:publisher "Deutsche Schule Helsinki" ;
-    dct:modified "2018-06-20"^^xsd:date ;
-    skos:topConceptOf schulf: .
+    dct:modified "2018-06-20"^^xsd:date .
 
 schulf:geschichte a skos:Concept ;
     skos:prefLabel "Geschichte"@de, "Historia"@fi ;
@@ -200,8 +187,7 @@ schulf:geschichte a skos:Concept ;
     skos:broader schulf:geisteswissenschaften ;
     skos:inScheme schulf: ;
     dct:publisher "Deutsche Schule Helsinki" ;
-    dct:modified "2018-06-20"^^xsd:date ;
-    skos:topConceptOf schulf: .
+    dct:modified "2018-06-20"^^xsd:date .
 
 schulf:gesellschaftskunde a skos:Concept ;
     skos:prefLabel "Gesellschaftskunde"@de, "Yhteiskuntaoppi"@fi ;
@@ -211,8 +197,7 @@ schulf:gesellschaftskunde a skos:Concept ;
     skos:broader schulf:geisteswissenschaften ;
     skos:inScheme schulf: ;
     dct:publisher "Deutsche Schule Helsinki" ;
-    dct:modified "2018-06-20"^^xsd:date ;
-    skos:topConceptOf schulf: .
+    dct:modified "2018-06-20"^^xsd:date .
 
 schulf:musik a skos:Concept ;
     skos:prefLabel "Musik"@de, "Musiikki"@fi ;
@@ -222,8 +207,7 @@ schulf:musik a skos:Concept ;
     skos:broader schulf:kuenstlerische_faecher ;
     skos:inScheme schulf: ;
     dct:publisher "Deutsche Schule Helsinki" ;
-    dct:modified "2018-06-20"^^xsd:date ;
-    skos:topConceptOf schulf: .
+    dct:modified "2018-06-20"^^xsd:date .
 
 schulf:kunst a skos:Concept ;
     skos:prefLabel "Kunst"@de, "Kuvataide"@fi ;
@@ -233,8 +217,7 @@ schulf:kunst a skos:Concept ;
     skos:broader schulf:kuenstlerische_faecher ;
     skos:inScheme schulf: ;
     dct:publisher "Deutsche Schule Helsinki" ;
-    dct:modified "2018-06-20"^^xsd:date ;
-    skos:topConceptOf schulf: .
+    dct:modified "2018-06-20"^^xsd:date .
 
 schulf:handarbeit a skos:Concept ;
     skos:prefLabel "Handarbeit"@de, "Käsityö"@fi ;
@@ -244,8 +227,7 @@ schulf:handarbeit a skos:Concept ;
     skos:broader schulf:kuenstlerische_faecher ;
     skos:inScheme schulf: ;
     dct:publisher "Deutsche Schule Helsinki" ;
-    dct:modified "2018-06-20"^^xsd:date ;
-    skos:topConceptOf schulf: .
+    dct:modified "2018-06-20"^^xsd:date .
 
 schulf:sport a skos:Concept ;
     skos:prefLabel "Sport"@de, "Liikunta"@fi ;
@@ -254,8 +236,7 @@ schulf:sport a skos:Concept ;
     skos:scopeNote "Unterricht auf Deutsch"@de, "Opetus saksaksi"@fi ;
     skos:inScheme schulf: ;
     dct:publisher "Deutsche Schule Helsinki" ;
-    dct:modified "2018-06-20"^^xsd:date ;
-    skos:topConceptOf schulf: .
+    dct:modified "2018-06-20"^^xsd:date .
 
 schulf:hauswirtschaft a skos:Concept ;
     skos:prefLabel "Hauswirtschaft"@de, "Kotitalous"@fi ;
@@ -265,8 +246,8 @@ schulf:hauswirtschaft a skos:Concept ;
     skos:broader schulf:erziehungswissenschaften ;
     skos:inScheme schulf: ;
     dct:publisher "Deutsche Schule Helsinki" ;
-    dct:modified "2018-06-20"^^xsd:date ;
-    skos:topConceptOf schulf: .
+    dct:modified "2018-06-20"^^xsd:date .
+
 
 
 
