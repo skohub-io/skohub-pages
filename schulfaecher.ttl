@@ -13,9 +13,8 @@ schulf: a skos:ConceptScheme ;
         schulf:sprachen, 
         schulf:naturwissenschaften, 
         schulf:geisteswissenschaften, 
-        schulf:erzieungswissenschaften, 
-        schulf:kuenstlerische_faecher, 
-        schulf:sport .
+        schulf:erziehungswissenschaften, 
+        schulf:kuenstlerische_faecher .
 
 schulf:sprachen a skos:Concept ;
     skos:prefLabel "Sprachen"@de, "Kielet"@fi ;
@@ -28,14 +27,12 @@ schulf:naturwissenschaften a skos:Concept ;
     skos:topConceptOf schulf: .
 
 schulf:geisteswissenschaften a skos:Concept ;
-    skos:prefLabel "Geisteswissenschaften"@de, "humanistiset tieteet
-"@fi ;
+    skos:prefLabel "Geisteswissenschaften"@de, "humanistiset tieteet"@fi ;
     skos:inScheme schulf: ;
     skos:topConceptOf schulf: .
 
 schulf:kuenstlerische_faecher a skos:Concept ;
-    skos:prefLabel "Künstlerische Fächer"@de, "taiteellisia aiheita
-"@fi ;
+    skos:prefLabel "Künstlerische Fächer"@de, "taiteellisia aiheita"@fi ;
     skos:inScheme schulf: ;
     skos:topConceptOf schulf: .
 
@@ -45,7 +42,7 @@ schulf:erziehungswissenschaften a skos:Concept ;
     skos:topConceptOf schulf: .
 
 schulf:sport a skos:Concept ;
-    skos:prefLabel "Sport"@de, "urheilu"@fi ;
+    skos:prefLabel "Sport"@de, "Liikunta"@fi ;
     skos:inScheme schulf: ;
     skos:topConceptOf schulf: .
 
@@ -247,6 +244,7 @@ schulf:hauswirtschaft a skos:Concept ;
     skos:inScheme schulf: ;
     dct:publisher "Deutsche Schule Helsinki" ;
     dct:modified "2018-06-20"^^xsd:date .
+
 
 
 
