@@ -1,0 +1,234 @@
+@prefix schulf: <https://w3id.org/dsh/schulfaecher/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+schulf: a skos:ConceptScheme ;
+    dct:title "Schulfächer an einer deutschen Schule in Finnland"@de, "School Subjects at a German school in Finland"@en ;
+    dct:creator "Deutsche Schule Helsinki" ;
+    dct:created "2018-06-20"^^xsd:date ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    skos:hasTopConcept schulf:sprachen, schulf:naturwissenschaften, schulf:geisteswissenschaften, schulf:erzieungswissenschaften, schulf:kuenstlerische_faecher, schulf:sport .
+
+schulf:deutsch a skos:Concept ;
+    skos:prefLabel "Deutsch"@de, "Saksa"@fi ;
+    skos:definition "Schulfach, in dem die deutsche Sprache gelehrt wird"@de, "Koulun oppiaine, jossa opetetaan saksan kieltä."@fi ;
+    skos:altLabel "saksankieli"@fi ;
+    skos:scopeNote "Unterricht auf Deutsch"@de, "Opetus saksaksi"@fi ;
+    skos:broader schulf:sprachen ;
+    skos:inScheme schulf: ;
+    dct:publisher "Deutsche Schule Helsinki" ;
+    dct:modified "2018-06-20"^^xsd:date ;
+    skos:topConceptOf schulf: .
+
+schulf:finnisch_muttersprache a skos:Concept ;
+    skos:prefLabel "Finnisch als Muttersprache"@de, "Suomi äidinkielenä"@fi ;
+    skos:definition "Schulfach, in dem die finnische Sprache gelehrt wird"@de, "Koulun oppiaine, jossa opetetaan suomen kieltä"@fi ;
+    skos:altLabel "FIM"@fi, "Äikkä"@fi ;
+    skos:scopeNote "Unterricht auf Finnisch"@de, "Opetus suomeksi"@fi ;
+    skos:broader schulf:sprachen ;
+    skos:inScheme schulf: ;
+    dct:publisher "Deutsche Schule Helsinki" ;
+    dct:modified "2018-06-20"^^xsd:date ;
+    skos:topConceptOf schulf: .
+
+schulf:finnisch_fremsprache a skos:Concept ;
+    skos:prefLabel "Finnisch als Fremdsprache"@de, "Suomi vieraana kielenä"@fi ;
+    skos:definition "Schulfach, in dem die finnische Sprache gelehrt wird"@de, "Koulun oppiaine, jossa opetetaan suomen kieltä"@fi ;
+    skos:altLabel "Finni"@de, "FIF"@fi, "suomenkieli"@fi ;
+    skos:scopeNote "Unterricht auf Finnisch"@de, "Opetus suomeksi"@fi ;
+    skos:broader schulf:sprachen ;
+    skos:inScheme schulf: ;
+    dct:publisher "Deutsche Schule Helsinki" ;
+    dct:modified "2018-06-20"^^xsd:date ;
+    skos:topConceptOf schulf: .
+
+schulf:englisch a skos:Concept ;
+    skos:prefLabel "Englisch"@de, "Englanti"@fi ;
+    skos:definition "Schulfach, in dem die englische Sprache gelehrt wird"@de, "Koulun oppiaine, jossa opetetaan englantia"@fi ;
+    skos:altLabel "Englantis"@fi, "Englantsi"@fi ;
+    skos:scopeNote "Unterricht auf Deutsch"@de, "Opetus saksaksi"@fi ;
+    skos:broader schulf:sprachen ;
+    skos:inScheme schulf: ;
+    dct:publisher "Deutsche Schule Helsinki" ;
+    dct:modified "2018-06-20"^^xsd:date ;
+    skos:topConceptOf schulf: .
+
+schulf:schwedisch a skos:Concept ;
+    skos:prefLabel "Schwedisch"@de, "Ruotsi"@fi ;
+    skos:definition "Schulfach, in dem die schwedische Sprache gelehrt wird"@de, "Koulun oppiaine, jossa opetetaan ruotsia"@fi ;
+    skos:altLabel "Rotsi"@fi ;
+    skos:scopeNote "Unterricht auf Finnisch"@de, "Opetus suomeksi"@fi ;
+    skos:broader schulf:sprachen ;
+    skos:inScheme schulf: ;
+    dct:publisher "Deutsche Schule Helsinki" ;
+    dct:modified "2018-06-20"^^xsd:date ;
+    skos:topConceptOf schulf: .
+
+schulf:mathematik a skos:Concept ;
+    skos:prefLabel "Mathematik"@de, "Matematiikka"@fi ;
+    skos:definition "Schulfach über Strukturen und Zahlen"@de, "Rakenteita ja lukuja käsittelevä kouluaine"@fi ;
+    skos:altLabel "Mathe"@de, "Matikka"@fi ;
+    skos:scopeNote "Unterricht auf Deutsch"@de, "Opetus saksaksi"@fi ;
+    skos:broader schulf:naturwissenschaften ;
+    skos:inScheme schulf: ;
+    dct:publisher "Deutsche Schule Helsinki" ;
+    dct:modified "2018-06-20"^^xsd:date ;
+    skos:topConceptOf schulf: .
+
+schulf:sachkunde a skos:Concept ;
+    skos:prefLabel "Sachkunde"@de, "Ympäristö- ja luonnontieto"@fi ;
+    skos:definition "Schulfach über Natur und Umwelt"@de, "Luontoa ja ympäristöä koskeva aihekohtainen opetus"@fi ;
+    skos:altLabel "Ympäri"@fi, "Ympis"@fi ;
+    skos:scopeNote "Unterricht auf Deutsch"@de, "Opetus saksaksi"@fi ;
+    skos:broader schulf:naturwissenschaften ;
+    skos:inScheme schulf: ;
+    dct:publisher "Deutsche Schule Helsinki" ;
+    dct:modified "2018-06-20"^^xsd:date ;
+    skos:topConceptOf schulf: .
+
+schulf:biologie a skos:Concept ;
+    skos:prefLabel "Biologie"@de, "Biologia"@fi ;
+    skos:definition "Schulfach über lebende Organismen"@de, "Koulun oppiaine elävistä organismeista"@fi ;
+    skos:altLabel "Bio"@de, "Biot"@fi, "Biosa"@fi ;
+    skos:scopeNote "Unterricht auf Deutsch"@de, "Opetus saksaksi"@fi ;
+    skos:broader schulf:naturwissenschaften ;
+    skos:inScheme schulf: ;
+    dct:publisher "Deutsche Schule Helsinki" ;
+    dct:modified "2018-06-20"^^xsd:date ;
+    skos:topConceptOf schulf: .
+
+schulf:erdkunde a skos:Concept ;
+    skos:prefLabel "Erdkunde"@de, "Maantieto"@fi ;
+    skos:definition "Schulfach, das sich mit der Erde, ihren Landschaften, Ländern, Kulturen und natürlichen Prozessen befasst"@de, "Kouluaine, joka käsittelee Maata, sen maisemia, maita, kulttuureja ja luonnollisia prosesseja"@fi ;
+    skos:altLabel "Mäntsä"@fi ;
+    skos:scopeNote "Unterricht auf Deutsch"@de, "Opetus saksaksi"@fi ;
+    skos:broader schulf:naturwissenschaften ;
+    skos:inScheme schulf: ;
+    dct:publisher "Deutsche Schule Helsinki" ;
+    dct:modified "2018-06-20"^^xsd:date ;
+    skos:topConceptOf schulf: .
+
+schulf:physik a skos:Concept ;
+    skos:prefLabel "Physik"@de, "Fysiikka"@fi ;
+    skos:definition "Schulfach, das grundlegende Naturgesetze sowie Phänomene der Materie, Energie und Bewegung vermittelt"@de, "Kouluaine, joka opettaa luonnon peruslakeja sekä aineen, energian ja liikkeen ilmiöitä"@fi ;
+    skos:altLabel "Fyssari"@fi, "Fyssa"@fi ;
+    skos:scopeNote "Unterricht auf Deutsch"@de, "Opetus saksaksi"@fi ;
+    skos:broader schulf:naturwissenschaften ;
+    skos:inScheme schulf: ;
+    dct:publisher "Deutsche Schule Helsinki" ;
+    dct:modified "2018-06-20"^^xsd:date ;
+    skos:topConceptOf schulf: .
+
+schulf:chemie a skos:Concept ;
+    skos:prefLabel "Chemie"@de, "Kemia"@fi ;
+    skos:definition "Schulfach, das den Aufbau, die Eigenschaften und die Umwandlung von Stoffen untersucht"@de, "Kouluaine, joka tutkii aineiden rakennetta, ominaisuuksia ja muuttumista"@fi ;
+    skos:altLabel "Kemppi"@fi,"Kemari"@fi ;
+    skos:scopeNote "Unterricht auf Deutsch"@de, "Opetus saksaksi"@fi ;
+    skos:broader schulf:naturwissenschaften ;
+    skos:inScheme schulf: ;
+    dct:publisher "Deutsche Schule Helsinki" ;
+    dct:modified "2018-06-20"^^xsd:date ;
+    skos:topConceptOf schulf: .
+
+schulf:gesundheitserziehung a skos:Concept ;
+    skos:prefLabel "Gesundheitserziehung"@de, "Terveystieto"@fi ;
+    skos:definition "Schulfach, das Kenntnisse und Kompetenzen zur Förderung von Gesundheit, Wohlbefinden und verantwortungsbewusstem Lebensstil vermittelt"@de, "Kouluaine, joka opettaa tietoja ja taitoja terveyden, hyvinvoinnin ja vastuullisen elämäntavan edistämiseksi"@fi ;
+    skos:altLabel "Terveis"@fi, "Tetsi"@fi ;
+    skos:scopeNote "Unterricht auf Deutsch"@de, "Opetus saksaksi"@fi ;
+    skos:broader schulf:naturwissenschaften ;
+    skos:inScheme schulf: ;
+    dct:publisher "Deutsche Schule Helsinki" ;
+    dct:modified "2018-06-20"^^xsd:date ;
+    skos:topConceptOf schulf: .
+
+schulf:religion_ethik a skos:Concept ;
+    skos:prefLabel "Religion, Ethik"@de, "Uskonto, elämänkatsomustieto"@fi ;
+    skos:definition "Schulfach, das religiöse Traditionen, ethische Fragestellungen sowie Werteorientierung thematisiert"@de, "Kouluaine, joka käsittelee uskonnollisia perinteitä, eettisiä kysymyksiä sekä arvopohjaa"@fi ;
+    skos:altLabel "Reli"@de, "Usku"@fi, "Elkatsi"@fi, "Elkä"@fi ;
+    skos:scopeNote "Unterricht auf Deutsch"@de, "Opetus saksaksi"@fi ;
+    skos:broader schulf:geisteswissenschaften ;
+    skos:inScheme schulf: ;
+    dct:publisher "Deutsche Schule Helsinki" ;
+    dct:modified "2018-06-20"^^xsd:date ;
+    skos:topConceptOf schulf: .
+
+schulf:geschichte a skos:Concept ;
+    skos:prefLabel "Geschichte"@de, "Historia"@fi ;
+    skos:definition "Schulfach, das historische Ereignisse, Entwicklungen und Zusammenhänge aus Vergangenheit und Gegenwart behandelt"@de, "Kouluaine, joka käsittelee historiallisia tapahtumia, kehityskulkuja ja yhteyksiä menneisyydestä nykypäivään"@fi ;
+    skos:altLabel "Geschi"@de, "Histis"@fi, "Histsa"@fi ;
+    skos:scopeNote "Unterricht auf Deutsch und Finnisch"@de, "Opetus saksaki ja suomeksi"@fi ;
+    skos:broader schulf:geisteswissenschaften ;
+    skos:inScheme schulf: ;
+    dct:publisher "Deutsche Schule Helsinki" ;
+    dct:modified "2018-06-20"^^xsd:date ;
+    skos:topConceptOf schulf: .
+
+schulf:gesellschaftskunde a skos:Concept ;
+    skos:prefLabel "Gesellschaftskunde"@de, "Yhteiskuntaoppi"@fi ;
+    skos:definition "Schulfach, das politische, soziale und wirtschaftliche Strukturen sowie das Zusammenleben in der Gesellschaft vermittelt"@de, "Kouluaine, joka opettaa poliittisia, sosiaalisia ja taloudellisia rakenteita sekä yhteiselämää yhteiskunnassa"@fi ;
+    skos:altLabel "Yhteis"@fi, "Ykkis"@fi, "Yoppi"@fi ;
+    skos:scopeNote "Unterricht auf Deutsch"@de, "Opetus saksaksi"@fi ;
+    skos:broader schulf:geisteswissenschaften ;
+    skos:inScheme schulf: ;
+    dct:publisher "Deutsche Schule Helsinki" ;
+    dct:modified "2018-06-20"^^xsd:date ;
+    skos:topConceptOf schulf: .
+
+schulf:musik a skos:Concept ;
+    skos:prefLabel "Musik"@de, "Musiikki"@fi ;
+    skos:definition "Schulfach, das musikalische Grundlagen, aktives Musizieren sowie das Verständnis von Musik fördert"@de, "Kouluaine, joka edistää musiikin perusteiden, aktiivisen soiton ja musiikin ymmärtämisen oppimista"@fi ;
+    skos:altLabel "Muska"@fi ;
+    skos:scopeNote "Unterricht auf Deutsch"@de, "Opetus saksaksi"@fi ;
+    skos:broader schulf:kuenstlerische_faecher ;
+    skos:inScheme schulf: ;
+    dct:publisher "Deutsche Schule Helsinki" ;
+    dct:modified "2018-06-20"^^xsd:date ;
+    skos:topConceptOf schulf: .
+
+schulf:kunst a skos:Concept ;
+    skos:prefLabel "Kunst"@de, "Kuvataide"@fi ;
+    skos:definition "Schulfach, das kreatives Gestalten, bildnerische Ausdrucksformen und ästhetisches Wahrnehmen fördert"@de, "Kouluaine, joka edistää luovaa ilmaisua, kuvallisia ilmaisumuotoja ja esteettistä havainnointia"@fi ;
+    skos:altLabel "Kuva"@fi ;
+    skos:scopeNote "Unterricht auf Deutsch"@de, "Opetus saksaksi"@fi ;
+    skos:broader schulf:kuenstlerische_faecher ;
+    skos:inScheme schulf: ;
+    dct:publisher "Deutsche Schule Helsinki" ;
+    dct:modified "2018-06-20"^^xsd:date ;
+    skos:topConceptOf schulf: .
+
+schulf:handarbeit a skos:Concept ;
+    skos:prefLabel "Handarbeit"@de, "Käsityö"@fi ;
+    skos:definition "Schulfach, das handwerkliche Fertigkeiten sowie kreatives Arbeiten mit verschiedenen Materialien vermittelt"@de, "Kouluaine, joka opettaa käsityötaitoja sekä luovaa työskentelyä eri materiaaleillaKoulun oppiaine, jossa opetetaan suomen kieltä"@fi ;
+    skos:altLabel "Käsis"@fi ;
+    skos:scopeNote "Unterricht auf Deutsch und Finnisch"@de, "Opetus saksaki ja suomeksi"@fi ;
+    skos:broader schulf:kuenstlerische_faecher ;
+    skos:inScheme schulf: ;
+    dct:publisher "Deutsche Schule Helsinki" ;
+    dct:modified "2018-06-20"^^xsd:date ;
+    skos:topConceptOf schulf: .
+
+schulf:sport a skos:Concept ;
+    skos:prefLabel "Sport"@de, "Liikunta"@fi ;
+    skos:definition "Schulfach, das körperliche Bewegung, sportliche Fähigkeiten sowie Gesundheit und Teamarbeit fördert"@de, "Kouluaine, joka edistää liikuntaa, urheilullisia taitoja sekä terveyttä ja ryhmätyöskentelyä"@fi ;
+    skos:altLabel "Liiku"@fi ;
+    skos:scopeNote "Unterricht auf Deutsch"@de, "Opetus saksaksi"@fi ;
+    skos:inScheme schulf: ;
+    dct:publisher "Deutsche Schule Helsinki" ;
+    dct:modified "2018-06-20"^^xsd:date ;
+    skos:topConceptOf schulf: .
+
+schulf:hauswirtschaft a skos:Concept ;
+    skos:prefLabel "Hauswirtschaft"@de, "Kotitalous"@fi ;
+    skos:definition "Schulfach, das Kenntnisse und Fähigkeiten zur Haushaltsführung, Ernährung und Alltagsorganisation vermittelt"@de, "Kouluaine, joka opettaa taloudenhoidon, ravitsemuksen ja arkielämän järjestämisen tietoja ja taitoja"@fi ;
+    skos:altLabel "HW"@de, "Koti"@fi, "Kotis"@fi ;
+    skos:scopeNote "Unterricht auf Deutsch"@de, "Opetus saksaksi"@fi ;
+    skos:broader schulf:erziehungswissenschaften ;
+    skos:inScheme schulf: ;
+    dct:publisher "Deutsche Schule Helsinki" ;
+    dct:modified "2018-06-20"^^xsd:date ;
+    skos:topConceptOf schulf: .
+
+
+
