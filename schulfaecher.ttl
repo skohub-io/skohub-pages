@@ -9,7 +9,45 @@ schulf: a skos:ConceptScheme ;
     dct:creator "Deutsche Schule Helsinki" ;
     dct:created "2018-06-20"^^xsd:date ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    skos:hasTopConcept schulf:sprachen, schulf:naturwissenschaften, schulf:geisteswissenschaften, schulf:erzieungswissenschaften, schulf:kuenstlerische_faecher, schulf:sport .
+    skos:hasTopConcept 
+        schulf:sprachen, 
+        schulf:naturwissenschaften, 
+        schulf:geisteswissenschaften, 
+        schulf:erzieungswissenschaften, 
+        schulf:kuenstlerische_faecher, 
+        schulf:sport .
+
+schulf:sprachen a skos:Concept ;
+    skos:prefLabel "Sprachen"@de, "Kielet"@fi ;
+    skos:inScheme schulf: ;
+    skos:topConceptOf schulf: .
+
+schulf:naturwissenschaften a skos:Concept ;
+    skos:prefLabel "Naturwissenschaften"@de, "luonnontieteet"@fi ;
+    skos:inScheme schulf: ;
+    skos:topConceptOf schulf: .
+
+schulf:geisteswissenschaften a skos:Concept ;
+    skos:prefLabel "Geisteswissenschaften"@de, "humanistiset tieteet
+"@fi ;
+    skos:inScheme schulf: ;
+    skos:topConceptOf schulf: .
+
+schulf:kuenstlerische_faecher a skos:Concept ;
+    skos:prefLabel "Künstlerische Fächer"@de, "taiteellisia aiheita
+"@fi ;
+    skos:inScheme schulf: ;
+    skos:topConceptOf schulf: .
+
+schulf:erziehungswissenschaften a skos:Concept ;
+    skos:prefLabel "Erziehungswissenschaften"@de, "kasvatustieteet"@fi ;
+    skos:inScheme schulf: ;
+    skos:topConceptOf schulf: .
+
+schulf:sport a skos:Concept ;
+    skos:prefLabel "Sport"@de, "urheilu"@fi ;
+    skos:inScheme schulf: ;
+    skos:topConceptOf schulf: .
 
 schulf:deutsch a skos:Concept ;
     skos:prefLabel "Deutsch"@de, "Saksa"@fi ;
@@ -229,6 +267,7 @@ schulf:hauswirtschaft a skos:Concept ;
     dct:publisher "Deutsche Schule Helsinki" ;
     dct:modified "2018-06-20"^^xsd:date ;
     skos:topConceptOf schulf: .
+
 
 
 
