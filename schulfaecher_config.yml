@@ -1,7 +1,7 @@
 ---
 # see https://github.com/nextapps-de/flexsearch#tokenizer-prefix-search for options
 tokenizer: "full" # strict, forward, reverse, full
-custom_domain: "https://skohub-io.github.io/skohub-pages/"
+custom_domain: "https://github.com/JudiSchumi/skohub-pages"
 fail_on_validation: false
 searchableAttributes:
   - "prefLabel" # you should not delete this one
