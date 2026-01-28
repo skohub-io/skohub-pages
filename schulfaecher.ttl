@@ -5,7 +5,7 @@
 
 
 schulf: a skos:ConceptScheme ;
-    dct:title "Schulfächer an einer deutschen Schule in Finnland"@de, "School Subjects at a German school in Finland"@en ;
+    dct:title "Schulfächer an einer deutschen Schule in Finnland"@de, "Kouluaineet saksalaisessa koulussa suomessa"@fi ;
     dct:creator "Deutsche Schule Helsinki" ;
     dct:created "2018-06-20"^^xsd:date ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
@@ -244,6 +244,7 @@ schulf:hauswirtschaft a skos:Concept ;
     skos:inScheme schulf: ;
     dct:publisher "Deutsche Schule Helsinki" ;
     dct:modified "2018-06-20"^^xsd:date .
+
 
 
 
