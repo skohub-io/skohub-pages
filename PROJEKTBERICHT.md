@@ -11,17 +11,17 @@
 Wir haben uns für die Schulfächer der Deutschen Schule in Helsinki entschieden, weil wir gerne ein zweisprachiges Vokabular im internationalen Kontext erstellen wollten. Zudem haben wir einen persönlichen Bezug zum Vokabular, da eine der Gruppenteilnehmerinnen an dieser Schule tätig ist. Die Schulfächer sind sowohl auf Deutsch, als auch auf Finnisch verfügbar. Eine mögliche Weiterbearbeitung kann international erfolgen, durch andere deutsche Auslandsschulen beispielsweise.
 
 Wir haben für die Beschreibung der 20 Schulfächer folgende Properties verwendet:  
-**-	Inhaltliche Beschreibung (zweisprachig Deutsch/Finnisch):**  
-        - prefLabel: Bevorzugte, offizielle Bezeichnung des Schulfaches,  
-        - altLabel: Alternative, inoffizielle Bezeichnungen des Schulfaches und Slangnamen sowie Abkürzungen,  
-        - definition/description: Inhaltliche Erläuterung des Schulfaches,  
-        - scopeNote: Hinweise zur Unterrichtssprache.  
-**- Hierarchische und strukturelle Verknüpfung:**  
-        - broader: Einordnung in Wissenschaftsbereiche, z. B. Naturwissenschaften,  
-        - inScheme, hasTopConcept, topConceptOf: Technische Einbindung in das Gesamtschema.  
-**-	Metadaten:**  
-        - publisher: Herausgeber (Deutsche Schule Helsinki),  
-        - modified: Letztes Änderungsdatum.  
+**Inhaltliche Beschreibung (zweisprachig Deutsch/Finnisch):**  
+  - prefLabel: Bevorzugte, offizielle Bezeichnung des Schulfaches,  
+  - altLabel: Alternative, inoffizielle Bezeichnungen des Schulfaches und Slangnamen sowie Abkürzungen,  
+  - definition/description: Inhaltliche Erläuterung des Schulfaches,  
+  - scopeNote: Hinweise zur Unterrichtssprache.  
+**Hierarchische und strukturelle Verknüpfung:**  
+  - broader: Einordnung in Wissenschaftsbereiche, z. B. Naturwissenschaften,  
+  - inScheme, hasTopConcept, topConceptOf: Technische Einbindung in das Gesamtschema.  
+**Metadaten:**  
+  - publisher: Herausgeber (Deutsche Schule Helsinki),  
+  - modified: Letztes Änderungsdatum.  
 
 ## Zusammenarbeit: 
 Die Zusammenarbeit erfolgte neben dem GitHub-Repo auch auf Google Docs. Dort haben wir in mehreren Treffen unsere Arbeit vorab erstellt, besprochen und für den Bericht festgehalten. Danach haben wir es auf GitHub eingefügt, sodass nur eine von uns ein GitHub Konto erstellen musste und das Erstellen bzw. Ändern der besprochenen Aspekte übernommen hat. Die Zusammenarbeit hat so gut geklappt. Da dies erst unsere zweite Arbeit mit GitHub war und wir in vorherigen Projekten, auch in dieser Konstellation, schon mit GoogleDocs gearbeitet hatten, haben wir uns gegen ein Kanban in GitHub entschieden und für das schon bekannte Tool. Die Zusammenarbeit hat gut funktioniert, allerdings war das Thema für uns alle unbekannt. Keine von uns hat technische Vorkenntnisse, also nicht immer einfach. Die Commits im GitHub zeigen, dass wir viel ausprobiert haben, um zu sehen, ob es für unsere Zwecke passt oder um zu überprüfen, ob bestimmte Befehle richtig codiert wurden.
