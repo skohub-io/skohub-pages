@@ -180,7 +180,7 @@ schulf:geschichte a skos:Concept ;
     skos:prefLabel "Geschichte"@de, "Historia"@fi ;
     skos:definition "Schulfach, das historische Ereignisse, Entwicklungen und Zusammenhänge aus Vergangenheit und Gegenwart behandelt"@de, "Kouluaine, joka käsittelee historiallisia tapahtumia, kehityskulkuja ja yhteyksiä menneisyydestä nykypäivään"@fi ;
     skos:altLabel "Geschi"@de, "Histis"@fi, "Histsa"@fi ;
-    skos:scopeNote "Unterricht auf Deutsch und Finnisch"@de, "Opetus saksaki ja suomeksi"@fi ;
+    skos:scopeNote "Unterricht auf Deutsch und Finnisch"@de, "Opetus saksaksi ja suomeksi"@fi ;
     skos:broader schulf:geisteswissenschaften ;
     skos:inScheme schulf: ;
     dct:publisher "Deutsche Schule Helsinki" ;
@@ -220,7 +220,7 @@ schulf:handarbeit a skos:Concept ;
     skos:prefLabel "Handarbeit"@de, "Käsityö"@fi ;
     skos:definition "Schulfach, das handwerkliche Fertigkeiten sowie kreatives Arbeiten mit verschiedenen Materialien vermittelt"@de, "Kouluaine, joka opettaa käsityötaitoja sekä luovaa työskentelyä eri materiaaleillaKoulun oppiaine, jossa opetetaan suomen kieltä"@fi ;
     skos:altLabel "Käsis"@fi ;
-    skos:scopeNote "Unterricht auf Deutsch und Finnisch"@de, "Opetus saksaki ja suomeksi"@fi ;
+    skos:scopeNote "Unterricht auf Deutsch und Finnisch"@de, "Opetus saksaksi ja suomeksi"@fi ;
     skos:broader schulf:kuenstlerische_faecher ;
     skos:inScheme schulf: ;
     dct:publisher "Deutsche Schule Helsinki" ;
@@ -244,6 +244,7 @@ schulf:hauswirtschaft a skos:Concept ;
     skos:inScheme schulf: ;
     dct:publisher "Deutsche Schule Helsinki" ;
     dct:modified "2018-06-20"^^xsd:date .
+
 
 
 
