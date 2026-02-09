@@ -1,1 +1,1 @@
-{"data":{"allConceptScheme":{"edges":[{"node":{"id":"https://w3id.org/dsh/schulfaecher/","fields":{"languages":["de","fi"]}}}]}}}
+{"data":{"allConceptScheme":{"edges":[{"node":{"id":"https://example.org/colour/","fields":{"languages":["en","de"]}}},{"node":{"id":"https://example.org/colour-with-hierarchy/","fields":{"languages":["en","de"]}}}]}}}
