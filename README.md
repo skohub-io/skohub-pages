@@ -7,7 +7,7 @@ It spins up a Docker container made from [SkoHub Vocabs](https://github.com/hbz/
 
 ## Usage
 
-If you want to reuse this repo and have your vocabulary automatically pushed und published via GitHub-Pages, follow these steps:
+If you want to reuse this repo and have your vocabulary automatically pushed und published via GitHub-Pages, follow these steps (and note the [Troubleshooting section](#troubleshooting) below when things don't work as expected):
 
 1. Fork this repo. **Uncheck the box to only fork the main branch**.
 1. Go to "Actions" tab and if not already activated, activate GitHub Actions.
@@ -56,4 +56,3 @@ Go to `Settings` > `Actions` > `General` > `Workflow permissions` and toggle the
 
 - In an earlier version, there was the .env variable `PATH_PREFIX` set to point to the repository the vocabulary is hosted at. To align with rest of code, this was changed to `BASEURL`.
 - The docker image now also support i18n
-
