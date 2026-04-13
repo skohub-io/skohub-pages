@@ -36,4 +36,19 @@ ui:
       font_style: "normal"
       font_weight: 700
       name: "ubuntu-v20-latin-700"
+  footer:
+    links:
+      # It is strongly adviced to provide appropriate links for imprint and data protection and to then uncomment the following lines
+      #- title: "Impressum"
+      #  url: ""
+      #  target: "_blank"
+      #  rel: "noopener noreferrer"
+      #- title: "Datenschutz"
+      #  url: ""
+      #  target: "_blank"
+      #  rel: "noopener noreferrer"
+      - title: "© SkoHub"
+        url: "https://skohub.io"
+        target: "_blank"
+        rel: "noopener noreferrer"      
 

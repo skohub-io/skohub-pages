@@ -30,6 +30,11 @@ The base of your concept scheme could then be something like: `https://skohub-io
 
 Notice that this will apply to all your hosted vocabularies.
 
+## Further UI Customization
+
+If you want to customize your vocabulary UI further, check out the options provided by the `config.yaml`.
+See [default config](https://github.com/skohub-io/skohub-vocabs/blob/main/config.default.yaml) and [UI configuration documentation](https://github.com/skohub-io/skohub-vocabs?tab=readme-ov-file#ui)
+
 ## Troubleshooting
 
 ### There is no `gh-pages` branch to select for GitHub Pages
